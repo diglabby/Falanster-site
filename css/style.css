@@ -12,8 +12,8 @@ body{
 
 #left-side-img{
 	margin-top: -77px;
-	margin-left: 35px;
-	z-index: 1;
+	margin-left: 52px;
+	z-index: 0;
 }
 
 .block{
@@ -39,8 +39,8 @@ body{
 	width: 456px;
 	background-color:#FCFCFC;
 	margin-top: -164px;
-  position: absolute;
-  z-index: 10;
+	position: absolute;
+	z-index: 10;
   	border-radius:3px;
 	transition:.5s;
 }
@@ -211,7 +211,7 @@ body{
 .midle{
 	width: 600px;
 	background-color: white;
-   display: flex;
+    display: flex;
 }
 
 
@@ -357,6 +357,7 @@ body{
 }
 
 #right-side-img{
+
 		display: none;
 }
 

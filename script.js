@@ -43,16 +43,18 @@ function  button_click(e){
 	}
 }
 
+var img = document.getElementById("block-image");
 
-/*var el = document.getElementById ("box");
+img.addEventListener("mouseover", over_func);
+img.addEventListener("mouseout", out_func);
 
+function over_func(){
+	img.style.opacity = "0.5";
+}
 
-el.addEventListener("mouseover", deform_over, false);
-function deform_over(e){
-e.target.style.fontSize = "36px";
-};*/
-
-
+function out_func(){
+	img.style.opacity = "1";
+}
 
 
 
