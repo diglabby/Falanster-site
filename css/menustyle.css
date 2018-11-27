@@ -42,7 +42,7 @@ body{
 }
 
 #supportimg{
-		position: absolute;
+	position: absolute;
 	margin: 0 0 0 -5px;
 }
 
@@ -94,7 +94,7 @@ body{
 	height: 61px;
 	margin-top: -15px;
 	position: relative;
-	background: rgba(30, 30, 30, 0.9);
+	background: rgba(30, 30, 30, 0.86);
 	z-index:  2;
 }
 
@@ -237,7 +237,7 @@ header{
 	display: flex;
 	height: 130px;
 	background-color: #ffffff;
-	width: 600px;
+	width: auto;
 }
 
 .head_menu img{
@@ -273,7 +273,7 @@ header{
 
 #background_left{
 	height: 627px;
-	width: 600px;
+	width: auto;
 	content: url('../images/mobilespacetable.jpg');
 	margin: 0 0 0 0;
 }

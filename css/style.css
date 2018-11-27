@@ -209,7 +209,7 @@ body{
 }
 
 .midle{
-	width: 600px;
+	width: auto;
 	background-color: white;
     display: flex;
 }

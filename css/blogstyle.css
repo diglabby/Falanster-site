@@ -109,7 +109,7 @@ body{
 @media screen and (max-width: 1080px){
 	
 .blog{
-	width: 600px;
+	width: auto;
 	height: auto;
 	background-color: white;
 }
