@@ -79,17 +79,6 @@ body{
 	text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .nav_bar{
 	height: 61px;
 	margin-top: -15px;
@@ -224,6 +213,13 @@ body{
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 1080px){
+	
+	body{
+	margin: 0 0 0 0;
+	background-color: #DDDDDD;
+	/*overflow-x: hidden;*/
+	width: 100%;
+}
 
 body{
 	margin: 0 0 0 0;
@@ -234,20 +230,22 @@ header{
 }
 
 .head_menu{
+
 	display: flex;
 	height: 130px;
 	background-color: #ffffff;
-	width: auto;
+	width: 100%;
 }
 
 .head_menu img{
-	margin: 20px 0 0 30px;
+	margin: 40px 0 0 40px;
 }
 
 #head_menu{
-	height: 86px;
-	width: 340px;
-	content: url('../images/mobilelogo.jpg');
+	
+	height: 125px;
+	width: 500px;
+	content: url('../images/menulogo2.jpg');
 }
 
 .profile{
@@ -266,15 +264,35 @@ header{
 	display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav_bar{
 	display: none;
 }
 
 
 #background_left{
+	display: none;
 	height: 627px;
 	width: auto;
-	content: url('../images/mobilespacetable.jpg');
+	content: url('../images/mobilespacetable2.jpg');
 	margin: 0 0 0 0;
 }
 
@@ -284,10 +302,11 @@ header{
 }
 
 .manifest p{
+	display: none;
 	height: 516px;
 	width: 510px;
 	margin: -630px 0 0 0;
-	padding: 110px 45px 0 45px;
+	padding: 110px 100% 0 45px;
 	position: absolute;
 	color: #ffffff;
 	font-family:'Ubuntu';

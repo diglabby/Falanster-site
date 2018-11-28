@@ -12,7 +12,7 @@ body{
 
 #left-prefooter{
 	height: 280px;
-	width: 768px;
+	width: 50%;
 	background-color:#FF6600;
 	color:#ffffff;
 	font-family:'Ubuntu';
@@ -23,6 +23,13 @@ body{
 	margin: 83px 140px 0 170px;
 	font-weight: bold;
 	letter-spacing: 1px;
+}
+
+#left-prefooter h1 a{
+	margin: 83px 140px 0 170px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color:#ffffff;
 }
 
 #left-prefooter p{
@@ -40,7 +47,7 @@ body{
 
 #right-prefooter{
 	height: 280px;
-	width: 60%;
+	width: 50%;
 	background-color:#F5F5F5;
 	color:#333333;
 	font-family:'Ubuntu';
@@ -109,9 +116,9 @@ footer{
 	margin-top: -5px;
 }
 
-#twitter{
-	margin-top: -17px;
-	margin-left: 3px;
+#face{
+	margin-top: -15px;
+	margin-left: ;
 }
 
 #youtube{
@@ -146,8 +153,14 @@ footer{
 	border: 1px #ffffff solid;
 }
 
+INPUT[type="search"]{
+		font-size:15px;
+	padding-left: 10px;
+	color: #ffffff;
+}
+
 ::-webkit-input-placeholder{
-	padding-left: 15px;
+	padding-left: 0px;
 	font-size:15px;
 }
 
@@ -168,10 +181,18 @@ footer{
 
 @media screen and (max-width: 1080px){
 
+body{
+	margin: 0 0 0 0;
+	background-color: #DDDDDD;
+	/*overflow-x: hidden;*/
+	width: 100%;
+}
+
 .prefooter{
 	margin: 0 0 0 0;
 	justify-content: center;
-	width: auto;
+	width:  100%;
+	height: 800px;
 	-webkit-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	-moz-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
@@ -179,15 +200,27 @@ footer{
 
 }
 
+.date-autor{
+	display: flex;
+}
+
+.main-article img{
+	margin-left: 35px;
+}
+
+.autor{
+	margin-left: 40px;
+}
+
 #left-prefooter{
 	margin: 0 0 0 0;
 	height: 410px;
-	font-size:18px;
+	font-size:58px;
 }
 
 #left-prefooter h1{
 	margin: 0 0 0 0;
-	padding: 75px 0 0 35px;
+	padding: 75px 0 0 50px;
 	font-weight: bold;
 	color:#ffffff;
 	letter-spacing: 1px;
@@ -195,13 +228,13 @@ footer{
 }
 
 #left-prefooter p{
-	margin: 35px 50px 0 35px;
+	margin: 35px 50px 0 55px;
 	color:#ffffff;
 	font-family:'Ubuntu';
-	font-size:25px;
+	font-size:45px;
 	font-weight: normal;
 	visibility: visible;
-	letter-spacing: 0px;
+	letter-spacing: 2px;
 }
 	
 #right-prefooter{
@@ -211,14 +244,14 @@ footer{
 footer{
 	display: flex;
 	width: auto;
-	height: 530px;
+	height: 1400px;
 	background-color:#303030;
 }
 
 #footer-logo{
 	margin: 40px 0 0 35px;
-	height: 75px;
-	width: 75px;
+	height: 175px;
+	width: 175px;
 }
 	
 .list{
@@ -232,7 +265,7 @@ footer{
 	margin: 7px 0 0 0;
 	color:#ffffff;
 	font-family:'Ubuntu';
-	font-size:22px;
+	font-size:45px;
 	list-style-type: none;
 	line-height: 2;
 }
@@ -243,12 +276,12 @@ footer{
 }	
 
 .social-network{
-	margin-top: 8px;
-	margin-left: 55px;
+	margin-top: 0px;
+	margin-left: 135px;
 }
 
 .social-network p{
-	font-size:25px;
+	font-size:45px;
 	color:#ffffff;
 	font-family:'Ubuntu';
 
@@ -263,69 +296,74 @@ footer{
 	margin-top: -24px;
 	margin-left: -10px;
 	margin-right: 3px;
-	height: 95px;
-	width: 95px;
+	height: 190px;
+	width: 190px;
 }
 
 #telegram{
-	margin-left: -80px;
-	margin-top: 75px;
-	height: 60px;
-	width: 60px;
+	margin-left: -150px;
+	margin-top: 155px;
+	height: 120px;
+	width: 120px;
 }
 
-#twitter{
-	margin-top: -18px;
+#face{
+	margin-top: 10px;
 	margin-left: 30px;
 	margin-right: 3px;
-	height: 85px;
-	width: 85px;
+	height: 130px;
+	width: 130px;
 }
 
 #youtube{
-	margin-left: -90px;
-	margin-top: 55px;
-	height: 90px;
-	width: 90px;
+	margin-left: -160px;
+	margin-top: 115px;
+	height: 180px;
+	width: 180px;
 
 }
 	
 .search-row{
 	position: absolute;
-	margin-top: 250px;
-	margin-left: 160px;
+	margin-top: 650px;
+	margin-left: 260px;
 }
 
 .search-row p {
 	color:#ffffff;
 	font-family:'Ubuntu';
-	font-size:25px;
+	font-size:45px;
 }
 
 .search-row input{
-	width: 315px;
-	height: 58px;
+	width: 550px;
+	height: 116px;
 	border-radius: 1px;
 	background-color: #303030;
 	border: 1px #ffffff solid;
 }
 
+INPUT[type="search"]{
+	font-size:40px;
+	padding-left: 25px;
+	color: #ffffff;
+}
+
 ::-webkit-input-placeholder{
 	padding-top: 5px;
-	padding-left: 15px;
-	font-size:20px;
-
+	padding-left: 2px;
+	font-size:45px;
 }
 
 .search-row button{
-	width: 72px;
-	height: 58px;
+	width: 116px;
+	height: 116px;
 	background-color: #ffffff;
 	border: 0px;
 	border-radius: 1px;
-	margin-left: 15px;
+	margin: -100px 0 0 15px;
 	color: #8A8A8A;
-	font-size:20px;
+	font-size:35px;
 }	
 	
 #footer-logo-2{

@@ -46,8 +46,8 @@ body{
 }
 
 .info-block:hover .block-text{
-		opacity: 0;
-		transition:.5s;
+	display: none;
+	transition:.5s;
 }
 
 
@@ -125,24 +125,50 @@ position: relative;
 
 
 .info-block-highimg h2{
-		text-align: center;
-		font-family: 'Ubuntu';
+	text-align: center;
+	font-family: 'Ubuntu';
 	font-size: 30;
 	color:  #333333;
 	margin: 137px 0 10px 8px;
-		letter-spacing: 0.5px;
+	letter-spacing: 0.5px;
 }
 
 .block-image{
 }
 
+
+.block-button{
+	position: absolute;
+	margin-top: -250px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#showmore{
+	background-color:#ff6600;
+	margin-top: 10px;
+	color:#ffffff;
+	cursor: pointer;
+	font-family:'Ubuntu';
+	font-size:15px;
+	padding:19px 19px 16px 20px;
+	text-decoration:none;
+	border-radius:4px;
+	border-width: 0px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	visibility: hidden;
+	
+}
+
+.info-block:hover #showmore{
+	visibility: visible;
+	transition:.8s;
+}
+
 #article{
-	position: absolute; 
-	font-family: 'Ubuntu';
-	font-size: 30;
-	color:  #333333;
-	margin-top: -290px;
-	letter-spacing: 0.5px;
 	visibility: hidden;
 }
 
@@ -151,27 +177,8 @@ position: relative;
 	transition:.8s;
 }
 
-#showmore{
-	position: absolute;
-	margin-top: -210px;
-	margin-left: 30%;
-	background-color:#ff6600;
-	color:#ffffff;
-	cursor: pointer;
-	font-family:'Ubuntu';
-	font-size:15px;
-	padding:19px 19px 16px 20px;
-	text-align: center;
-	text-decoration:none;
-	border-radius:4px;
-	border-width: 0px;
-	letter-spacing: 1px;
-	font-weight: bold;
-	visibility: hidden;
 
-}
-
-.info-block:hover #showmore{
+.block-button:hover button{
 	visibility: visible;
 	transition:.8s;
 }
@@ -205,13 +212,16 @@ position: relative;
 body{
 	margin: 0 0 0 0;
 	background-color: #DDDDDD;
-	overflow-x: hidden;
 }
 
 .midle{
-	width: auto;
+	width: 100%;
 	background-color: white;
     display: flex;
+}
+
+#menu{
+	width: 100%;
 }
 
 
@@ -221,7 +231,7 @@ body{
 	margin-left: 35px;
 	margin-bottom: 58px;
 	font-family: 'Ubuntu';
-	font-size: 48px;
+	font-size: 88px;
 	color: #090909;
 	letter-spacing: 2px;
 	text-shadow: 2px 2px 0px #FF6600;
@@ -232,44 +242,45 @@ body{
 	margin-left: 35px;
 	margin-bottom: 20px;
 	font-family: 'Ubuntu';
-	font-size: 48;
+	font-size: 8px;
 	color: #303030;
 	letter-spacing: 2px;
 }
 
 .block img{
-		margin-left: 35px;
+	margin-left: 35px;
 }
 
 #block1 img{
 	content: url('../images/img111.jpg');
-	width: 532px;
-	height: 298px;
+	width: 798px;
+	height: 477px;
 }
 
 #block2 img{
 	content: url('../images/img222.jpg');
-	width: 532px;
-	height: 298px;
+	width: 798px;
+	height: 477px;
 }
 
 #block3 img{
 	content: url('../images/img333.jpg');
-	width: 532px;
-	height: 298px;
+	width: 798px;
+	height: 477px;
 }
 
 #block4 img{
 	content: url('../images/img444.jpg');
-	width: 532px;
-	height: 298px;
+	width: 798px;
+	height: 477px;
 }
 
 .block p{
-		margin-left: 35px;
+	margin-left: 35px;
+	margin-right: 25px;
 	font-family: "PT Sans"; 
-	font-size: 30px; 
-		color: #303030;
+	font-size: 40px; 
+	color: #303030;
 }
 
 .block p a{
@@ -284,7 +295,7 @@ body{
 }
 
 .block-text h2{
-	font-size: 40px;
+	font-size: 60px;
 	margin: 170px 0 0 35px;
 }
 
@@ -322,8 +333,8 @@ body{
 
 
 .basic{
-	height: 30px;
-	width: 30px;
+	height: 50px;
+	width: 50px;
 	margin: 15px 35px 150px 0;
 	background-color: white;
 	border: 2px #AAABAA solid;
@@ -332,8 +343,8 @@ body{
 }
 
 .basic:hover{
-	height: 30px;
-	width: 30px;
+	height: 50px;
+	width: 50px;
 	margin: 15px 35px 150px 0;
 	background-color: white;
 	border: 2px #d6ff32 solid;
@@ -342,8 +353,8 @@ body{
 }
 
 .btn-on{
-	height: 30px;
-	width: 30px;
+	height: 50px;
+	width: 50px;
 	margin: 15px 35px 150px 0;
 	background-color: #d6ff32;
 	border: 2px #d6ff32 solid;

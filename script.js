@@ -43,24 +43,67 @@ function  button_click(e){
 	}
 }
 
-var img = document.getElementById("block-image");
+/*var img1 = document.getElementById("block1");
+var img2 = document.getElementById("block2");
+var img3 = document.getElementById("block3");
+var img4 = document.getElementById("block4");
 
-img.addEventListener("mouseover", over_func);
-img.addEventListener("mouseout", out_func);
+img1.addEventListener("mouseover", over_func1);
+img1.addEventListener("mouseout", out_func1);
+img2.addEventListener("mouseover", over_func2);
+img2.addEventListener("mouseout", out_func2);
+img3.addEventListener("mouseover", over_func3);
+img3.addEventListener("mouseout", out_func3);
+img4.addEventListener("mouseover", over_func4);
+img4.addEventListener("mouseout", out_func4);
 
-function over_func(){
-	img.style.opacity = "0.5";
+function over_func1(){
+	img1.style.opacity = "0.5";
 }
 
-function out_func(){
-	img.style.opacity = "1";
+function out_func1(){
+	img1.style.opacity = "1";
+}
+
+function over_func2(){
+	img2.style.opacity = "0.5";
+}
+
+function out_func2(){
+	img2.style.opacity = "1";
 }
 
 
+function over_func3(){
+	img3.style.opacity = "0.5";
+}
 
+function out_func3(){
+	img3.style.opacity = "1";
+}
 
+function over_func4(){
+	img4.style.opacity = "0.5";
+}
 
+function out_func4(){
+	img4.style.opacity = "1";
+}*/
 
+var img_arr = document.getElementsByClassName("blockimg");
+
+for (var i = 0; i < img_arr.length; i++) {
+    img_arr[i].addEventListener("mouseover", over_func);
+	img_arr[i].addEventListener("mouseout", out_func);
+}
+
+function over_func(e){
+	e.target.style.opacity = "0.5";
+}
+
+function out_func(e){
+	e.target.style.opacity = "1";
+}
 
 
 

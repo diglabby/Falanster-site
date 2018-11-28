@@ -108,6 +108,12 @@ body{
 
 @media screen and (max-width: 1080px){
 	
+	body{
+	margin: 0 0 0 0;
+	background-color: #DDDDDD;
+
+}
+	
 .blog{
 	width: auto;
 	height: auto;
@@ -123,7 +129,7 @@ body{
 	margin-left: 30px;
 	margin-bottom: 35px;
 	font-family: 'Ubuntu';
-	font-size: 60px;
+	font-size: 88px;
 	color: #090909;
 	letter-spacing: 2px;
 	text-shadow: 2px 2px 0px #d6ff32;
@@ -139,9 +145,9 @@ body{
 }
 
 .blog-article img{
-	/*content: url('../images/x1.jpg');*/
-	width: 596px;
-	height: 372px;
+	content: url('../images/blogphoto.jpg');
+	width: 798px;
+	height: 477px;
 	border-radius:0px;
 	margin-top: 30px;
 	
@@ -149,44 +155,46 @@ body{
 
 .main-article{
 	margin-left: 0px;
-	width: 600px;
+	width: auto;
 	color:#333333;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
-	font-size:18px;
+	font-size:33px;
 	font-weight: 100;
 }
 
 .main-article h2{
 	margin-left: 30px;
+	margin-right: 10px;
 }
 
 .date p{
 	margin-left: 30px;
-	font-size:18px;
+	font-size:35px;
 	font-weight: 500;
 }
 
 .autor p{
 	margin-right: 30px;
-	font-size:18px;
+	font-size:35px;
 	font-weight: 500;
 }
 
 .recent-article{
 	margin-left: 0px;
-	width: 600px;
+	width: auto;
 	color:#333333;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
-	font-size:28px;
+	font-size:33px;
 	font-weight: 100;
 }
 
 .recent-article h2{
-	margin-left: 30px;
-	width: 520px;
-	font-size:25px;
+	margin-left: 35px;
+	margin-right: 5px;
+	width: auto;
+	font-size:35px;
 	font-weight: 600;
 }
 
