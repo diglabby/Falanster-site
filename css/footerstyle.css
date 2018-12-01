@@ -26,10 +26,11 @@ body{
 }
 
 #left-prefooter h1 a{
-	margin: 83px 140px 0 170px;
+	margin: 83px 140px 0 0px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	color:#ffffff;
+	text-decoration: none;
 }
 
 #left-prefooter p{
@@ -225,6 +226,14 @@ body{
 	color:#ffffff;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
+}
+
+#left-prefooter h1 a{
+	margin: 83px 140px 0 0px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color:#ffffff;
+	text-decoration: none;
 }
 
 #left-prefooter p{

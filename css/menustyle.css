@@ -15,10 +15,14 @@ body{
 }
 
 .profile{
-	margin: 20px 0 0 315px;
+
+	width: 136px;
+	margin: 20px 0 0 350px;
+	text-align: center;
 }
 
 .profile a{
+	margin:0 0 0 0;
 	color: #333333;
 	font-family:'Ubuntu';
 	font-size:16px;
@@ -26,15 +30,20 @@ body{
 }
 
 #profileimg{
-	position: absolute;
-	margin: 0 0 0 -2px;
+	position: inherit;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .support{
+
+	width: 96px;
 	margin: 20px 0 0 35px;
+		text-align: center;
 }
 
 .support a{
+	margin:0 0 0 0;
 	color: #333333;
 	font-family:'Ubuntu';
 	font-size:16px;
@@ -42,8 +51,9 @@ body{
 }
 
 #supportimg{
-	position: absolute;
-	margin: 0 0 0 -5px;
+	position: inherit;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .enter{
@@ -162,13 +172,17 @@ body{
 	width: 50%;
 }
 
+.background_left img{
+	height: 705px;
+}
+
+
 .background_left .manifest{
 		display: none;
 }
 
 .background_right{
-		height: 705px;
-	width: 50%;
+	height: 705px;
 }
 
 #background_left{
@@ -184,9 +198,16 @@ body{
 	z-index:  1;
 }
 
+.background_right img{
+		width: 50%;
+		height: 705px;
+
+}
+
+
 .manifest p{
 	margin: 215px 0 0 63px;
-	position: relative;
+	position: absolute;
 	color: #ffffff;
 	font-family:'Ubuntu';
 	font-size:25px;
@@ -196,7 +217,7 @@ body{
 }
 
 .manifest a{
-	margin: 30px 0 0 63px;
+	margin: 420px 0 0 63px;
 	position: absolute;
 	text-decoration: none;
 	color: #ffffff;
@@ -226,23 +247,18 @@ body{
 }
 
 header{
-	margin: 0 0 -5px 0;
+	margin: 0 0 0 0;
 }
 
 .head_menu{
-
 	display: flex;
-	height: 130px;
+	height: 200px;
 	background-color: #ffffff;
 	width: 100%;
 }
 
-.head_menu img{
-	margin: 40px 0 0 40px;
-}
-
 #head_menu{
-	
+padding: 45px 0 0 45px;
 	height: 125px;
 	width: 500px;
 	content: url('../images/menulogo2.jpg');
@@ -264,69 +280,57 @@ header{
 	display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .nav_bar{
 	display: none;
 }
 
-
-#background_left{
-	display: none;
-	height: 627px;
+.background_left{
+	height: 854px;
 	width: auto;
-	content: url('../images/mobilespacetable2.jpg');
+	background-color: #ffffff;
+	background-size: 100%;
+	background-image: url('../images/space_table_blur2.jpg');
 	margin: 0 0 0 0;
 }
 
+#background_left{
+	display: none;
+	background-color:#ffffff;
+}
 
 .background_right{
 	display: none;
 }
 
-.manifest p{
-	display: none;
+.manifest{
+	margin: 0 0 0 0;
 	height: 516px;
-	width: 510px;
-	margin: -630px 0 0 0;
-	padding: 110px 100% 0 45px;
-	position: absolute;
+	width: 750px;
+}
+
+.manifest p{
+	margin: 0 0 0 0;
+	padding: 100px 0 0 45px;
 	color: #ffffff;
 	font-family:'Ubuntu';
-	font-size:37px;
+	font-size:55px;
 	letter-spacing: 0px;
 	line-height: 1.2;
 	z-index: 3;
-	background: rgba(30, 30, 30, 0.9);
 }
 
+
+
 .manifest a{
-	margin: -190px 0 0 45px;
 	position: absolute;
+	margin: 50px 0 0 45px;
 	text-decoration: none;
 	color: #ffffff;
 	padding: 15px 25px 18px 25px;
 	background-color: #FF6600;
 	font-family:'Ubuntu';
 	font-weight: bold;
-	font-size:18px;
+	font-size:30px;
 	border-radius: 1px;
 	z-index: 4;
 }
