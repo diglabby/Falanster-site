@@ -1,9 +1,25 @@
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 2200px){
+.content{
+	display: flex;
+}
+
+
+#right-side-img img{
+	margin-top: -310px;
+	width: 230px;
+	right: 0;
+	z-index:  1;
+}
+
+}
+
+
+
+@media screen and (min-width: 1081px){
 
 body{
 	margin: 0 0 0 0;
-
 }
 
 .midle{
@@ -12,8 +28,12 @@ body{
 
 #left-side-img{
 	margin-top: -77px;
-	margin-left: 52px;
+	margin-left: 3%;
 	z-index: 0;
+}
+
+.content{
+
 }
 
 .block{
