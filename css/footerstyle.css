@@ -74,6 +74,10 @@ footer{
 	margin: 31px 0 0 173px;
 }
 
+.footer_menu{
+	display: flex;
+}
+
 .list{
 	margin-top: 10px;
 	margin-left: 68px;
@@ -166,7 +170,7 @@ INPUT[type="search"]{
 	font-size:15px;
 }
 
-.search-row button{
+#search-row-button{
 	width: 48px;
 	height: 40px;
 	background-color: #ffffff;
@@ -258,6 +262,8 @@ footer{
 	height: 1400px;
 	background-color:#303030;
 }
+
+
 
 #footer-logo{
 	margin: 40px 0 0 35px;
@@ -366,16 +372,19 @@ INPUT[type="search"]{
 	font-size:45px;
 }
 
-.search-row button{
-	width: 116px;
-	height: 116px;
-	background-color: #ffffff;
-	border: 0px;
-	border-radius: 1px;
-	margin: -100px 0 0 15px;
-	color: #8A8A8A;
+#search-row-button{
+	margin: 0 0 0 15px;
+	background-color:#ffffff;
+	color:#848484;
+	cursor: pointer;
+	font-family:'Ubuntu';
 	font-size:35px;
-			cursor: pointer;
+	padding:39px 39px 36px 30px;
+	text-decoration:none;
+	border: 0px;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	font-weight: bold;
 }	
 	
 #footer-logo-2{
@@ -387,6 +396,10 @@ INPUT[type="search"]{
 	margin-left: 2px;
 	position: absolute;
 }
+
+
+
+
 	
 	
 	
