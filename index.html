@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="css/calendarstyle.css">
 		<link rel="stylesheet" href="css/blogstyle.css">
 		<link rel="stylesheet" href="css/footerstyle.css">
+		<link rel="stylesheet" href="css/modal.css">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	</head>
@@ -305,7 +306,7 @@
 		</section>
 		
 		<footer>
-				<img id="footer-logo" src="images/footerlogo.jpg" height="103" width="100">
+			<img id="footer-logo" src="images/footerlogo.jpg" height="103" width="100">
 			
 				<div class="list">
 					<ul>
@@ -331,12 +332,27 @@
 				</div>
 
 			
-			<div class="search-row">
-				<p>Падпiсацца на нас</p>
-				<input type="search" placeholder="Ваш e-mail">
-				<button type="submit">OK</button>
-				<img id="footer-logo-3" src="images/by-sa.png">
-			</div>
+				<div class="search-row">
+					<p>Падпiсацца на нас</p>
+					<input type="search" placeholder="Ваш e-mail">
+					<a href="#modal"><button id="search-row-button">OK</button></a>
+					<img id="footer-logo-3" src="images/by-sa.png">
+				</div>
+				
+				<div class="modal" id="modal">
+					<div class="popup">
+						<img src="images/topleft.jpg" id="topleft" height="54" width="80">
+						<img src="images/topright.jpg" id="topright" height="54" width="80">
+						<h2>Дзякуй!</h2>
+						<img src="images/modal.svg" id="face">
+						<p>Амаль гатова!<br>Толькi што вам на email быу адпраулены лiст. 
+						<br>Клiкнiце па спасылке унутры, каб пацвердзiць падпiску</p>
+						<a href="#vk" class="close"><p>Добра!</p></a>
+						<img src="images/bottom.jpg" id="bottom1" height="40" width="80">
+						<img src="images/bottom.jpg" id="bottom2" height="40" width="80">
+					</div>
+				</div>
+			
 		</footer>
 		
 		<script type="text/javascript" src="script.js"></script>
