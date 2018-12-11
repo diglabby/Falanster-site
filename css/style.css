@@ -21,7 +21,7 @@
 
 
 
-@media screen and (min-width: 1081px){
+@media screen and (min-width: 1080px){
 
 body{
 	margin: 0 0 0 0;
@@ -42,9 +42,8 @@ body{
 }
 
 .block{
-   display: flex;
+	display: flex;
 	z-index: 2;
-
 }
 
 #caption h1{
@@ -78,10 +77,10 @@ body{
 
 
 .block-image{
-		height: 398px;
+	height: 398px;
 	width: 456px;
-		transition:.5s;
-			border-radius:3px;
+	transition:.5s;
+	border-radius:3px;
 }
 
 .info-block:hover .block-image{
@@ -95,7 +94,7 @@ body{
 }
 
 .info-block{
-position: relative;
+	position: relative;
 	background-color:#FCFCFC;
 	border-radius:3px;
 	margin-left: 0px;
@@ -113,23 +112,28 @@ position: relative;
 
 .info-block h2{
 	text-align: center;
-		font-family: 'Ubuntu';
+	font-family: 'Ubuntu';
 	font-size: 24;
 	color:  #333333;
 	margin: 20px 0 5px 0;
-		letter-spacing: 0.5px;
+	letter-spacing: 0.5px;
+}
+
+.info-block h2 a{
+	color: #333333;
+	text-decoration: none;
 }
 
 
 .info-block p{
-		font-family: "PT Sans"; 
-		margin-top: 0px;
+	font-family: "PT Sans"; 
+	margin-top: 0px;
 	font-size: 16px;
 	text-align: left;
 	margin: 0 45px 0 43px;
-		color:  #767676;
-		line-height: 1.4;
-
+	color:  #767676;
+	line-height: 1.4;
+	text-align: center;
 }
 
 .info-block p a{
@@ -232,7 +236,7 @@ position: relative;
 
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1079px){
 
 body{
 	margin: 0 0 0 0;
@@ -282,19 +286,19 @@ body{
 }
 
 #block2 img{
-	content: url('../images/img222.jpg');
+	content: url('../images/img444.jpg');
 	width: 798px;
 	height: 477px;
 }
 
 #block3 img{
-	content: url('../images/img333.jpg');
+	content: url('../images/img222.jpg');
 	width: 798px;
 	height: 477px;
 }
 
 #block4 img{
-	content: url('../images/img444.jpg');
+	content: url('../images/img333.jpg');
 	width: 798px;
 	height: 477px;
 }
@@ -305,6 +309,7 @@ body{
 	font-family: "PT Sans"; 
 	font-size: 40px; 
 	color: #303030;
+	
 }
 
 .block p a{
@@ -316,11 +321,34 @@ body{
 	display: inline-block;
     vertical-align: baseline;
     line-height: 1;
+
 }
 
 .block-text h2{
 	font-size: 60px;
 	margin: 170px 0 0 35px;
+}
+
+.block-text h2 a{
+	color: #303030;
+	text-decoration: none;
+}
+
+#project_source1:visited{
+	color: #ff6600;
+	text-decoration: none;
+}
+#project_source2:visited{
+	color: #ff6600;
+	text-decoration: none;
+}
+#project_source3:visited{
+	color: #ff6600;
+	text-decoration: none;
+}
+#project_source4:visited{
+	color: #ff6600;
+	text-decoration: none;
 }
 
 #article{

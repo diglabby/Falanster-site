@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 1081px){
+@media screen and (min-width: 1080px){
 
 body{
 	margin: 0 0 0 0;
@@ -16,22 +16,16 @@ body{
 	background-color:#FF6600;
 	color:#ffffff;
 	font-family:'Ubuntu';
-	font-size:23px;
+	font-size:30px;
 }
 
 #left-prefooter h1{
-	margin: 83px 140px 0 170px;
+	margin: 80px 140px 0 170px;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
 
-#left-prefooter h1 a{
-	margin: 83px 140px 0 0px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	color:#ffffff;
-	text-decoration: none;
-}
+
 
 #left-prefooter p{
 	margin: 0 0 0 0;
@@ -186,7 +180,7 @@ INPUT[type="search"]{
 
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1079px){
 
 body{
 	margin: 0 0 0 0;
@@ -301,7 +295,6 @@ footer{
 	font-size:45px;
 	color:#ffffff;
 	font-family:'Ubuntu';
-
 }
 	
 .icons{

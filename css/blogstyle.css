@@ -1,20 +1,24 @@
 
-@media screen and (min-width: 1081px){
+@media screen and (min-width: 1080px){
 	
 body{
 	margin: 0 0 0 0;
-
 }
 
 .blog{
-	margin: 0 0 0 0;
+	display: flex;
+	padding-left: 7%;
+}
+
+#blog_content{
+	margin: 0 auto;
 }
 
 
 #blog-caption h1{
 	width:auto;
 	margin-top: 110px;
-	margin-left: 171px;
+	margin-left: 0px;
 	margin-bottom: 45px;
 	font-family: 'Ubuntu';
 	font-size: 60px;
@@ -29,7 +33,7 @@ body{
 }
 
 .main-article{
-	margin-left: 171px;
+	margin-left: 0px;
 	width: 490px;
 	color:#333333;
 	letter-spacing: 1px;
@@ -85,10 +89,11 @@ body{
 }
 
 #blog-right-side-img{
-	margin-top: -179px;
+
+	margin-top: 0px;
 	position: absolute;
 	right: 0;
-	z-index:  1;
+	z-index: 1;
 }
 
 #ivents p a{
@@ -107,7 +112,7 @@ body{
 
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1079px){
 	
 	body{
 	margin: 0 0 0 0;
