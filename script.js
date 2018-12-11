@@ -107,7 +107,18 @@ function out_func(e){
 
 
 
+window.onscroll = function(){stickyNav()};
 
+function stickyNav(){
+	var navigationbar = document.getElementById("navigation_bar");
+	var settop = navigationbar.offsetTop;
+	if(window.pageYOffset > settop + 8){
+		navigationbar.classList.add("sticky");
+	}
+	else{
+		navigationbar.classList.remove("sticky");
+	}
+};
 
 
 
