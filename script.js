@@ -106,8 +106,7 @@ function out_func(e){
 }
 
 
-
-window.onscroll = function(){stickyNav()};
+window.onscroll = stickyNav;
 
 function stickyNav(){
 	var navigationbar = document.getElementById("navigation_bar");
@@ -121,7 +120,22 @@ function stickyNav(){
 };
 
 
+document.getElementById('left-prefooter').onclick = pref_Fun;
 
+function pref_Fun(e){
+	if( window.innerWidth >= 1080){
+		if(e.currentTarget.style.background === "white"){
+			e.currentTarget.style.background = "#ff6600";
+			e.currentTarget.style.color = "white";
+		}
+		else{
+			e.currentTarget.style.background = "white";
+			e.currentTarget.style.color = "#ff6600";
+		}
+	}
+	
+	window.location='https://falanster.by/be/volunteers';
+};
 
 
 
