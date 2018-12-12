@@ -330,11 +330,11 @@ body{
 }
 
 .block-text h2 a{
-	color: #303030;
+	color: #ff6600;;
 	text-decoration: none;
 }
 
-#project_source1:visited{
+/*#project_source1:visited{
 	color: #ff6600;
 	text-decoration: none;
 }
@@ -349,7 +349,7 @@ body{
 #project_source4:visited{
 	color: #ff6600;
 	text-decoration: none;
-}
+}*/
 
 #article{
 	display:none;
