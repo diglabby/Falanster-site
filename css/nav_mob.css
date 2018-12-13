@@ -1,0 +1,58 @@
+@media screen and (max-width: 1079px){
+	
+body{
+	margin: 0 0 0 0;
+}
+
+.mob_nav{
+	width: auto;
+	height: auto;
+	padding: 15px 0 30px 0;
+	background-color: #303030;
+	line-height: 1.5;
+	z-index:9999;
+}
+
+#close_button{
+	background-color: #303030;
+	color: white;
+	border: none;
+	font-size:55px;
+	position: relative;
+	left: 93%;
+	cursor: pointer;
+}
+
+#menu_mob li{
+	color: white;
+	list-style-type: none; 
+	font-size:45px;
+	font-family:'Ubuntu';
+}
+
+#menu_mob li a{
+	color: white;
+	text-decoration: none;
+}
+
+#menu_mob li a:hover{
+	color: #ff6600;
+}
+
+#languge_mob{
+	display: flex;
+}
+
+#languge_mob li{
+	color: #898989;
+	list-style-type: none; 
+	padding-right: 40px;
+	font-size:45px;
+	font-family:'Ubuntu';
+}
+
+#languge_mob li a{
+	color: #898989;
+	text-decoration: none;
+}
+}

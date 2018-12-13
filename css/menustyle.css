@@ -117,6 +117,10 @@ body{
 	text-decoration: none;
 }
 
+.mob_nav{
+	display: none;
+}
+
 .nav_bar{
 	height: 61px;
 	margin-top: -15px;
@@ -324,11 +328,12 @@ padding: 45px 0 0 45px;
 	display: none;
 }
 
+
+
 .background_left{
 	height: 1024px;
 	width: auto;
 	background-color: #ffffff;
-
 	background-image: url('../images/space_table_blur2.jpg');
 	margin: 0 0 0 0;
 }
