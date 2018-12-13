@@ -7,7 +7,6 @@ body{
 
 .blog{
 	display: flex;
-	padding-left: 7%;
 }
 
 #blog_content{
@@ -90,7 +89,7 @@ body{
 
 #blog-right-side-img{
 
-	margin-top: 0px;
+	margin-top: 50px;
 	position: absolute;
 	right: 0;
 	z-index: 1;
