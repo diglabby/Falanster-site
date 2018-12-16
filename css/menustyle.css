@@ -25,12 +25,14 @@ body{
 }
 
 .head_menu{
+	margin: 0 auto;
+	width: 990px;
 	display: flex;
 	height: 65px;
 }
 
 .head_logo{
-	margin-left: 10%;
+	margin-left: ;
 }
 
 .head_logo img{
@@ -39,7 +41,7 @@ body{
 
 .head_menu_buttons{
 	margin-left: auto;
-	margin-right: 5%;
+	margin-right: ;
 	display: flex;
 }
 
@@ -100,7 +102,7 @@ body{
 }
 
 .language ul{
-	margin: 10px 0 0 0;
+	margin: 10px 0 0 10px;
 }
 
 .language ul li{
