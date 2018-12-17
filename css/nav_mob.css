@@ -5,29 +5,37 @@ body{
 }
 
 .mob_nav{
-	width: auto;
+	position: absolute;
+	width: 100%;
 	height: auto;
+	left: -100%;
 	padding: 15px 0 30px 0;
 	background-color: #303030;
 	line-height: 1.5;
 	z-index:9999;
 }
 
+
 #close_button{
 	background-color: #303030;
 	color: white;
 	border: none;
 	font-size:55px;
-	position: relative;
-	left: 93%;
+	position: absolute;
+	margin-top: 10px;
+	right: 5%;
 	cursor: pointer;
 }
 
 #menu_mob li{
 	color: white;
 	list-style-type: none; 
-	font-size:45px;
+	font-size:55px;
 	font-family:'Ubuntu';
+}
+
+#menu_mob li:nth-child(1){
+	padding-top:73px;
 }
 
 #menu_mob li a{
@@ -47,6 +55,7 @@ body{
 	color: #898989;
 	list-style-type: none; 
 	padding-right: 40px;
+	padding-bottom: 25px;
 	font-size:45px;
 	font-family:'Ubuntu';
 }
