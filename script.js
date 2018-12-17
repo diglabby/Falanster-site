@@ -43,53 +43,6 @@ function  button_click(e){
 	}
 }
 
-/*var img1 = document.getElementById("block1");
-var img2 = document.getElementById("block2");
-var img3 = document.getElementById("block3");
-var img4 = document.getElementById("block4");
-
-img1.addEventListener("mouseover", over_func1);
-img1.addEventListener("mouseout", out_func1);
-img2.addEventListener("mouseover", over_func2);
-img2.addEventListener("mouseout", out_func2);
-img3.addEventListener("mouseover", over_func3);
-img3.addEventListener("mouseout", out_func3);
-img4.addEventListener("mouseover", over_func4);
-img4.addEventListener("mouseout", out_func4);
-
-function over_func1(){
-	img1.style.opacity = "0.5";
-}
-
-function out_func1(){
-	img1.style.opacity = "1";
-}
-
-function over_func2(){
-	img2.style.opacity = "0.5";
-}
-
-function out_func2(){
-	img2.style.opacity = "1";
-}
-
-
-function over_func3(){
-	img3.style.opacity = "0.5";
-}
-
-function out_func3(){
-	img3.style.opacity = "1";
-}
-
-function over_func4(){
-	img4.style.opacity = "0.5";
-}
-
-function out_func4(){
-	img4.style.opacity = "1";
-}*/
-
 var img_arr = document.getElementsByClassName("blockimg");
 
 for (var i = 0; i < img_arr.length; i++) {
@@ -99,10 +52,12 @@ for (var i = 0; i < img_arr.length; i++) {
 
 function over_func(e){
 	e.target.style.opacity = "0.5";
+	e.target.style.transition = "0.35s";
 }
 
 function out_func(e){
 	e.target.style.opacity = "1";
+	e.target.style.transition = "0.35s";
 }
 
 
@@ -120,9 +75,9 @@ function stickyNav(){
 };
 
 
-document.getElementById('left-prefooter').onclick = pref_Fun;
+document.getElementById('left-prefooter').onclick = pref_fun;
 
-function pref_Fun(e){
+function pref_fun(e){
 	if( window.innerWidth >= 1080){
 		if(e.currentTarget.style.background === "white"){
 			e.currentTarget.style.background = "#ff6600";
@@ -139,6 +94,23 @@ function pref_Fun(e){
 
 
 
+document.getElementById('hamburger').onclick = open_fun;
+
+function open_fun(){
+	for(i = -99; i <= 0; i++){
+		document.getElementById('mob_nav').style.left = i + "%";
+	}
+	document.getElementById('mob_nav').style.transition = "0.35s";
+}
+
+document.getElementById('close_button').onclick = close_fun;
+
+function close_fun(){
+	for(i = 0; i >= -100; i--){
+		document.getElementById('mob_nav').style.left = i + "%";
+	}
+	document.getElementById('mob_nav').style.transition = "0.35s";
+}
 
 
 

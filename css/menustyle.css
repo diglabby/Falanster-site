@@ -102,7 +102,7 @@ body{
 }
 
 .language ul{
-	margin: 10px 0 0 10px;
+	margin: 10px -20px 0 0;
 }
 
 .language ul li{
@@ -117,6 +117,10 @@ body{
 .language ul li a{
 	color: #333333;
 	text-decoration: none;
+}
+
+.hamburger{
+	display: none;
 }
 
 .mob_nav{
@@ -304,7 +308,7 @@ header{
 }
 
 #head_menu{
-padding: 45px 0 0 45px;
+	padding: 45px 0 0 45px;
 	height: 125px;
 	width: 500px;
 	content: url('../images/menulogo2.jpg');
@@ -328,6 +332,14 @@ padding: 45px 0 0 45px;
 
 .nav_bar{
 	display: none;
+}
+
+.hamburger button{
+	position: absolute;
+	background-color: #ffffff;
+	border: none;
+	margin-top: 45px;
+	right: 5%;
 }
 
 
@@ -381,8 +393,5 @@ padding: 45px 0 0 45px;
 	border-radius: 2px;
 	z-index: 4;
 }
-
-
-
 
 }
