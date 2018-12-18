@@ -5,6 +5,10 @@
 	display: flex;
 }
 
+#menu{
+	z-index: 3;
+}
+
 
 #right-side-img img{
 	margin-top: -310px;
@@ -15,6 +19,13 @@
 
 #block{
 	margin-left: 85px;
+}
+
+}
+
+@media screen and (max-width: 1165px){
+	#left-side-img{
+display: none;
 }
 
 }
@@ -57,6 +68,7 @@ body{
 	color: #090909;
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 0px #FF6600;
+	z-index: 2;
 }
 
 .block-text{
@@ -235,6 +247,8 @@ body{
 }
 
 
+
+
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 1079px){
@@ -314,14 +328,15 @@ body{
 }
 
 .block p a{
-	font-size: 32;
-	font-family: "PT Sans"; 
-	color: #303030;
-	text-decoration: none;
+	color: black;
+	font-family:'Ubuntu';
+	font-size:45px;
 	border-bottom: 2px #303030 solid;
 	display: inline-block;
     vertical-align: baseline;
     line-height: 1;
+	text-decoration: none;
+	font-weight: 600;
 
 }
 

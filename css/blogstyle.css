@@ -39,10 +39,16 @@ body{
 	font-family:'Ubuntu';
 	font-size:15px;
 	font-weight: 100;
+	transition: 0.2s;
 }
 
 .main-article h2{
 	margin-bottom: 0px;
+}
+
+.main-article h2:hover{
+	color: #FF6600;
+	transition: 0.2s;
 }
 
 .main-article img{
@@ -85,7 +91,14 @@ body{
 	font-family:'Ubuntu';
 	font-size:19px;
 	font-weight: 400;
+	transition: 0.2s;
 }
+
+.recent-article h2:hover{
+	color: #FF6600;
+	transition: 0.2s;
+}
+
 
 #blog-right-side-img{
 
@@ -215,7 +228,7 @@ body{
 	margin: 35px 0 120px 30px;
 	color: black;
 	font-family:'Ubuntu';
-	font-size:28px;
+	font-size:45px;
 	border-bottom: 2px #303030 solid;
 	display: inline-block;
     vertical-align: baseline;
