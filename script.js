@@ -97,19 +97,13 @@ function pref_fun(e){
 document.getElementById('hamburger').onclick = open_fun;
 
 function open_fun(){
-	for(i = -99; i <= 0; i++){
-		document.getElementById('mob_nav').style.left = i + "%";
-	}
-	document.getElementById('mob_nav').style.transition = "0.35s";
+	document.getElementById('mob_nav').style.left = 0;
 }
 
 document.getElementById('close_button').onclick = close_fun;
 
 function close_fun(){
-	for(i = 0; i >= -100; i--){
-		document.getElementById('mob_nav').style.left = i + "%";
-	}
-	document.getElementById('mob_nav').style.transition = "0.35s";
+	document.getElementById('mob_nav').style.left = "-100%";
 }
 
 
