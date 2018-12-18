@@ -102,7 +102,7 @@ body{
 }
 
 .language ul{
-	margin: 10px -20px 0 0;
+	margin: 10px 0 0 0;
 }
 
 .language ul li{
@@ -151,29 +151,34 @@ body{
 
 #item1{
 	width: 120px;
+	margin-left: -5px;
 }
 #item2{
+		margin-left: 20px;
 	width: 120px;
 }
 #item3{
+	margin-left: 20px;
 	width: 60px;
 }
 #item4{
-	margin-left: 25px;
+	margin-left: 20px;
 	width: 170px;
 }
 #item5{
+	margin-left: 20px;
 	width: 100px;
 }
 #item6{
-	margin-left: 35px;
+	margin-left: 20px;
 	width: 60px;
 }
 #item7{
+		margin-left: 20px;
 	width: 140px;
 }
 #item8{
-	margin-left: 15px;
+	margin-left: 20px;
 	width: 100px;
 }
 
