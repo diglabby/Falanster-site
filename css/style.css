@@ -269,7 +269,7 @@ body{
 }
 
 #caption h1{
-	margin-top: 70px;
+	margin-top: 180px;
 	margin-left: 35px;
 	margin-bottom: 58px;
 	font-family: 'Ubuntu';
@@ -403,7 +403,7 @@ body{
 .basic{
 	height: 50px;
 	width: 50px;
-	margin: 15px 35px 150px 0;
+	margin: 15px 35px 180px 0;
 	background-color: white;
 	border: 2px #AAABAA solid;
 	border-radius:3px;
@@ -413,7 +413,7 @@ body{
 .basic:hover{
 	height: 50px;
 	width: 50px;
-	margin: 15px 35px 150px 0;
+	margin: 15px 35px 180px 0;
 	background-color: white;
 	border: 2px #d6ff32 solid;
 	border-radius:3px;
@@ -423,7 +423,7 @@ body{
 .btn-on{
 	height: 50px;
 	width: 50px;
-	margin: 15px 35px 150px 0;
+	margin: 15px 35px 180px 0;
 	background-color: #d6ff32;
 	border: 2px #d6ff32 solid;
 	border-radius:3px;
