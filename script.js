@@ -107,6 +107,32 @@ function close_fun(){
 }
 
 
+document.getElementById('ivents_a').onclick = ivents_fun;
+
+function ivents_fun(e){
+	if(e.currentTarget.style.color == "#090909"){
+		e.currentTarget.style.color = "#ff6600";
+	}
+	else{
+		e.currentTarget.style.color = "#ff6600";
+		e.currentTarget.style.border = "2px #ffffff";
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
