@@ -306,10 +306,12 @@ header{
 }
 
 .head_menu{
+	position: fixed;
 	display: flex;
 	height: 200px;
 	background-color: #ffffff;
 	width: 100%;
+	z-index:5;
 }
 
 #head_menu{
@@ -366,6 +368,10 @@ header{
 	display: none;
 }
 
+.falanster_manifest{
+	padding-top: 200px;
+}
+
 .manifest{
 	margin: 0 0 0 0;
 	height: 516px;
@@ -377,7 +383,7 @@ header{
 	padding: 120px 0 0 45px;
 	color: #ffffff;
 	font-family:'Ubuntu';
-	font-size:65px;
+	font-size:60px;
 	letter-spacing: 0px;
 	line-height: 1.2;
 	z-index: 3;
@@ -387,7 +393,7 @@ header{
 
 .manifest a{
 	position: absolute;
-	margin: 50px 0 0 45px;
+	margin: 80px 0 0 45px;
 	text-decoration: none;
 	color: #ffffff;
 	padding: 35px 35px 38px 35px;

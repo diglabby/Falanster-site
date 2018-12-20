@@ -13,7 +13,7 @@ body{
 	line-height: 1.5;
 	z-index:9999;
 	transition: left 0.2s;
-	position: fixed;
+	position: absolute;
 }
 
 

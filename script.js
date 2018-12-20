@@ -119,6 +119,17 @@ function ivents_fun(e){
 	}
 };
 
+document.getElementById('recent_article').onclick = article_fun;
+
+function article_fun(e){
+	if(e.currentTarget.style.color == "#090909"){
+		e.currentTarget.style.color = "#ff6600";
+	}
+	else{
+		e.currentTarget.style.color = "#ff6600";
+	}
+};
+
 
 
 
