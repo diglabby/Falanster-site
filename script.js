@@ -44,29 +44,42 @@ function  button_click(e){
 }
 
 var img_arr = document.getElementsByClassName("blockimg");
+var btn_arr = document.getElementsByClassName("block-button");
+var last_targ = null;
 
 for (var i = 0; i < img_arr.length; i++) {
     img_arr[i].addEventListener("mouseover", over_func);
 	img_arr[i].addEventListener("mouseout", out_func);
 }
 
+for (var i = 0; i < btn_arr.length; i++) {
+    btn_arr[i].addEventListener("mouseover", over_func1);
+}
+
 function over_func(e){
-	e.target.style.opacity = "0.5";
-	e.target.style.transition = "0.35s";
+	e.currentTarget.style.opacity = "0.5";
+	e.currentTarget.style.transition = "0.35s";
+}
+
+function over_func1(){
+	last_targ.style.opacity = "0.5";
+	last_targ.style.transition = "0.35s";
 }
 
 function out_func(e){
-	e.target.style.opacity = "1";
-	e.target.style.transition = "0.35s";
+	e.currentTarget.style.opacity = "1";
+	e.currentTarget.style.transition = "0.35s";
+	last_targ = e.currentTarget;
 }
 
 
-window.onscroll = stickyNav;
+
+window.onscroll = function(){stickyNav(); autoclose_fun()};
 
 function stickyNav(){
 	var navigationbar = document.getElementById("navigation_bar");
-	var settop = navigationbar.offsetTop;
-	if(window.pageYOffset > settop + 8){
+	var navbar_settop = navigationbar.offsetTop;
+	if(window.pageYOffset > navbar_settop + 8){
 		navigationbar.classList.add("sticky");
 	}
 	else{
@@ -74,6 +87,13 @@ function stickyNav(){
 	}
 };
 
+function autoclose_fun(){
+	var mobnav = document.getElementById('mob_nav');
+	var settop = mobnav.offsetTop;
+	if(window.pageYOffset > settop + 300){
+		mobnav.style.left = "-100%";
+	}
+};
 
 document.getElementById('left-prefooter').onclick = pref_fun;
 
@@ -82,17 +102,26 @@ function pref_fun(e){
 		if(e.currentTarget.style.background === "white"){
 			e.currentTarget.style.background = "#ff6600";
 			e.currentTarget.style.color = "white";
+			e.currentTarget.style.transition = "0.05s";
 		}
 		else{
 			e.currentTarget.style.background = "white";
 			e.currentTarget.style.color = "#ff6600";
+			e.currentTarget.style.transition = "0.05s";
 		}
+		window.location='https://falanster.by/be/volunteers';
 	}
-	
-	window.location='https://falanster.by/be/volunteers';
 };
 
+document.getElementById('prefooter').onclick = mob_pref_fun;
 
+function mob_pref_fun(e){
+	if( window.innerWidth < 1080){
+		e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);";
+		
+		window.location='https://falanster.by/be/volunteers';
+	}
+};
 
 document.getElementById('hamburger').onclick = open_fun;
 
@@ -106,7 +135,6 @@ function close_fun(){
 	document.getElementById('mob_nav').style.left = "-100%";
 }
 
-
 document.getElementById('ivents_a').onclick = ivents_fun;
 
 function ivents_fun(e){
@@ -119,26 +147,44 @@ function ivents_fun(e){
 	}
 };
 
-document.getElementById('recent_article').onclick = article_fun;
+document.getElementById('recent_article1').onclick = article_click1;
 
-function article_fun(e){
-	if(e.currentTarget.style.color == "#090909"){
-		e.currentTarget.style.color = "#ff6600";
+function article_click1(){
+
+	var art1 = document.getElementById('recent_article1')
+	if(art1.style.color === ""){
+		art1.style.color = "#ff6600";
 	}
 	else{
-		e.currentTarget.style.color = "#ff6600";
+		art1.style.color = "#ff6600";
 	}
 };
 
+document.getElementById('recent_article2').onclick = article_click2;
 
+function article_click2(){
 
+	var art1 = document.getElementById('recent_article2')
+	if(art1.style.color === ""){
+		art1.style.color = "#ff6600";
+	}
+	else{
+		art1.style.color = "#ff6600";
+	}
+};
 
+document.getElementById('recent_article3').onclick = article_click3;
 
+function article_click3(){
 
-
-
-
-
+	var art1 = document.getElementById('recent_article3')
+	if(art1.style.color === ""){
+		art1.style.color = "#ff6600";
+	}
+	else{
+		art1.style.color = "#ff6600";
+	}
+};
 
 
 
