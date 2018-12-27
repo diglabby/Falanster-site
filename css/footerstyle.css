@@ -17,6 +17,10 @@ body{
 	color:#ffffff;
 	font-family:'Ubuntu';
 	font-size:30px;
+	-webkit-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
+	-moz-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
+	box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
+	
 }
 
 #left-prefooter h1{
@@ -263,7 +267,7 @@ body{
 	
 footer{
 	width: auto;
-	height: 1400px;
+	height: 1000px;
 	background-color:#303030;
 }
 
@@ -274,23 +278,24 @@ footer{
 
 
 #footer-logo{
-	margin: 40px 0 0 35px;
-	height: 175px;
-	width: 175px;
+	margin: 80px 0 0 45px;
+	height: 135px;
+	width: 135px;
 }
 	
 .list{
-	width: 190px;
-	margin-top: 10px;
-	margin-left: 10px;
+	width: 320px;
+	margin-top: 40px;
+	margin-left: 50px;
 }
 
 
 .list ul li{
+	width: 270px;
 	margin: 7px 0 0 0;
 	color:#ffffff;
 	font-family:'Ubuntu';
-	font-size:45px;
+	font-size:35px;
 	list-style-type: none;
 	line-height: 2;
 }
@@ -301,12 +306,13 @@ footer{
 }	
 
 .social-network{
-	margin-top: 0px;
-	margin-left: 135px;
+	margin-top: 28px;
+	margin-left: 60px;
+
 }
 
 .social-network p{
-	font-size:45px;
+	font-size:42px;
 	color:#ffffff;
 	font-family:'Ubuntu';
 }
@@ -320,37 +326,36 @@ footer{
 	margin-top: -24px;
 	margin-left: -10px;
 	margin-right: 3px;
-	height: 190px;
-	width: 190px;
+	height: 140px;
+	width: 140px;
 }
 
 #telegram{
-	margin-left: -150px;
+	margin-left: -110px;
 	margin-top: 155px;
-	height: 120px;
-	width: 120px;
+	height: 90px;
+	width: 90px;
 }
 
 #face{
-	margin-top: 10px;
-	margin-left: 30px;
-	margin-right: 3px;
-	height: 130px;
-	width: 130px;
+	margin-top: -5px;
+padding-left: 40px;
+	height: 100px;
+	width: 100px;
 }
 
 #youtube{
-	margin-left: -160px;
+	margin-left: -120px;
 	margin-top: 115px;
-	height: 180px;
-	width: 180px;
+	height: 150px;
+	width: 150px;
 
 }
 	
 .search-row{
 	position: absolute;
-	margin-top: 650px;
-	margin-left: 260px;
+	margin-top: 430px;
+	margin-left: 270px;
 }
 
 .search-row p {
@@ -360,8 +365,8 @@ footer{
 }
 
 .search-row input{
-	width: 550px;
-	height: 116px;
+	width: 500px;
+	height: 100px;
 	border-radius: 1px;
 	background-color: #303030;
 	border: 1px #ffffff solid;
@@ -380,13 +385,13 @@ INPUT[type="search"]{
 }
 
 #search-row-button{
-	margin: 0 0 0 15px;
+	margin: 0 0 0 35px;
 	background-color:#ffffff;
 	color:#848484;
 	cursor: pointer;
 	font-family:'Ubuntu';
 	font-size:35px;
-	padding:39px 39px 36px 30px;
+	padding:32px 35px 30px 33px;
 	text-decoration:none;
 	border: 0px;
 	border-radius: 2px;
@@ -399,7 +404,9 @@ INPUT[type="search"]{
 }
 
 #footer-logo-3{
-	margin-top: 35px;
+	height: 94px;
+	width: 266px;
+	margin-top: 55px;
 	margin-left: 2px;
 	position: absolute;
 }

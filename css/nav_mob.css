@@ -12,8 +12,8 @@ body{
 	background-color: #303030;
 	line-height: 1.5;
 	z-index:9999;
-	transition: left 0.2s;
-	position: absolute;
+	transition: left 0.3s;
+	position: fixed;
 }
 
 
@@ -44,7 +44,7 @@ body{
 	text-decoration: none;
 }
 
-#menu_mob li a:hover{
+#menu_mob li a:active{
 	color: #ff6600;
 }
 
