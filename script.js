@@ -95,6 +95,13 @@ function autoclose_fun(){
 	}
 };
 
+document.getElementById('menu_mob').onclick = close_btn_fun;
+
+function close_btn_fun(){
+	var mobnav = document.getElementById('mob_nav');
+	mobnav.style.left = "-100%";
+};
+
 document.getElementById('left-prefooter').onclick = pref_fun;
 
 function pref_fun(e){
@@ -103,8 +110,10 @@ function pref_fun(e){
 			e.currentTarget.style.background = "#ff6600";
 			e.currentTarget.style.color = "white";
 			e.currentTarget.style.transition = "0.05s";
+			e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);";
 		}
 		else{
+			e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);";
 			e.currentTarget.style.background = "white";
 			e.currentTarget.style.color = "#ff6600";
 			e.currentTarget.style.transition = "0.05s";
