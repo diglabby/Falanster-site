@@ -1,0 +1,157 @@
+#page_title{
+  background-image: url(/images/image.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 600px;
+
+}
+#background-blackout{
+background-color: rgba(0, 0, 0, 0.4);
+width:100%;
+height: 600px;
+position: absolute;
+z-index: 0;
+}
+#name_page{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+#button_down, #button_left, #button_right{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ff6600;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+
+}
+
+#button_left, #button_right{
+  border: 1px solid #bebebe;}
+
+#button_left p{
+   transform: rotate(90deg);
+   }
+#button_right p{
+  transform: rotate(-90deg);}
+#button_left p,#button_right p{
+  text-align: center;}
+#button_left p, #button_right p{
+    color: #bebebe;
+  }
+
+
+#button_down:hover, #button_left:hover, #button_right:hover {
+  border: 1px solid white;
+  cursor: pointer;
+  }
+
+  #button_down p{
+    color: #ff6600;
+    text-align: center;
+      }
+#button_down:hover p, #button_left:hover p, #button_right:hover p{
+  color: white;
+}
+
+#status_information{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#positioning_problems{
+  width: 233px;
+  height: 86px;
+}
+#inner_page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+#inner_page h1{
+font-family: Ubuntu;
+font-size: 60px;
+color: white;
+}
+#inner_page h2{
+  font-family: Ubuntu;
+  font-size: 48px;
+  color: #333333;
+  }
+
+#heading_2{
+  background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0.7));
+  margin: 0px;
+  width: 100%;
+  box-sizing: content-box;
+  padding: 40px 0px 20px 0px;
+  z-index: 1;
+}
+#waper_h2{
+display: inline;
+width: 990px;
+text-align: center;
+}
+#inner_page h3{
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#inner_page p, #inner_page ol, #inner_page ul{
+  font-family: PT Sans;
+  font-weight: normal;
+  font-size: 16px;
+}
+#project_status{
+  width: 233px;
+  height: 86px;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#project_status p{
+  color: #ff6600;
+  font: 20px;
+}
+
+#main_text{
+  width: 990px;}
+
+
+@media screen and (max-width: 1080px){
+#project_status{
+  width: 370px;
+  height: 140px;
+  }
+
+  #inner_page p, #inner_page ol, #inner_page ul{
+      font-size: 32px;
+  }
+
+  #main_text{
+    width: 89%;
+  }
+#button_down{
+ display: none;
+  }
+  
+#inner_page h3{
+  font-size: 30px;}
+}
