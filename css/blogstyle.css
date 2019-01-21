@@ -6,14 +6,18 @@ body{
 }
 
 .blog{
-	margin: 0 0 0 0;
+	display: flex;
+}
+
+#blog_content{
+	margin: 0 auto;
 }
 
 
 #blog-caption h1{
 	width:auto;
 	margin-top: 110px;
-	margin-left: 171px;
+	margin-left: 0px;
 	margin-bottom: 45px;
 	font-family: 'Ubuntu';
 	font-size: 60px;
@@ -28,17 +32,30 @@ body{
 }
 
 .main-article{
-	margin-left: 171px;
+	margin-left: 0px;
 	width: 490px;
 	color:#333333;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
 	font-size:15px;
 	font-weight: 100;
+	transition: 0.2s;
 }
 
 .main-article h2{
+	color: #090909;
 	margin-bottom: 0px;
+}
+
+.main-article h2 a{
+	color: #090909;
+	text-decoration: none;
+}
+
+.main-article h2 a:hover{
+	color: #FF6600;
+	transition: 0.2s;
+	text-decoration: none;
 }
 
 .main-article img{
@@ -76,23 +93,38 @@ body{
 .recent-article h2{
 	width: 430px;
 	margin-bottom: 3px; 
-	color:#333333;
+	color:#090909;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
 	font-size:19px;
 	font-weight: 400;
+	transition: 0.2s;
 }
 
+.recent-article h2 a{
+	color: #090909;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+.recent-article h2 a:hover{
+	color: #FF6600;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+
 #blog-right-side-img{
-	margin-top: -179px;
+
+	margin-top: 50px;
 	position: absolute;
 	right: 0;
-	z-index:  1;
+	z-index: 1;
 }
 
 #ivents p a{
 	margin: 5px 0 0 75px;
-	color: black;
+	color: #090909;
 	font-family:'Ubuntu';
 	font-size:19px;
 	border-bottom: 2px #303030 solid;
@@ -100,13 +132,25 @@ body{
     vertical-align: baseline;
     line-height: 1;
 	text-decoration: none;
+	transition: 0.2s;
+}
+
+#ivents p a:hover{
+		border-bottom:2px #ffffff solid;
+		transition: 0.2s;
 }
 }
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1079px){
+	
+	body{
+	margin: 0 0 0 0;
+	background-color: #DDDDDD;
+
+}
 	
 .blog{
 	width: auto;
@@ -123,10 +167,10 @@ body{
 	margin-left: 30px;
 	margin-bottom: 35px;
 	font-family: 'Ubuntu';
-	font-size: 60px;
+	font-size: 88px;
 	color: #090909;
 	letter-spacing: 2px;
-	text-shadow: 2px 2px 0px #d6ff32;
+	text-shadow: 2px 2px 0px #FF6600;
 }
 
 #blog-right-side-img{
@@ -139,9 +183,9 @@ body{
 }
 
 .blog-article img{
-	/*content: url('../images/x1.jpg');*/
-	width: 596px;
-	height: 372px;
+	content: url('../images/blogphoto.jpg');
+	width: 798px;
+	height: 477px;
 	border-radius:0px;
 	margin-top: 30px;
 	
@@ -149,45 +193,59 @@ body{
 
 .main-article{
 	margin-left: 0px;
-	width: 600px;
+	width: auto;
 	color:#333333;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
-	font-size:18px;
+	font-size:33px;
 	font-weight: 100;
 }
 
 .main-article h2{
 	margin-left: 30px;
+	margin-right: 10px;
+}
+
+.main-article h2 a{
+	color: #090909;
+	transition: 0.2s;
+	text-decoration: none;
 }
 
 .date p{
 	margin-left: 30px;
-	font-size:18px;
+	font-size:35px;
 	font-weight: 500;
 }
 
 .autor p{
 	margin-right: 30px;
-	font-size:18px;
+	font-size:35px;
 	font-weight: 500;
 }
 
 .recent-article{
 	margin-left: 0px;
-	width: 600px;
+	width: auto;
 	color:#333333;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
-	font-size:28px;
+	font-size:33px;
 	font-weight: 100;
 }
 
 .recent-article h2{
-	margin-left: 30px;
-	width: 520px;
-	font-size:25px;
+	margin-left: 35px;
+	margin-right: 5px;
+	width: auto;
+	font-size:35px;
 	font-weight: 600;
+}
+
+.recent-article h2 a{
+	color: #090909;
+	transition: 0.2s;
+	text-decoration: none;
 }
 
 .recent-article:nth-child(3){
@@ -200,9 +258,9 @@ body{
 
 #ivents p a{
 	margin: 35px 0 120px 30px;
-	color: black;
+	color: #090909;
 	font-family:'Ubuntu';
-	font-size:28px;
+	font-size:45px;
 	border-bottom: 2px #303030 solid;
 	display: inline-block;
     vertical-align: baseline;

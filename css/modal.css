@@ -1,0 +1,204 @@
+
+@media screen and (min-width: 1081px){
+	
+.modal{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(51,51,51,.86);
+	display: none;
+	z-index: 99999;
+}
+
+.modal:target{
+	display: block;
+}
+
+.popup{
+	width: 600px;
+	height: 432px;
+	position: relative;
+	margin: 10% auto;
+	background: #ffffff;
+}
+
+.popup h2{
+	color:rgb(51, 51, 51);
+	text-align: center;
+display:block;
+font-family:Ubuntu;
+font-size:22.5px;
+font-weight:700;
+height:78px;
+letter-spacing:1px;
+}
+
+.popup p{
+	text-align: center;
+	color:rgb(51, 51, 51);
+display:block;
+font-family:Ubuntu;
+font-size:17px;
+
+letter-spacing:1px;
+}
+
+#face{
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#topright{
+position: absolute;
+right: 0;
+}
+
+#bottom1{	
+position: absolute;
+bottom: 0;
+}
+
+#bottom2{
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.close p{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 60px;
+	background-color:#ff6600;
+	margin-top: 10px;
+	color:#ffffff;
+	cursor: pointer;
+	font-family:'Ubuntu';
+	font-size:15px;
+	padding:19px 50px 16px 50px;
+	text-decoration:none;
+	border-radius:2px;
+	border-width: 0px;
+	letter-spacing: 1px;
+	font-weight: bold;
+
+}
+
+.popup a {
+	text-decoration: none;
+}
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 1080px){
+	
+.modal{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(51,51,51,.86);
+	display: none;
+	z-index: 99999;
+}
+
+.modal:target{
+	display: block;
+}	
+
+.popup{
+	width: 632px;
+	height: 800px;
+	position: relative;
+	margin: 10% auto;
+	background: #ffffff;
+}
+	
+.popup h2{
+	color:rgb(51, 51, 51);
+	text-align: center;
+display:block;
+font-family:Ubuntu;
+font-size:40px;
+font-weight:700;
+
+letter-spacing:1px;
+}
+
+.popup p{
+	text-align: center;
+	color:rgb(51, 51, 51);
+display:block;
+font-family:Ubuntu;
+font-size:30px;
+
+letter-spacing:1px;
+}
+
+#face{
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#topright{
+position: absolute;
+right: 0;
+}
+
+#bottom1{	
+position: absolute;
+bottom: 0;
+}
+
+#bottom2{
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.close p{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 60px;
+	background-color:#ff6600;
+	margin-top: 10px;
+	color:#ffffff;
+	cursor: pointer;
+	font-family:'Ubuntu';
+	font-size:35px;
+	padding:19px 100px 16px 50px;
+	text-decoration:none;
+	border-radius:2px;
+	border-width: 0px;
+	letter-spacing: 1px;
+	font-weight: bold;
+
+}
+
+.popup a {
+	text-decoration: none;
+}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
