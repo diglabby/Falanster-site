@@ -1,192 +1,266 @@
 
 @media screen and (min-width: 1081px){
-	
-.modal{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	background: rgba(51,51,51,.86);
-	display: none;
-	z-index: 99999;
+	.modal{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: rgba(51,51,51,.86);
+		display: none;
+		z-index: 99999;
+	}
+
+	.show-element{
+		display: block;
+	}
+
+	.hide-element {
+		display: none;
+	}
+
+	.popup p{
+		color:rgb(51, 51, 51);
+		display: block;
+		font: 17px 'Ubuntu';
+		letter-spacing:1px;
+	}
+
+	#topright{
+		position: absolute;
+		right: 0;
+	}
+
+	#bottom1{
+		position: absolute;
+		bottom: 0;
+	}
+
+	#bottom2{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.popup {
+		display: flex;
+		justify-content: center;
+		margin-top: 10%;
+		width: 100%;
+	}
+
+	.popup a {
+		text-decoration: none;
+	}
+
+	.modal-section {
+		position: relative;
+		width: 600px;
+		background-color: #fff;
+	}
+
+	.modal-section::before {
+		content: '';
+		width: 100%;
+		height: 54px;
+		background: url('/images/topleft.jpg') no-repeat top left, url('/images/topright.jpg') no-repeat top right;
+		background-size: 80px 54px;
+		background-color: #fff;
+		position: absolute;
+	}
+
+	.modal-section::after {
+		content: '';
+		width: 100%;
+		height: 40px;
+		background:  url('/images/bottom.jpg') no-repeat bottom left, url('/images/bottom.jpg') no-repeat bottom right;
+		background-size: 80px 40px;
+		background-color: #fff;
+		position: absolute;
+		margin-top: -2px; /*fix */
+	}
+
+	.modal-article {
+		margin: 50px 0 40px 0;
+		display: flex;
+		flex-flow: column nowrap;
+		text-align: center;
+	}
+
+	.modal-title {
+		color:rgb(51, 51, 51);
+		font: 22.5px 'Ubuntu';
+		font-weight: 700;
+		letter-spacing: 1px;
+		background: url('/images/modal.svg') no-repeat bottom;
+		background-size: 64px 47px;
+		height: 130px;
+		margin: 30px 0 0 0;
+	}
+
+	.modal-close {
+		width: 150px;
+		height: 50px;
+		background-color:#f60;
+		align-self: center;
+		color:#fff;
+		cursor: pointer;
+		font: 15px 'Ubuntu';
+		border-radius:2px;
+		border-width: 0;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+
+	.prevent-default-button:active,
+	.prevent-default-button:focus {
+		outline: none;
+	}
 }
 
-.modal:target{
-	display: block;
-}
-
-.popup{
-	width: 600px;
-	height: 432px;
-	position: relative;
-	margin: 10% auto;
-	background: #ffffff;
-}
-
-.popup h2{
-	color:rgb(51, 51, 51);
-	text-align: center;
-display:block;
-font-family:Ubuntu;
-font-size:22.5px;
-font-weight:700;
-height:78px;
-letter-spacing:1px;
-}
-
-.popup p{
-	text-align: center;
-	color:rgb(51, 51, 51);
-display:block;
-font-family:Ubuntu;
-font-size:17px;
-
-letter-spacing:1px;
-}
-
-#face{
-	display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
-
-#topright{
-position: absolute;
-right: 0;
-}
-
-#bottom1{	
-position: absolute;
-bottom: 0;
-}
-
-#bottom2{
-position: absolute;
-bottom: 0;
-right: 0;
-}
-
-.close p{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	width: 60px;
-	background-color:#ff6600;
-	margin-top: 10px;
-	color:#ffffff;
-	cursor: pointer;
-	font-family:'Ubuntu';
-	font-size:15px;
-	padding:19px 50px 16px 50px;
-	text-decoration:none;
-	border-radius:2px;
-	border-width: 0px;
-	letter-spacing: 1px;
-	font-weight: bold;
-
-}
-
-.popup a {
-	text-decoration: none;
-}
-
-}
 
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 1080px){
-	
-.modal{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	background: rgba(51,51,51,.86);
-	display: none;
-	z-index: 99999;
-}
+	.modal{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: rgba(51,51,51,.86);
+		display: none;
+		z-index: 99999;
+	}
 
-.modal:target{
-	display: block;
-}	
+	.modal-section {
+		position: relative;
+		width: 600px;
+		background-color: #fff;
+	}
 
-.popup{
-	width: 632px;
-	height: 800px;
-	position: relative;
-	margin: 10% auto;
-	background: #ffffff;
-}
-	
-.popup h2{
-	color:rgb(51, 51, 51);
-	text-align: center;
-display:block;
-font-family:Ubuntu;
-font-size:40px;
-font-weight:700;
+	.modal-section::before {
+		content: '';
+		width: 100%;
+		height: 54px;
+		background: url('/images/topleft.jpg') no-repeat top left, url('/images/topright.jpg') no-repeat top right;
+		background-size: 80px 54px;
+		background-color: #fff;
+		position: absolute;
+	}
 
-letter-spacing:1px;
-}
+	.modal-section::after {
+		content: '';
+		width: 100%;
+		height: 40px;
+		background:  url('/images/bottom.jpg') no-repeat bottom left, url('/images/bottom.jpg') no-repeat bottom right;
+		background-size: 80px 40px;
+		background-color: #fff;
+		margin-top: -2px; /*fix */
+		position: absolute;
+	}
 
-.popup p{
-	text-align: center;
-	color:rgb(51, 51, 51);
-display:block;
-font-family:Ubuntu;
-font-size:30px;
+	.modal-article {
+		margin: 50px 0 40px 0;
+		display: flex;
+		flex-flow: column nowrap;
+		text-align: center;
+	}
 
-letter-spacing:1px;
-}
+	.modal-title {
+		color:rgb(51, 51, 51);
+		font: 40px 'Ubuntu';
+		font-weight: 700;
+		letter-spacing: 1px;
+		background: url('/images/modal.svg') no-repeat bottom;
+		background-size: 64px 47px;
+		height: 130px;
+		margin: 30px 0 0 0;
+	}
 
-#face{
-	display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
+	.modal-close {
+		width: 200px;
+		height: 70px;
+		background-color:#f60;
+		align-self: center;
+		color:#fff;
+		cursor: pointer;
+		font: 35px 'Ubuntu';
+		border-radius:2px;
+		border-width: 0;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
 
-#topright{
-position: absolute;
-right: 0;
-}
+	.prevent-default-button:active,
+	.prevent-default-button:focus {
+		outline: none;
+	}
 
-#bottom1{	
-position: absolute;
-bottom: 0;
-}
+	.modal:target{
+		display: block;
+	}
 
-#bottom2{
-position: absolute;
-bottom: 0;
-right: 0;
-}
+	.show-element{
+		display: block;
+	}
 
-.close p{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	width: 60px;
-	background-color:#ff6600;
-	margin-top: 10px;
-	color:#ffffff;
-	cursor: pointer;
-	font-family:'Ubuntu';
-	font-size:35px;
-	padding:19px 100px 16px 50px;
-	text-decoration:none;
-	border-radius:2px;
-	border-width: 0px;
-	letter-spacing: 1px;
-	font-weight: bold;
+	.hide-element {
+		display: none;
+	}
 
-}
+	.popup {
+		display: flex;
+		justify-content: center;
+		margin-top: 10%;
+		width: 100%;
+	}
 
-.popup a {
-	text-decoration: none;
-}	
-	
+	.popup p{
+		text-align: center;
+		color:rgb(51, 51, 51);
+		display: block;
+		font: 30px 'Ubuntu';
+		letter-spacing: 1px;
+	}
+
+	#topright{
+		position: absolute;
+		right: 0;
+	}
+
+	#bottom1{
+		position: absolute;
+		bottom: 0;
+	}
+
+	#bottom2{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.close p{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60px;
+		background-color:#f60;
+		margin-top: 10px;
+		color:#fff;
+		cursor: pointer;
+		font: 35px 'Ubuntu';
+		padding:19px 100px 16px 50px;
+		text-decoration:none;
+		border-radius:2px;
+		border-width: 0;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+
+	.popup a {
+		text-decoration: none;
+	}
 }
 
 

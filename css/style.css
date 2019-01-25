@@ -9,14 +9,6 @@
 	z-index: 3;
 }
 
-
-#right-side-img img{
-	margin-top: -310px;
-	width: 230px;
-	right: 0;
-	z-index:  1;
-}
-
 #block{
 	margin-left: 85px;
 }
@@ -38,15 +30,18 @@ body{
 	margin: 0 0 0 0;
 }
 
-.midle{
+.midle {
 	display: flex;
+	background: url('/images/right.svg') no-repeat bottom right;
 }
 
-#left-side-img{
-	position: absolute;
-	margin-top: -77px;
+.midle::before {
+	content: '';
+	background: url('/images/left.png') no-repeat top left;
+	width: 50px;
+	height: 380px;
 	margin-left: 3%;
-	z-index: 0;
+	position: absolute;
 }
 
 #menu{
@@ -170,7 +165,7 @@ body{
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 30;
-	color:  #333333;
+	color:  #333;
 	margin: 137px 0 10px 8px;
 	letter-spacing: 0.5px;
 }
@@ -189,9 +184,9 @@ body{
 }
 
 #showmore{
-	background-color:#ff6600;
+	background-color:#f60;
 	margin-top: 10px;
-	color:#ffffff;
+	color:#fff;
 	cursor: pointer;
 	font-family:'Ubuntu';
 	font-size:15px;
@@ -234,13 +229,6 @@ body{
 		margin-left: 75px;
 }
 
-#right-side-img{
-    margin-top: 305px;
-	position: absolute;
-	right: 0;
-	z-index:  1;
-}
-
 .buttons{
 	visibility: hidden;
 }
@@ -254,14 +242,14 @@ body{
 @media screen and (max-width: 1079px){
 
 body{
-	margin: 0 0 0 0;
-	background-color: #DDDDDD;
+	margin: 0;
+	background-color: #ddd;
 }
 
 .midle{
 	width: 100%;
-	background-color: white;
-    display: flex;
+	background-color: #fff;
+  display: flex;
 }
 
 #menu{
@@ -432,11 +420,6 @@ body{
 }
 
 #left-side-img{
-		display: none;
-}
-
-#right-side-img{
-
 		display: none;
 }
 

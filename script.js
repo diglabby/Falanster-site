@@ -196,6 +196,20 @@ function article_click3(){
 };
 
 
+// show subscribe message ====================================
+const footer = document.querySelector('.footer');
+const modal = document.querySelector('.modal');
+footer.addEventListener('click', (event) => {
+  if (event.target.className === 'search-row-button') {
+    modal.classList.add('show-element'); 
+  }
+
+  if (event.target.classList.contains('modal-close')) {
+    modal.classList.remove('show-element');
+  }
+});
+
+
 
 
 
