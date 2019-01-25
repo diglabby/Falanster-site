@@ -33,7 +33,7 @@ body{
 }
 
 .head_logo {
-	background: url('/images/menulogo.png') no-repeat 0 0;
+	background: url('../images/menulogo.png') no-repeat 0 0;
 	width: 185px;
 	height: 46px;
 }
@@ -50,7 +50,7 @@ body{
 	text-decoration: none;
 	width: 136px;
 	margin: 0 0 0 10px;
-	background: url('/images/profileimg.jpg') no-repeat bottom;
+	background: url('../images/profileimg.jpg') no-repeat bottom;
 	padding-bottom: 15px;
 }
 
@@ -60,7 +60,7 @@ body{
 	text-decoration: none;
 	width: 96px;
 	margin: 0 0 0 35px;
-	background: url('/images/supportimg.jpg') no-repeat bottom;
+	background: url('../images/supportimg.jpg') no-repeat bottom;
 	padding-bottom: 15px;
 }
 
@@ -194,7 +194,7 @@ body{
 	height: 705px;
 	width: 50%;
 	z-index:1;
-	background: url('/images/spacetable3.png') no-repeat 0 0;
+	background: url('../images/spacetable3.png') no-repeat 0 0;
 }
 
 .background_left .manifest{
@@ -203,7 +203,7 @@ body{
 
 .background_right{
 	height: 705px;
-	background: #121212 url('/images/background.jpg') no-repeat top right;
+	background: #121212 url('../images/background.jpg') no-repeat top right;
 	width: 50%;
 }
 
@@ -266,7 +266,7 @@ header{
 }
 
 .head_logo {
-	background: url('/images/mobilelogo.jpg') no-repeat 0 0;
+	background: url('../images/mobilelogo.jpg') no-repeat 0 0;
 	background-size: cover;
 	width: 500px;
 	height: 125px;
@@ -295,7 +295,7 @@ header{
 .hamburger {
 	width: 100px;
 	height: 100px;
-	background: #fff url('/images/hamburger.jpg') no-repeat;
+	background: #fff url('../images/hamburger.jpg') no-repeat;
 	background-size: 100px;
 	border: none;
 	margin-right: 45px;
@@ -323,13 +323,13 @@ header{
 }
 
 .manifest{
-	margin: 0 0 0 0;
+	margin: 0;
 	height: 516px;
 	width: 930px;
 }
 
 .manifest p{
-	margin: 0 0 0 0;
+	margin: 0;
 	padding: 120px 0 0 45px;
 	color: #ffffff;
 	font-family:'Ubuntu';

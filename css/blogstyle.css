@@ -6,7 +6,7 @@
 
 	.blog{
 		display: flex;
-		background: #fff url('/images/try_dis.svg') no-repeat top right;
+		background: #fff url('../images/try_dis.svg') no-repeat top right;
 		background-size: 10%;
 		margin-top: 50px;
 	}

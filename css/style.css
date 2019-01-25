@@ -32,12 +32,12 @@ body{
 
 .midle {
 	display: flex;
-	background: url('/images/right.svg') no-repeat bottom right;
+	background: url('../images/right.svg') no-repeat bottom right;
 }
 
 .midle::before {
 	content: '';
-	background: url('/images/left.png') no-repeat top left;
+	background: url('../images/left.png') no-repeat top left;
 	width: 50px;
 	height: 380px;
 	margin-left: 3%;
@@ -169,10 +169,6 @@ body{
 	margin: 137px 0 10px 8px;
 	letter-spacing: 0.5px;
 }
-
-.block-image{
-}
-
 
 .block-button{
 	position: absolute;

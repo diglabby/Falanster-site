@@ -69,7 +69,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
-		background: url('/images/footerlogo.jpg') no-repeat 0 30px;
+		background: url('../images/footerlogo.jpg') no-repeat 0 30px;
 		padding-left: 150px;
 	}
 
@@ -113,19 +113,19 @@
 	}
 
 	.vk {
-		background: url('/images/social-network-icons.png') no-repeat 0 0;
+		background: url('../images/social-network-icons.png') no-repeat 0 0;
 	}
 
 	.telegram {
-		background: url('/images/social-network-icons.png') no-repeat -60px 0;
+		background: url('../images/social-network-icons.png') no-repeat -60px 0;
 	}
 
 	.face {
-		background: url('/images/social-network-icons.png') no-repeat -120px 0;
+		background: url('../images/social-network-icons.png') no-repeat -120px 0;
 	}
 
 	.youtube {
-		background: url('/images/social-network-icons.png') no-repeat -180px 0;
+		background: url('../images/social-network-icons.png') no-repeat -180px 0;
 	}
 
 	.footer-logo-2{
@@ -193,7 +193,7 @@
 		align-items: baseline;
 		justify-content: flex-end;
 		margin: 0 50px 0 0;
-		background: url('/images/footerlogo.jpg') no-repeat 30px 70px;
+		background: url('../images/footerlogo.jpg') no-repeat 30px 70px;
 	}
 
 	.prefooter{
@@ -317,19 +317,19 @@
 	}
 
 	.vk {
-		background: url('/images/social-network-icons.png') no-repeat 0 0;
+		background: url('../images/social-network-icons.png') no-repeat 0 0;
 	}
 
 	.telegram {
-		background: url('/images/social-network-icons.png') no-repeat -60px 0;
+		background: url('../images/social-network-icons.png') no-repeat -60px 0;
 	}
 
 	.face {
-		background: url('/images/social-network-icons.png') no-repeat -120px 0;
+		background: url('../images/social-network-icons.png') no-repeat -120px 0;
 	}
 
 	.youtube {
-		background: url('/images/social-network-icons.png') no-repeat -180px 0;
+		background: url('../images/social-network-icons.png') no-repeat -180px 0;
 	}
 
 	.search-row{

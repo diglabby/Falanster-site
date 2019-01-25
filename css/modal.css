@@ -63,7 +63,7 @@
 		content: '';
 		width: 100%;
 		height: 54px;
-		background: url('/images/topleft.jpg') no-repeat top left, url('/images/topright.jpg') no-repeat top right;
+		background: url('../images/topleft.jpg') no-repeat top left, url('../images/topright.jpg') no-repeat top right;
 		background-size: 80px 54px;
 		background-color: #fff;
 		position: absolute;
@@ -73,7 +73,7 @@
 		content: '';
 		width: 100%;
 		height: 40px;
-		background:  url('/images/bottom.jpg') no-repeat bottom left, url('/images/bottom.jpg') no-repeat bottom right;
+		background:  url('../images/bottom.jpg') no-repeat bottom left, url('../images/bottom.jpg') no-repeat bottom right;
 		background-size: 80px 40px;
 		background-color: #fff;
 		position: absolute;
@@ -92,7 +92,7 @@
 		font: 22.5px 'Ubuntu';
 		font-weight: 700;
 		letter-spacing: 1px;
-		background: url('/images/modal.svg') no-repeat bottom;
+		background: url('../images/modal.svg') no-repeat bottom;
 		background-size: 64px 47px;
 		height: 130px;
 		margin: 30px 0 0 0;
@@ -143,7 +143,7 @@
 		content: '';
 		width: 100%;
 		height: 54px;
-		background: url('/images/topleft.jpg') no-repeat top left, url('/images/topright.jpg') no-repeat top right;
+		background: url('../images/topleft.jpg') no-repeat top left, url('../images/topright.jpg') no-repeat top right;
 		background-size: 80px 54px;
 		background-color: #fff;
 		position: absolute;
@@ -153,7 +153,7 @@
 		content: '';
 		width: 100%;
 		height: 40px;
-		background:  url('/images/bottom.jpg') no-repeat bottom left, url('/images/bottom.jpg') no-repeat bottom right;
+		background:  url('../images/bottom.jpg') no-repeat bottom left, url('../images/bottom.jpg') no-repeat bottom right;
 		background-size: 80px 40px;
 		background-color: #fff;
 		margin-top: -2px; /*fix */
@@ -172,7 +172,7 @@
 		font: 40px 'Ubuntu';
 		font-weight: 700;
 		letter-spacing: 1px;
-		background: url('/images/modal.svg') no-repeat bottom;
+		background: url('../images/modal.svg') no-repeat bottom;
 		background-size: 64px 47px;
 		height: 130px;
 		margin: 30px 0 0 0;
