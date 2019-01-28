@@ -139,9 +139,9 @@ function close_fun(){
 	document.querySelector('.mob_nav').style.left = "-100%";
 }
 
-document.getElementById('ivents_a').onclick = ivents_fun;
+document.querySelector('.events-link').onclick = events_fun;
 
-function ivents_fun(e){
+function events_fun(e){
 	if(e.currentTarget.style.color == "#090909"){
 		e.currentTarget.style.color = "#ff6600";
 	}
@@ -151,11 +151,11 @@ function ivents_fun(e){
 	}
 };
 
-document.getElementById('recent_article1').onclick = article_click1;
+document.querySelector('.blog-link-1').onclick = article_click1;
 
 function article_click1(){
 
-	var art1 = document.getElementById('recent_article1')
+	var art1 = document.querySelector('.blog-link-1');
 	if(art1.style.color === ""){
 		art1.style.color = "#ff6600";
 	}
@@ -164,11 +164,11 @@ function article_click1(){
 	}
 };
 
-document.getElementById('recent_article2').onclick = article_click2;
+document.querySelector('.blog-link-2').onclick = article_click2;
 
 function article_click2(){
 
-	var art1 = document.getElementById('recent_article2')
+	var art1 = document.querySelector('.blog-link-2');
 	if(art1.style.color === ""){
 		art1.style.color = "#ff6600";
 	}
@@ -177,11 +177,11 @@ function article_click2(){
 	}
 };
 
-document.getElementById('recent_article3').onclick = article_click3;
+document.querySelector('.blog-link-3').onclick = article_click3;
 
 function article_click3(){
 
-	var art1 = document.getElementById('recent_article3')
+	var art1 = document.querySelector('.blog-link-3');
 	if(art1.style.color === ""){
 		art1.style.color = "#ff6600";
 	}

@@ -9,12 +9,12 @@ body{
 	display: flex;
 }
 
-#blog_content{
+.blog-content{
 	margin: 0 auto;
 }
 
 
-#blog-caption h1{
+.blog-caption h1{
 	width:auto;
 	margin-top: 110px;
 	margin-left: 0px;
@@ -114,15 +114,14 @@ body{
 }
 
 
-#blog-right-side-img{
-
+.blog-right-side-img{
 	margin-top: 50px;
 	position: absolute;
 	right: 0;
 	z-index: 1;
 }
 
-#ivents p a{
+.events-link {
 	margin: 5px 0 0 75px;
 	color: #090909;
 	font-family:'Ubuntu';
@@ -135,7 +134,7 @@ body{
 	transition: 0.2s;
 }
 
-#ivents p a:hover{
+.events-link:hover{
 		border-bottom:2px #ffffff solid;
 		transition: 0.2s;
 }
@@ -162,7 +161,7 @@ body{
 	display: none;
 }
 
-#blog-caption h1{
+.blog-caption h1{
 	margin-top: 0px;
 	margin-left: 30px;
 	margin-bottom: 35px;
@@ -173,7 +172,7 @@ body{
 	text-shadow: 2px 2px 0px #FF6600;
 }
 
-#blog-right-side-img{
+.blog-right-side-img{
 	display: none;
 }
 
@@ -251,12 +250,12 @@ body{
 .recent-article:nth-child(3){
 	display: none;
 }
-
-#ivents p{
+/* 
+.events p{
 	margin: 0 0 0 0;
-}
+} */
 
-#ivents p a{
+.events-link{
 	margin: 35px 0 120px 30px;
 	color: #090909;
 	font-family:'Ubuntu';
