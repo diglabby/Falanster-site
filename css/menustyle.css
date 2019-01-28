@@ -1,6 +1,6 @@
 
 @media screen and (min-width: 2500px){
-	.background_left_img{
+	.background-left-img{
 		position: absolute;
 		left: 0;
 		z-index:  1;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 1240px){
-	.background_left_img{
+	.background-left-img{
 	width: 1080px;
 	position: absolute;
 	left: 0;
@@ -24,22 +24,22 @@ body{
 	margin: 0 0 0 0;
 }
 
-.head_menu{
+.head-menu{
 	margin: 0 auto;
 	width: 990px;
 	display: flex;
 	height: 65px;
 }
 
-.head_logo{
+.head-logo{
 	margin-left: ;
 }
 
-.head_logo img{
+.head-logo img{
 	margin: 10px 0 10px 0px;
 }
 
-.head_menu_buttons{
+.head-menu-buttons{
 	margin-left: auto;
 	margin-right: ;
 	display: flex;
@@ -59,7 +59,7 @@ body{
 	text-decoration: none;
 }
 
-.profile_img{
+.profile-img{
 	position: inherit;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -80,7 +80,7 @@ body{
 	text-decoration: none;
 }
 
-.support_img{
+.support-img{
 	position: inherit;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -123,11 +123,11 @@ body{
 	display: none;
 }
 
-.mob_nav{
+.mob-nav{
 	display: none;
 }
 
-.nav_bar{
+.nav-bar{
 	height: 61px;
 	margin-top: -15px;
 	position: relative;
@@ -144,51 +144,51 @@ body{
 	z-index:  999999;
 }
 
-.list_item{
+.list-item{
 	height: 40px;
 	margin-left: 20px;
 }
 
-.list_item_1{
+.list-item-1{
 	width: 120px;
 	margin-left: -5px;
 }
-.list_item_2{
+.list-item-2{
 		margin-left: 20px;
 	width: 120px;
 }
-.list_item_3{
+.list-item-3{
 	margin-left: 20px;
 	width: 60px;
 }
-.list_item_4{
+.list-item-4{
 	margin-left: 20px;
 	width: 170px;
 }
-.list_item_5{
+.list-item-5{
 	margin-left: 20px;
 	width: 100px;
 }
-.list_item_6{
+.list-item-6{
 	margin-left: 20px;
 	width: 60px;
 }
-.list_item_7{
+.list-item-7{
 		margin-left: 20px;
 	width: 140px;
 }
-.list_item_8{
+.list-item-8{
 	margin-left: 20px;
 	width: 100px;
 }
 
-.nav_bar ul{
+.nav-bar ul{
 	margin-left: -70px;
 	display: flex;
 	justify-content: center;
 }
 
-.nav_bar ul li{
+.nav-bar ul li{
 	color: #ffffff;
 	font-family:'Ubuntu';
 	font-size:18px;
@@ -198,7 +198,7 @@ body{
 	display: inline-block;
 }
 
-.nav_bar ul li a{
+.nav-bar ul li a{
 	color: #ffffff;
 	text-decoration: none;
 	transition:.2s;
@@ -206,40 +206,40 @@ body{
 	margin: 10px 0;
 }
 
-.nav_bar ul li a:hover{
+.nav-bar ul li a:hover{
 	color: #C4FF00;
 	transition:.2s;
 	font-size:20px;
 	border-left: 2px solid #C4FF00;
 }
 
-.menu_background{
+.menu-background{
 	width: 100%;
 	margin: -61px 0 0 0;
 	display: flex;
 	height: 705px;
 }
 
-.background_left{
+.background-left{
 	height: 705px;
 	width: 50%;
 	z-index:1;
 }
 
-.background_left_img{
+.background-left-img{
 	height: 705px;
 }
 
 
-.background_left .manifest{
+.background-left .manifest{
 		display: none;
 }
 
-.background_right{
+.background-right{
 	height: 705px;
 }
 
-/*.background_left_img{
+/*.background-left-img{
 
 	position: absolute;
 	left: 0;
@@ -247,7 +247,7 @@ body{
 }*/
 
 
-.background_right_img{
+.background-right-img{
 	position: absolute;
 	right: 0;
 	z-index:  1;
@@ -301,7 +301,7 @@ header{
 	margin: 0 0 0 0;
 }
 
-.head_menu{
+.head-menu{
 	position: fixed;
 	display: flex;
 	height: 200px;
@@ -310,7 +310,7 @@ header{
 	z-index:5;
 }
 
-.head_menu_logo{
+.head-menu-logo{
 	padding: 45px 0 0 45px;
 	height: 125px;
 	width: 500px;
@@ -333,11 +333,11 @@ header{
 	display: none;
 }
 
-.nav_bar{
+.nav-bar{
 	display: none;
 }
 
-.hamburger_button{
+.hamburger-button{
 	position: absolute;
 	background-color: #ffffff;
 	border: none;
@@ -347,7 +347,7 @@ header{
 
 
 
-.background_left{
+.background-left{
 	height: 1024px;
 	width: auto;
 	background-color: #ffffff;
@@ -355,16 +355,16 @@ header{
 	margin: 0 0 0 0;
 }
 
-.background_left_img{
+.background-left-img{
 	display: none;
 	background-color:#ffffff;
 }
 
-.background_right{
+.background-right{
 	display: none;
 }
 
-.falanster_manifest{
+.falanster-manifest{
 	padding-top: 200px;
 }
 

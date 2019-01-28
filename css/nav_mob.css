@@ -4,7 +4,7 @@ body{
 	margin: 0 0 0 0;
 }
 
-.mob_nav{
+.mob-nav{
 	width: 100%;
 	height: auto;
 	left: -100%;
@@ -17,7 +17,7 @@ body{
 }
 
 
-.close_button{
+.close-button{
 	background-color: #303030;
 	color: white;
 	border: none;
@@ -28,31 +28,31 @@ body{
 	cursor: pointer;
 }
 
-.menu_mob li{
+.menu-mob li{
 	color: white;
 	list-style-type: none; 
 	font-size:55px;
 	font-family:'Ubuntu';
 }
 
-.menu_mob li:nth-child(1){
+.menu-mob li:nth-child(1){
 	padding-top:73px;
 }
 
-.menu_mob li a{
+.menu-mob li a{
 	color: white;
 	text-decoration: none;
 }
 
-.menu_mob li a:active{
+.menu-mob li a:active{
 	color: #ff6600;
 }
 
-.language_mob{
+.language-mob{
 	display: flex;
 }
 
-.language_mob li{
+.language-mob li{
 	color: #898989;
 	list-style-type: none; 
 	padding-right: 40px;
@@ -61,12 +61,12 @@ body{
 	font-family:'Ubuntu';
 }
 
-.language_mob li a{
+.language-mob li a{
 	color: #898989;
 	text-decoration: none;
 }
 
-.language_mob-bel{
+.language-mob-bel{
 	border-bottom: 4px #898989 solid;
 }
 
