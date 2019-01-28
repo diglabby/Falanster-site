@@ -149,35 +149,35 @@ body{
 	margin-left: 20px;
 }
 
-#item1{
+.list_item_1{
 	width: 120px;
 	margin-left: -5px;
 }
-#item2{
+.list_item_2{
 		margin-left: 20px;
 	width: 120px;
 }
-#item3{
+.list_item_3{
 	margin-left: 20px;
 	width: 60px;
 }
-#item4{
+.list_item_4{
 	margin-left: 20px;
 	width: 170px;
 }
-#item5{
+.list_item_5{
 	margin-left: 20px;
 	width: 100px;
 }
-#item6{
+.list_item_6{
 	margin-left: 20px;
 	width: 60px;
 }
-#item7{
+.list_item_7{
 		margin-left: 20px;
 	width: 140px;
 }
-#item8{
+.list_item_8{
 	margin-left: 20px;
 	width: 100px;
 }

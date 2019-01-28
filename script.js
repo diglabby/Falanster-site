@@ -77,7 +77,7 @@ function out_func(e){
 window.onscroll = function(){stickyNav(); autoclose_fun()};
 
 function stickyNav(){
-	var navigationbar = document.getElementById("navigation_bar");
+	var navigationbar = document.querySelector(".navigation");
 	var navbar_settop = navigationbar.offsetTop;
 	if(window.pageYOffset > navbar_settop + 8){
 		navigationbar.classList.add("sticky");
@@ -88,7 +88,7 @@ function stickyNav(){
 };
 
 function autoclose_fun(){
-	var mobnav = document.getElementById('mob_nav');
+	var mobnav = document.querySelector('.mob_nav');
 	var settop = mobnav.offsetTop;
 	if(window.pageYOffset > settop + 300){
 		mobnav.style.left = "-100%";
