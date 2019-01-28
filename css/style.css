@@ -10,7 +10,7 @@
 }
 
 
-#right-side-img img{
+.right-side-img img{
 	margin-top: -310px;
 	width: 230px;
 	right: 0;
@@ -230,11 +230,11 @@ body{
 } */
 
 .info-block:nth-child(2){
-		margin-left: 75px;
+	margin-left: 75px;
 }
 
-#right-side-img{
-    margin-top: 305px;
+.right-side-img{
+  margin-top: 305px;
 	position: absolute;
 	right: 0;
 	z-index:  1;
@@ -434,9 +434,8 @@ body{
 	display: none;
 }
 
-#right-side-img{
-
-		display: none;
+.right-side-img{
+	display: none;
 }
 
 #highimg{
