@@ -67,11 +67,11 @@ footer{
 	background-color:#303030;
 }
 
-#footer-logo{
+.footer-logo{
 	margin: 31px 0 0 0;
 }
 
-.footer_menu{
+.footer-menu{
 	width:990px;
 	margin: 0 auto;
 	display: flex;
@@ -95,12 +95,12 @@ footer{
 	text-decoration: none;
 }
 
-.social-network{
+.footer-social{
 	margin-top: 8px;
 	margin-left: 98px;
 }
 
-.social-network p{
+.footer-social p{
 	color:#ffffff;
 	font-family:'Ubuntu';
 	font-size:18px;
@@ -110,31 +110,31 @@ footer{
 	display: flex;
 }
 
-#vk{
+.footer-icon-vk{
 	margin-top: -24px;
 	margin-left: -10px;
 	margin-right: 3px;
 }
 
-#telegram{
+.footer-icon-telegram{
 	margin-top: -5px;
 }
 
-#face{
+.footer-icon-facebook{
 	margin-top: -15px;
 	margin-left: ;
 }
 
-#youtube{
+.footer-icon-youtube{
 	margin-top: -15px;
 	margin-left: -5px;
 }
 
-#footer-logo-2{
+.footer-license{
 	margin-top: 10px;
 }
 
-#footer-logo-3{
+.footer-license-big{
 	display: none;
 }
 
@@ -169,7 +169,7 @@ INPUT[type="search"]{
 	font-size:15px;
 }
 
-#search-row-button{
+.search-row-button{
 	width: 48px;
 	height: 40px;
 	background-color: #ffffff;
@@ -269,13 +269,12 @@ footer{
 	background-color:#303030;
 }
 
-.footer_menu{
-
+.footer-menu{
 	display: flex;
 }
 
 
-#footer-logo{
+.footer-logo{
 	margin: 80px 0 0 45px;
 	height: 135px;
 	width: 135px;
@@ -303,13 +302,13 @@ footer{
 	text-decoration: none;
 }	
 
-.social-network{
+.footer-social{
 	margin-top: 28px;
 	margin-left: 60px;
 
 }
 
-.social-network p{
+.footer-social p{
 	font-size:42px;
 	color:#ffffff;
 	font-family:'Ubuntu';
@@ -320,7 +319,7 @@ footer{
 }
 
 	
-#vk{
+.footer-icon-vk{
 	margin-top: -24px;
 	margin-left: -10px;
 	margin-right: 3px;
@@ -328,21 +327,21 @@ footer{
 	width: 140px;
 }
 
-#telegram{
+.footer-icon-telegram{
 	margin-left: -110px;
 	margin-top: 155px;
 	height: 90px;
 	width: 90px;
 }
 
-#face{
+.footer-icon-facebook{
 	margin-top: -5px;
 padding-left: 40px;
 	height: 100px;
 	width: 100px;
 }
 
-#youtube{
+.footer-icon-youtube{
 	margin-left: -120px;
 	margin-top: 115px;
 	height: 150px;
@@ -382,7 +381,7 @@ INPUT[type="search"]{
 	font-size:45px;
 }
 
-#search-row-button{
+.search-row-button{
 	margin: 0 0 0 35px;
 	background-color:#ffffff;
 	color:#848484;
@@ -397,11 +396,11 @@ INPUT[type="search"]{
 	font-weight: bold;
 }	
 	
-#footer-logo-2{
+.footer-license{
 	display: none;
 }
 
-#footer-logo-3{
+.footer-license-big{
 	height: 94px;
 	width: 266px;
 	margin-top: 55px;

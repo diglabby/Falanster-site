@@ -45,23 +45,23 @@ font-size:17px;
 letter-spacing:1px;
 }
 
-#face{
+.modal-image{
 	display: block;
-    margin-left: auto;
-    margin-right: auto 
+  margin-left: auto;
+  margin-right: auto 
 }
 
-#topright{
+.popup-bg-top-right{
 position: absolute;
 right: 0;
 }
 
-#bottom1{	
+.popup-bg-bottom-left{	
 position: absolute;
 bottom: 0;
 }
 
-#bottom2{
+.popup-bg-bottom-right{
 position: absolute;
 bottom: 0;
 right: 0;
@@ -141,23 +141,23 @@ font-size:30px;
 letter-spacing:1px;
 }
 
-#face{
+.modal-image{
 	display: block;
-    margin-left: auto;
-    margin-right: auto 
+  margin-left: auto;
+  margin-right: auto 
 }
 
-#topright{
+.popup-bg-top-right{
 position: absolute;
 right: 0;
 }
 
-#bottom1{	
+.popup-bg-bottom-left{	
 position: absolute;
 bottom: 0;
 }
 
-#bottom2{
+.popup-bg-bottom-right{
 position: absolute;
 bottom: 0;
 right: 0;
