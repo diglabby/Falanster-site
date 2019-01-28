@@ -224,6 +224,7 @@ body{
 	height: 705px;
 	width: 50%;
 	z-index:1;
+	background: url('../images/spacetable3.png') no-repeat 0 0;
 }
 
 .background_left img{
