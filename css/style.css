@@ -9,6 +9,12 @@
 	z-index: 3;
 }
 
+#right-side-img {
+	margin-top: 0 !important;
+	width: 230px !important;
+	height: 756px !important;
+	background-size: 230px 756px !important;
+}
 
 #right-side-img img{
 	margin-top: -310px;
@@ -243,6 +249,9 @@ body{
 	position: absolute;
 	right: 0;
 	z-index:  1;
+	width: 264px;
+	height: 868px;
+	background: url('../images/right.svg') no-repeat 0 0;
 }
 
 .buttons{
