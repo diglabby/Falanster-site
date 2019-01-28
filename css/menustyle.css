@@ -59,7 +59,17 @@ body{
 	text-decoration: none;
 }
 
-.profile a::after {
+.profile a:active {
+	color: #d6ff32;
+}
+
+.profile a:hover{
+	transform: scale(1.125);
+	transition:.2s;
+	display: inline-block;
+}
+
+.profile::after {
 	content: '';
 	width: 136px;
 	height: 6px;
@@ -88,7 +98,17 @@ body{
 	text-decoration: none;
 }
 
-.support a::after{
+.support a:active {
+	color: #d6ff32;
+}
+
+.support a:hover {
+	transform: scale(1.125);
+	transition:.2s;
+	display: inline-block;
+}
+
+.support::after{
 	content: '';
 	width: 96px;
 	height: 6px;
