@@ -132,7 +132,7 @@ function mob_pref_fun(e){
 	}
 };
 
-document.getElementById('hamburger').onclick = open_fun;
+document.querySelector('.hamburger_button').onclick = open_fun;
 
 function open_fun(){
 	document.querySelector('.mob_nav').style.left = 0;

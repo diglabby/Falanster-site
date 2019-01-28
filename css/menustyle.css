@@ -59,7 +59,7 @@ body{
 	text-decoration: none;
 }
 
-#profileimg{
+.profile_img{
 	position: inherit;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -80,7 +80,7 @@ body{
 	text-decoration: none;
 }
 
-#supportimg{
+.support_img{
 	position: inherit;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -314,7 +314,7 @@ header{
 	z-index:5;
 }
 
-#head_menu{
+.head_menu_logo{
 	padding: 45px 0 0 45px;
 	height: 125px;
 	width: 500px;
@@ -341,7 +341,7 @@ header{
 	display: none;
 }
 
-.hamburger button{
+.hamburger_button{
 	position: absolute;
 	background-color: #ffffff;
 	border: none;
