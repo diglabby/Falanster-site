@@ -120,6 +120,9 @@ body{
 	position: absolute;
 	right: 0;
 	z-index: 1;
+	background: url('../images/try_dis.svg') no-repeat;
+	height: 325px;
+	width: 135px;
 }
 
 #ivents p a{
