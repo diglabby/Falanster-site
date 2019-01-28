@@ -95,10 +95,10 @@ function autoclose_fun(){
 	}
 };
 
-document.getElementById('menu_mob').onclick = close_btn_fun;
+document.querySelector('.menu_mob').onclick = close_btn_fun;
 
 function close_btn_fun(){
-	var mobnav = document.getElementById('mob_nav');
+	var mobnav = document.querySelector('.mob_nav');
 	mobnav.style.left = "-100%";
 };
 
@@ -135,13 +135,13 @@ function mob_pref_fun(e){
 document.getElementById('hamburger').onclick = open_fun;
 
 function open_fun(){
-	document.getElementById('mob_nav').style.left = 0;
+	document.querySelector('.mob_nav').style.left = 0;
 }
 
-document.getElementById('close_button').onclick = close_fun;
+document.querySelector('.close_button').onclick = close_fun;
 
 function close_fun(){
-	document.getElementById('mob_nav').style.left = "-100%";
+	document.querySelector('.mob_nav').style.left = "-100%";
 }
 
 document.getElementById('ivents_a').onclick = ivents_fun;
