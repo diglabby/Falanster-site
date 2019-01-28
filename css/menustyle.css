@@ -1,6 +1,6 @@
 
 @media screen and (min-width: 2500px){
-	#background_left{
+	.background_left_img{
 		position: absolute;
 		left: 0;
 		z-index:  1;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 1240px){
-	#background_left{
+	.background_left_img{
 	width: 1080px;
 	position: absolute;
 	left: 0;
@@ -226,7 +226,7 @@ body{
 	z-index:1;
 }
 
-.background_left img{
+.background_left_img{
 	height: 705px;
 }
 
@@ -239,7 +239,7 @@ body{
 	height: 705px;
 }
 
-/*#background_left{
+/*.background_left_img{
 
 	position: absolute;
 	left: 0;
@@ -247,16 +247,12 @@ body{
 }*/
 
 
-#background_right{
+.background_right_img{
 	position: absolute;
 	right: 0;
 	z-index:  1;
-}
-
-.background_right img{
-		width: 50%;
-		height: 705px;
-
+	width: 50%;
+	height: 705px;
 }
 
 
@@ -359,7 +355,7 @@ header{
 	margin: 0 0 0 0;
 }
 
-#background_left{
+.background_left_img{
 	display: none;
 	background-color:#ffffff;
 }
