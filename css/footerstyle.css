@@ -10,7 +10,7 @@ body{
 	display:flex;
 }
 
-#left-prefooter{
+.prefooter-left{
 	height: 280px;
 	width: 50%;
 	background-color:#FF6600;
@@ -23,7 +23,7 @@ body{
 	
 }
 
-#left-prefooter h1{
+.prefooter-left h1{
 	float: right;
 	margin: 80px 205px 0 0;
 	font-weight: bold;
@@ -32,7 +32,7 @@ body{
 
 
 
-#left-prefooter p{
+.prefooter-left p{
 	margin: 0 0 0 0;
 	color:#333333;
 	font-family:'Ubuntu';
@@ -43,9 +43,7 @@ body{
 	visibility: hidden;
 }
 
-
-
-#right-prefooter{
+.prefooter-right{
 	height: 280px;
 	width: 50%;
 	background-color:#F5F5F5;
@@ -54,7 +52,7 @@ body{
 	font-size:17px;
 }
 
-#right-prefooter p{
+.prefooter-right p{
 	margin: 95px 0 0 45px;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -228,13 +226,13 @@ body{
 	margin-left: 40px;
 }
 
-#left-prefooter{
+.prefooter-left{
 	margin: 0 0 0 0;
 	height: 410px;
 	font-size:58px;
 }
 
-#left-prefooter h1{
+.prefooter-left h1{
 	margin: 0 0 0 0;
 	padding: 75px 0 0 50px;
 	font-weight: bold;
@@ -243,7 +241,7 @@ body{
 	font-family:'Ubuntu';
 }
 
-#left-prefooter h1 a{
+.prefooter-left h1 a{
 	margin: 83px 140px 0 0px;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -251,7 +249,7 @@ body{
 	text-decoration: none;
 }
 
-#left-prefooter p{
+.prefooter-left p{
 	margin: 35px 50px 0 55px;
 	color:#ffffff;
 	font-family:'Ubuntu';
@@ -261,7 +259,7 @@ body{
 	letter-spacing: 2px;
 }
 	
-#right-prefooter{
+.prefooter-right{
 	display: none;
 }
 	
