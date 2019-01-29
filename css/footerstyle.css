@@ -50,7 +50,7 @@ body{
 	width: 50%;
 	background-color:#F5F5F5;
 	color:#333333;
-	font-family:'Ubuntu';
+	font-family:'PT Sans';
 	font-size:17px;
 }
 
@@ -255,7 +255,7 @@ body{
 #left-prefooter p{
 	margin: 35px 50px 0 55px;
 	color:#ffffff;
-	font-family:'Ubuntu';
+	font-family:'PT Sans';
 	font-size:45px;
 	font-weight: normal;
 	visibility: visible;
