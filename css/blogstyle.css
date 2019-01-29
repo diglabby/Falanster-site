@@ -43,12 +43,12 @@ body{
 }
 
 .main-article h2{
-	color: #090909;
+	color: #1a1a1a;
 	margin-bottom: 0px;
 }
 
 .main-article h2 a{
-	color: #090909;
+	color: #1a1a1a;
 	text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ body{
 .recent-article h2{
 	width: 430px;
 	margin-bottom: 3px; 
-	color:#090909;
+	color:#1a1a1a;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
 	font-size:19px;
@@ -102,7 +102,7 @@ body{
 }
 
 .recent-article h2 a{
-	color: #090909;
+	color: #1a1a1a;
 	transition: 0.2s;
 	text-decoration: none;
 }
@@ -210,7 +210,7 @@ body{
 }
 
 .main-article h2 a{
-	color: #090909;
+	color: #1a1a1a;
 	transition: 0.2s;
 	text-decoration: none;
 }
@@ -248,7 +248,7 @@ body{
 }
 
 .recent-article h2 a{
-	color: #090909;
+	color: #1a1a1a;
 	transition: 0.2s;
 	text-decoration: none;
 }

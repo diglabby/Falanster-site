@@ -137,13 +137,13 @@ body{
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 24;
-	color:  #333333;
+	color:  #1a1a1a;
 	margin: 20px 0 5px 0;
 	letter-spacing: 0.5px;
 }
 
 .info-block h2 a{
-	color: #333333;
+	color: #1a1a1a;
 	text-decoration: none;
 }
 
