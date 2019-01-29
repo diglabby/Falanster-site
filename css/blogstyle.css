@@ -21,7 +21,7 @@ body{
 	margin-bottom: 45px;
 	font-family: 'Ubuntu';
 	font-size: 60px;
-	color: #090909;
+	color: #333333;
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 0px #FF6600;
 }
@@ -43,12 +43,12 @@ body{
 }
 
 .main-article h2{
-	color: #1a1a1a;
+	color: #333333;
 	margin-bottom: 0px;
 }
 
 .main-article h2 a{
-	color: #1a1a1a;
+	color: #333333;
 	text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ body{
 .recent-article h2{
 	width: 430px;
 	margin-bottom: 3px; 
-	color:#1a1a1a;
+	color:#333333;
 	letter-spacing: 1px;
 	font-family:'Ubuntu';
 	font-size:19px;
@@ -102,7 +102,7 @@ body{
 }
 
 .recent-article h2 a{
-	color: #1a1a1a;
+	color: #333333;
 	transition: 0.2s;
 	text-decoration: none;
 }
@@ -171,7 +171,7 @@ body{
 	margin-bottom: 35px;
 	font-family: 'Ubuntu';
 	font-size: 88px;
-	color: #090909;
+	color: #333333;
 	letter-spacing: 2px;
 	text-shadow: 2px 2px 0px #FF6600;
 }
@@ -210,7 +210,7 @@ body{
 }
 
 .main-article h2 a{
-	color: #1a1a1a;
+	color: #333333;
 	transition: 0.2s;
 	text-decoration: none;
 }
@@ -248,7 +248,7 @@ body{
 }
 
 .recent-article h2 a{
-	color: #1a1a1a;
+	color: #333333;
 	transition: 0.2s;
 	text-decoration: none;
 }
