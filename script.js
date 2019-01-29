@@ -196,6 +196,50 @@ function article_click3(){
 };
 
 
+// <-- start touchSlider -->
+
+function touchSlider() {
+	let initTouch;
+	const content = document.querySelector('.content');
+
+	const getButtons = () => {
+		const blockButtons = document.querySelectorAll('.buttons > * > button');
+		const blockButtonsToArray = Array.from(blockButtons);
+		const activeButton = document.querySelector('.btn-on');
+
+		blockButtonsToArray.forEach((item, index) => {
+			if (item === activeButton) {
+				activeButton.prev = blockButtonsToArray[index - 1];
+				activeButton.next = blockButtonsToArray[index + 1];
+				}
+			});
+
+		return activeButton;
+	};
+
+	content.addEventListener('touchstart', () => {
+    const touchStartEvent = event.changedTouches[0];
+		initTouch = touchStartEvent;
+	});
+
+	content.addEventListener('touchend', () => {
+		const { prev, next } = getButtons();
+		const touchEndEvent = event.changedTouches[0];
+		const distance = Math.abs(initTouch.pageX - touchEndEvent.pageX);
+
+    if (!!(next) && distance > 200 && initTouch.pageX > touchEndEvent.pageX) {
+			next.click();
+		} else if (!!(prev) && distance > 200 && initTouch.pageX < touchEndEvent.pageX) {
+      	prev.click();
+    	}
+	});
+}
+
+touchSlider();
+
+// <-- end touchSlider -->
+
+
 
 
 
