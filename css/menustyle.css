@@ -131,7 +131,7 @@ body{
 	height: 61px;
 	margin-top: -15px;
 	position: relative;
-	background: rgba(30, 30, 30, 0.86);
+	background: #333333;
 	z-index:  2;
 }
 
