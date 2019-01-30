@@ -250,10 +250,6 @@ body{
 .recent-article:nth-child(3){
 	display: none;
 }
-/* 
-.events p{
-	margin: 0 0 0 0;
-} */
 
 .events-link{
 	margin: 35px 0 120px 30px;

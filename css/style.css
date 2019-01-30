@@ -224,11 +224,6 @@ body{
 	transition:.8s;
 }
 
-/* .block-content{
-	border-radius:3px;
-	opacity: 0.40;
-} */
-
 .info-block:nth-child(2){
 	margin-left: 75px;
 }
@@ -348,23 +343,6 @@ body{
 	color: #ff6600;
 	text-decoration: none;
 }
-
-/*.project-link-1:visited{
-	color: #ff6600;
-	text-decoration: none;
-}
-.project-link-2:visited{
-	color: #ff6600;
-	text-decoration: none;
-}
-.project-link-3:visited{
-	color: #ff6600;
-	text-decoration: none;
-}
-.project-link-4:visited{
-	color: #ff6600;
-	text-decoration: none;
-}*/
 
 .block-title{
 	display:none;
