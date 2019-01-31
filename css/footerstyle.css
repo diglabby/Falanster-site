@@ -66,7 +66,7 @@ footer{
 	display: flex;
 	height: 177px;
 	width: auto;
-	background-color:#303030;
+	background-color:#333333;
 }
 
 #footer-logo{
@@ -268,7 +268,7 @@ body{
 footer{
 	width: auto;
 	height: 1000px;
-	background-color:#303030;
+	background-color:#333333;
 }
 
 .footer_menu{

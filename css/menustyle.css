@@ -131,7 +131,7 @@ body{
 	height: 61px;
 	margin-top: -15px;
 	position: relative;
-	background: rgba(30, 30, 30, 0.86);
+	background: #333333;
 	z-index:  2;
 }
 
@@ -224,6 +224,7 @@ body{
 	height: 705px;
 	width: 50%;
 	z-index:1;
+	background: url('../images/spacetable3.png') no-repeat 0 0;
 }
 
 .background_left img{
