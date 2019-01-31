@@ -20,7 +20,7 @@ body{
 	-webkit-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	-moz-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
-	
+	cursor: pointer;
 }
 
 #left-prefooter h1{
