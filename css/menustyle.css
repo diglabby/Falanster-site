@@ -207,10 +207,10 @@ body{
 }
 
 .nav_bar ul li a:hover{
-	color: #C4FF00;
+	color: #d6ff32;
 	transition:.2s;
 	font-size:20px;
-	border-left: 2px solid #C4FF00;
+	border-left: 2px solid #d6ff32;
 }
 
 .menu_background{
