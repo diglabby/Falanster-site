@@ -20,7 +20,7 @@ body{
 	-webkit-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	-moz-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
-	
+	cursor: pointer;
 }
 
 #left-prefooter h1{
@@ -66,7 +66,7 @@ footer{
 	display: flex;
 	height: 177px;
 	width: auto;
-	background-color:#303030;
+	background-color: #333333;
 }
 
 #footer-logo{
@@ -156,7 +156,7 @@ footer{
 	width: 195px;
 	height: 38px;
 	border-radius: 3px;
-	background-color: #303030;
+	background-color: #333333;
 	border: 1px #ffffff solid;
 }
 
@@ -179,7 +179,7 @@ INPUT[type="search"]{
 	border: 0px;
 	border-radius: 3px;
 	margin-left: 15px;
-	color: #8A8A8A;
+	color: #898989;
 	font-size:16px;
 		cursor: pointer;
 }
@@ -269,7 +269,7 @@ body{
 footer{
 	width: auto;
 	height: 1000px;
-	background-color:#303030;
+	background-color:#333333;
 }
 
 .footer_menu{
@@ -371,7 +371,7 @@ padding-left: 40px;
 	width: 500px;
 	height: 100px;
 	border-radius: 1px;
-	background-color: #303030;
+	background-color: #333333;
 	border: 1px #ffffff solid;
 }
 
@@ -397,7 +397,7 @@ INPUT[type="search"]{
 	padding:32px 35px 30px 33px;
 	text-decoration:none;
 	border: 0px;
-	border-radius: 2px;
+	border-radius: 3px;
 	letter-spacing: 1px;
 	font-weight: bold;
 }	

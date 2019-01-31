@@ -167,7 +167,7 @@ body{
 	height: 61px;
 	margin-top: -15px;
 	position: relative;
-	background: rgba(30, 30, 30, 0.86);
+	background: #333333;
 	z-index:  2;
 }
 
@@ -243,10 +243,10 @@ body{
 }
 
 .nav_bar ul li a:hover{
-	color: #C4FF00;
+	color: #d6ff32;
 	transition:.2s;
 	font-size:20px;
-	border-left: 2px solid #C4FF00;
+	border-left: 2px solid #d6ff32;
 }
 
 .menu_background{
@@ -440,7 +440,7 @@ header{
 	font-family:'Ubuntu';
 	font-weight: bold;
 	font-size:45px;
-	border-radius: 2px;
+	border-radius: 3px;
 	z-index: 4;
 }
 
