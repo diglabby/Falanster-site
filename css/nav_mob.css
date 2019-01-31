@@ -6,7 +6,7 @@ body{
 
 .mob_nav{
 	width: 100%;
-	height: auto;
+	height: 100vh;
 	left: -100%;
 	padding: 15px 0 30px 0;
 	background-color: #333333;

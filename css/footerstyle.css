@@ -50,7 +50,7 @@ body{
 	width: 50%;
 	background-color:#F5F5F5;
 	color:#333333;
-	font-family:'Ubuntu';
+	font-family:'PT Sans';
 	font-size:17px;
 }
 
@@ -77,11 +77,12 @@ footer{
 	width:990px;
 	margin: 0 auto;
 	display: flex;
+	background: url('../images/footerlogo.jpg') no-repeat 0 30px;
 }
 
 .list{
 	margin-top: 10px;
-	margin-left: 68px;
+	margin-left: 168px;
 }
 
 .list ul li{
@@ -254,7 +255,7 @@ body{
 #left-prefooter p{
 	margin: 35px 50px 0 55px;
 	color:#ffffff;
-	font-family:'Ubuntu';
+	font-family:'PT Sans';
 	font-size:45px;
 	font-weight: normal;
 	visibility: visible;
@@ -274,6 +275,8 @@ footer{
 .footer_menu{
 
 	display: flex;
+	background: url('../images/footerlogo.jpg') no-repeat 45px 80px;
+	background-size: 135px 135px;
 }
 
 
@@ -286,7 +289,7 @@ footer{
 .list{
 	width: 320px;
 	margin-top: 40px;
-	margin-left: 50px;
+	margin-left: 230px;
 }
 
 

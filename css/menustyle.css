@@ -59,6 +59,24 @@ body{
 	text-decoration: none;
 }
 
+.profile a:active {
+	color: #d6ff32;
+}
+
+.profile a:hover{
+	transform: scale(1.125);
+	transition:.2s;
+	display: inline-block;
+}
+
+.profile::after {
+	content: '';
+	width: 136px;
+	height: 6px;
+	display: inline-block;
+	background: url('../images/profileimg.jpg') no-repeat bottom;
+}
+
 #profileimg{
 	position: inherit;
 	margin: 0 0 0 0;
@@ -78,6 +96,24 @@ body{
 	font-family:'Ubuntu';
 	font-size:16px;
 	text-decoration: none;
+}
+
+.support a:active {
+	color: #d6ff32;
+}
+
+.support a:hover {
+	transform: scale(1.125);
+	transition:.2s;
+	display: inline-block;
+}
+
+.support::after{
+	content: '';
+	width: 96px;
+	height: 6px;
+	display: inline-block;
+	background: url('../images/supportimg.jpg') no-repeat bottom;
 }
 
 #supportimg{
@@ -238,6 +274,8 @@ body{
 
 .background_right{
 	height: 705px;
+	background: #121212 url('../images/background.jpg') no-repeat top right;
+	width: 50%;
 }
 
 /*#background_left{

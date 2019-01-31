@@ -9,6 +9,12 @@
 	z-index: 3;
 }
 
+#right-side-img {
+	margin-top: 0 !important;
+	width: 230px !important;
+	height: 756px !important;
+	background-size: 230px 756px !important;
+}
 
 #right-side-img img{
 	margin-top: -310px;
@@ -43,10 +49,13 @@ body{
 }
 
 #left-side-img{
-	position: absolute;
 	margin-top: -77px;
 	margin-left: 3%;
 	z-index: 0;
+	width: 50px;
+	margin-right: -50px;
+	background: url('../images/left.png') no-repeat;
+	background-size: 50px 456px;
 }
 
 #menu{
@@ -127,13 +136,13 @@ body{
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 24;
-	color:  #333333;
+	color:  #1a1a1a;
 	margin: 20px 0 5px 0;
 	letter-spacing: 0.5px;
 }
 
 .info-block h2 a{
-	color: #333333;
+	color: #1a1a1a;
 	text-decoration: none;
 }
 
@@ -197,7 +206,7 @@ body{
 	font-size:15px;
 	padding:19px 19px 16px 20px;
 	text-decoration:none;
-	border-radius:4px;
+	border-radius:3px;
 	border-width: 0px;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -239,6 +248,9 @@ body{
 	position: absolute;
 	right: 0;
 	z-index:  1;
+	width: 264px;
+	height: 868px;
+	background: url('../images/right.svg') no-repeat 0 0;
 }
 
 .buttons{
