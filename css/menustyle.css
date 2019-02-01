@@ -167,9 +167,9 @@
 	}
 
 	.sticky {
-		margin-top: -68px;
 		width: 100%;
 		position: fixed;
+		top: 0;
 		background: rgba(30, 30, 30, 0.86);
 		z-index:  999999;
 	}
