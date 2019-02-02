@@ -114,6 +114,14 @@ footer{
 	display: flex;
 }
 
+.footer__social-link img {
+	transition: 200ms;
+}
+
+.footer__social-link:hover img {
+	transform: scale(1.1);
+}
+
 .vk-icon {
 	margin-top: -24px;
 	margin-left: -10px;
