@@ -370,7 +370,13 @@ padding-left: 40px;
 	width: 150px;
 
 }
-	
+
+.face-icon {
+	margin-top: -5px;
+	height: 100px;
+	width: 100px;
+}
+
 .footer__subscribe  {
 	position: absolute;
 	margin-top: 430px;
@@ -435,14 +441,5 @@ input[type="email"]{
 	margin-top: 55px;
 	margin-left: 2px;
 	position: absolute;
-}
-
-
-
-	
-	
-	
-	
-	
-	
+}	
 }
