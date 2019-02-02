@@ -1,9 +1,9 @@
 
 var last_btn = 'btn1';
-var last_block = 'block1';
+var last_block = 'project1';
 
-document.getElementById('block1').classList.add("info-block-visible");
-document.getElementById('btn1').classList.add("btn-on");
+document.getElementById('project1').classList.add("projects__item--visible");
+document.getElementById('btn1').classList.add("projects__button--active");
 
 document.getElementById('btn1').onclick = button_click;
 document.getElementById('btn2').onclick = button_click;
@@ -13,38 +13,38 @@ document.getElementById('btn4').onclick = button_click;
 
 function  button_click(e){
 
-	e.target.classList.remove("basic");
-	e.target.classList.add("btn-on");
-	document.getElementById(last_block).classList.remove("info-block-visible");
-	document.getElementById(last_btn).classList.remove("btn-on");
-	document.getElementById(last_btn).classList.add("basic");
+	e.target.classList.remove("projects__button--basic");
+	e.target.classList.add("projects__button--active");
+	document.getElementById(last_block).classList.remove("projects__item--visible");
+	document.getElementById(last_btn).classList.remove("projects__button--active");
+	document.getElementById(last_btn).classList.add("projects__button--basic");
 
 	switch(e.target.id){
 		case 'btn1':
-			document.getElementById('block1').classList.add("info-block-visible");
+			document.getElementById('project1').classList.add("projects__item--visible");
 			last_btn = 'btn1';
-			last_block = 'block1';
+			last_block = 'project1';
 			break;
 		case 'btn2':
-			document.getElementById('block2').classList.add("info-block-visible");
+			document.getElementById('project2').classList.add("projects__item--visible");
 			last_btn = 'btn2';
-			last_block = 'block2';
+			last_block = 'project2';
 			break;
 		case 'btn3':
-			document.getElementById('block3').classList.add("info-block-visible");
+			document.getElementById('project3').classList.add("projects__item--visible");
 			last_btn = 'btn3';
-			last_block = 'block3';
+			last_block = 'project3';
 			break;
 		case 'btn4':
-			document.getElementById('block4').classList.add("info-block-visible");
+			document.getElementById('project4').classList.add("projects__item--visible");
 			last_btn = 'btn4';
-			last_block = 'block4';
+			last_block = 'project4';
 			break;
 	}
 }
 
-var img_arr = document.getElementsByClassName("blockimg");
-var btn_arr = document.getElementsByClassName("block-button");
+var img_arr = document.getElementsByClassName("projects__image");
+var btn_arr = document.getElementsByClassName("projects__overlay-text");
 var last_targ = null;
 
 for (var i = 0; i < img_arr.length; i++) {
@@ -200,12 +200,12 @@ function article_click3(){
 
 function touchSlider() {
 	let initTouch;
-	const content = document.querySelector('.content');
+	const content = document.querySelector('.projects__items');
 
 	const getButtons = () => {
-		const blockButtons = document.querySelectorAll('.buttons > * > button');
+		const blockButtons = document.querySelectorAll('.projects__button');
 		const blockButtonsToArray = Array.from(blockButtons);
-		const activeButton = document.querySelector('.btn-on');
+		const activeButton = document.querySelector('.projects__button--active');
 
 		blockButtonsToArray.forEach((item, index) => {
 			if (item === activeButton) {
