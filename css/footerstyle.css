@@ -341,7 +341,7 @@ footer{
 	display: flex;
 }
 
-#vk {
+.vk-icon {
 	margin-top: -24px;
 	margin-left: -10px;
 	margin-right: 3px;
@@ -356,14 +356,14 @@ footer{
 	width: 90px;
 }
 
-#facebook {
+.fb-icon {
 	margin-top: -5px;
 padding-left: 40px;
 	height: 100px;
 	width: 100px;
 }
 
-#youtube{
+.youtube-icon {
 	margin-left: -120px;
 	margin-top: 115px;
 	height: 150px;
