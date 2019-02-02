@@ -73,19 +73,20 @@ footer{
 	margin: 31px 0 0 0;
 }
 
-.footer_menu{
-	width:990px;
-	margin: 0 auto;
+.footer__container {
 	display: flex;
 	background: url('../images/footerlogo.jpg') no-repeat 0 30px;
 }
 
-.list{
-	margin-top: 10px;
-	margin-left: 168px;
+.footer__menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin-top: 20px;
+	margin-left: 208px;
 }
 
-.list ul li{
+.footer__menu-item {
 	margin: 7px 0 0 0;
 	color:#ffffff;
 	font-family:'Ubuntu';
@@ -93,69 +94,74 @@ footer{
 	list-style-type: none;
 }
 
-.list a{
+.footer__menu-link {
 	color:#ffffff;
 	text-decoration: none;
 }
 
-.social-network{
+.footer__social {
 	margin-top: 8px;
 	margin-left: 98px;
 }
 
-.social-network p{
+.footer__social-title {
 	color:#ffffff;
 	font-family:'Ubuntu';
 	font-size:18px;
 }
 
-.icons{
+.footer__social-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	display: flex;
 }
 
-#vk{
+.vk-icon {
 	margin-top: -24px;
 	margin-left: -10px;
 	margin-right: 3px;
 }
 
-#telegram{
+.telegram-icon {
 	margin-top: -5px;
 }
 
-#face{
+.fb-icon {
 	margin-top: -15px;
 	margin-left: ;
 }
 
-#youtube{
+.youtube-icon {
 	margin-top: -15px;
 	margin-left: -5px;
 }
 
-#footer-logo-2{
+.footer__license {
 	margin-top: 10px;
 }
 
-#footer-logo-3{
+.footer__license--big {
 	display: none;
 }
 
-.search-row{
+.footer__subscribe {
 	margin-top: 8px;
 	margin-left: 124px;
 }
 
-.search-row p {
+.footer__subscribe-title {
+	display: block;
+	margin: 1em 0;
 	color:#ffffff;
 	font-family:'Ubuntu';
 	font-size:18px;
 }
 
-.search-row input{
+.footer__subscribe input{
 	box-sizing: border-box;
 	width: 195px;
-	height: 38px;
+	height: 40px;
 	border-radius: 3px;
 	background-color: #333333;
 	border: 1px #ffffff solid;
@@ -173,16 +179,22 @@ input[type="email"]{
 	font-size:15px;
 }
 
-#search-row-button{
+.footer__subscribe-button {
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: top;
 	width: 48px;
-	height: 40px;
 	background-color: #ffffff;
 	border: 0px;
 	border-radius: 3px;
 	margin-left: 15px;
 	color: #898989;
-	font-size:16px;
-		cursor: pointer;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 }
@@ -273,8 +285,7 @@ footer{
 	background-color:#333333;
 }
 
-.footer_menu{
-
+.footer__container {
 	display: flex;
 	background: url('../images/footerlogo.jpg') no-repeat 45px 80px;
 	background-size: 135px 135px;
@@ -287,14 +298,16 @@ footer{
 	width: 135px;
 }
 	
-.list{
+.footer__menu {
+	margin: 0;
+	padding: 0;
 	width: 320px;
 	margin-top: 40px;
 	margin-left: 230px;
 }
 
 
-.list ul li{
+.footer__menu-item {
 	width: 270px;
 	margin: 7px 0 0 0;
 	color:#ffffff;
@@ -304,29 +317,31 @@ footer{
 	line-height: 2;
 }
 
-.list a{
+.footer__menu-link {
 	color:#ffffff;
 	text-decoration: none;
 }	
 
-.social-network{
+.footer__social {
 	margin-top: 28px;
 	margin-left: 60px;
 
 }
 
-.social-network p{
+.footer__social-title {
 	font-size:42px;
 	color:#ffffff;
 	font-family:'Ubuntu';
 }
 	
-.icons{
+.footer__social-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	display: flex;
 }
 
-	
-#vk{
+#vk {
 	margin-top: -24px;
 	margin-left: -10px;
 	margin-right: 3px;
@@ -334,14 +349,14 @@ footer{
 	width: 140px;
 }
 
-#telegram{
+.telegram-icon {
 	margin-left: -110px;
 	margin-top: 155px;
 	height: 90px;
 	width: 90px;
 }
 
-#face{
+#facebook {
 	margin-top: -5px;
 padding-left: 40px;
 	height: 100px;
@@ -356,19 +371,21 @@ padding-left: 40px;
 
 }
 	
-.search-row{
+.footer__subscribe  {
 	position: absolute;
 	margin-top: 430px;
 	margin-left: 270px;
 }
 
-.search-row p {
+.footer__subscribe-title {
+	display: block;
+	margin: 1em 0;
 	color:#ffffff;
 	font-family:'Ubuntu';
 	font-size:45px;
 }
 
-.search-row input{
+.footer__subscribe input{
 	box-sizing: border-box;
 	width: 500px;
 	height: 100px;
@@ -389,13 +406,17 @@ input[type="email"]{
 	font-size:45px;
 }
 
-#search-row-button{
+.footer__subscribe-button {
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: top;
 	margin: 0 0 0 35px;
 	background-color:#ffffff;
 	color:#848484;
 	cursor: pointer;
 	font-family:'Ubuntu';
-	font-size:35px;
+	font-size: 35px;
 	padding:32px 35px 30px 33px;
 	text-decoration:none;
 	border: 0px;
@@ -404,11 +425,11 @@ input[type="email"]{
 	font-weight: bold;
 }	
 	
-#footer-logo-2{
+.footer__license {
 	display: none;
 }
 
-#footer-logo-3{
+.footer__license--big {
 	height: 94px;
 	width: 266px;
 	margin-top: 55px;

@@ -388,42 +388,56 @@
 			</div>
 		</section>
 		
-		<footer>
+		<footer class="footer">	
+			<div class="footer__container container">
+				<ul class="footer__menu">
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="URL">Правiлы сайта</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="https://falanster.by/be/pytanni">FAQ</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="https://falanster.by/be/help">Зрабi ўнесак</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="https://falanster.by/be/kantakt">Кантакты</a>
+					</li>
+				</ul>
 			
-			
-			<div class="footer_menu">
-				
-			
-
-				<div class="list">
-					<ul>
-						<li><a href="URL">Правiлы сайта</a></li>
-						<li><a href="https://falanster.by/be/pytanni">FAQ</a></li>
-						<li><a href="https://falanster.by/be/help">Зрабi ўнесак</a></li>
-						<li><a href="https://falanster.by/be/kantakt">Кантакты</a></li>
+				<div class="footer__social">
+					<p class="footer__social-title">Мы у сац. сетках</p>
+					<ul class="footer__social-links">
+						<li>
+							<a class="footer__social-link--vk" href="https://vk.com/falanster_by">
+								<img class="vk-icon" id="vk" alt="УКантакце" src="images/vk.png" height="60" width="60">
+							</a>
+						</li>
+						<li>
+							<a class="footer__social-link" href="https://t.me/falansterby">
+								<img class="telegram-icon" alt="Telegram" src="images/telegram.png" height="30" width="30">
+							</a>
+						</li>
+						<li>
+							<a class="footer__social-link" href="https://www.facebook.com/falanster.by/">
+								<img class="fb-icon" id="facebook" alt="Facebook" src="images/face.png" height="45" width="45">
+							</a>
+						</li>
+						<li>
+							<a class="footer__social-link" href="https://www.youtube.com/channel/UCAmTfxxasQwNaKkljnmvc5A">
+								<img class="youtube-icon" id="youtube" alt="Youtube" src="images/yo.png" height="45" width="45">
+							</a>
+						</li>
 					</ul>
+				
+					<img class="footer__license" alt="Creative Commons Attribution-ShareAlike" src="images/footerlogo2.jpg" height="34" width="95">
 				</div>
 			
-				<div class="social-network">
-					<p>Мы у сац. сетках</p>
-				
-					<div class="icons">
-						<a href="https://vk.com/falanster_by"><img id="vk" alt="УКантакце" src="images/vk.png" height="60" width="60"></a>
-						<a href="https://t.me/falansterby"><img id="telegram" alt="Telegram" src="images/telegram.png" height="30" width="30"></a>
-						<a href="https://www.facebook.com/falanster.by/"><img id="face" alt="Facebook" src="images/face.png" height="45" width="45"></a>
-						<a href="https://www.youtube.com/channel/UCAmTfxxasQwNaKkljnmvc5A"><img id="youtube" alt="Youtube" src="images/yo.png" height="45" width="45"></a>
-					</div>
-				
-					<img id="footer-logo-2" alt="Creative Commons Attribution-ShareAlike" src="images/footerlogo2.jpg" height="34" width="95">
-					
-				</div>
-
-			
-				<div class="search-row">
-					<p>Падпiсацца на нас</p>
-					<input type="email" placeholder="Ваш e-mail">
-					<a href="#modal"><button id="search-row-button">OK</button></a>
-					<img id="footer-logo-3" alt="Creative Commons Attribution-ShareAlike" src="images/by-sa.png">
+				<div class="footer__subscribe">
+					<label class="footer__subscribe-title" for="subscribe-email">Падпiсацца на нас</label>
+					<input class="footer__email-input" id="subscribe-email" type="email" placeholder="Ваш e-mail">
+					<a class="footer__subscribe-button" href="#modal">OK</a>
+					<img class="footer__license--big" alt="Creative Commons Attribution-ShareAlike" src="images/by-sa.png">
 				</div>
 				
 				<div class="modal" id="modal">

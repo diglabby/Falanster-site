@@ -463,6 +463,12 @@ body{
 	width: 990px;
 	margin: 0 auto;
 }
+@media (max-width: 1079px) {
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
