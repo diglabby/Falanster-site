@@ -227,15 +227,15 @@ body{
 	background-color:#FF6600;
 }
 
-.date-autor{
+.blog__article-info {
 	display: flex;
 }
 
-.main-article img{
+.blog__article-image {
 	margin-left: 35px;
 }
 
-.autor{
+.blog__author {
 	margin-left: 40px;
 }
 

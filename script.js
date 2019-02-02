@@ -144,9 +144,9 @@ function close_fun(){
 	document.querySelector('.mobile-menu').style.left = "-100%";
 }
 
-document.getElementById('ivents_a').onclick = ivents_fun;
+document.querySelector('.blog__more-link').onclick = blog_fun;
 
-function ivents_fun(e){
+function blog_fun(e){
 	if(e.currentTarget.style.color == "#090909"){
 		e.currentTarget.style.color = "#ff6600";
 	}
