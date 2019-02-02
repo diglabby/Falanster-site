@@ -102,7 +102,7 @@ function close_btn_fun(){
 	mobnav.style.left = "-100%";
 };
 
-document.getElementById('left-prefooter').onclick = pref_fun;
+document.querySelector('.prefooter__left').onclick = pref_fun;
 
 function pref_fun(e){
 	if( window.innerWidth >= 1080){
@@ -122,7 +122,7 @@ function pref_fun(e){
 	}
 };
 
-document.getElementById('prefooter').onclick = mob_pref_fun;
+document.querySelector('.prefooter').onclick = mob_pref_fun;
 
 function mob_pref_fun(e){
 	if( window.innerWidth < 1080){
