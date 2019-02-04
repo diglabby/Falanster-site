@@ -73,7 +73,7 @@ body{
 	margin-bottom: 76px;
 	font-family: 'Ubuntu';
 	font-size: 60px;
-	color: #090909;
+	color: #333333;
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 0px #FF6600;
 	z-index: 2;
@@ -284,7 +284,7 @@ body{
 	margin-bottom: 58px;
 	font-family: 'Ubuntu';
 	font-size: 88px;
-	color: #090909;
+	color: #333333;
 	letter-spacing: 2px;
 	text-shadow: 2px 2px 0px #FF6600;
 }
