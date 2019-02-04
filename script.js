@@ -240,6 +240,21 @@ touchSlider();
 // <-- end touchSlider -->
 
 
+// <-- the trick to correct sizing -->
+const setCorrectViewPort = () => {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+	window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+}
+
+setCorrectViewPort();
+// <-- the trick to correct sizing -->
+
+
 
 
 
