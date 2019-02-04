@@ -5,17 +5,16 @@ body{
 	margin: 0 0 0 0;
 }
 
-.blog{
-	display: flex;
-}
-
 #blog_content{
 	margin: 0 auto;
 }
 
+.blog {
+	position: relative;
+}
 
-#blog-caption h1{
-	width:auto;
+.blog__heading {
+	width: auto;
 	margin-top: 110px;
 	margin-left: 0px;
 	margin-bottom: 45px;
@@ -26,12 +25,12 @@ body{
 	text-shadow: 2px 2px 0px #FF6600;
 }
 
-.blog-article{
+.blog__articles{
 	display: flex;
 	margin-bottom: 100px;
 }
 
-.main-article{
+.blog__article--main{
 	margin-left: 0px;
 	width: 490px;
 	color:#333333;
@@ -42,36 +41,37 @@ body{
 	transition: 0.2s;
 }
 
-.main-article h2{
+.blog__article-title--main {
+	font-size: 1.5em;
 	color: #333333;
 	margin-bottom: 0px;
 }
 
-.main-article h2 a{
+.blog__article-link--main {
 	color: #333333;
 	text-decoration: none;
 }
 
-.main-article h2 a:hover{
+.blog__article-link--main:hover {
 	color: #FF6600;
 	transition: 0.2s;
 	text-decoration: none;
 }
 
-.main-article img{
+.blog__article-image {
 	margin-top: 40px;
 	margin-left: 2px;
 	border-radius:3px;
 }
 
-.date{
+.blog__date {
 	color: #898989;
 	font-family:'PT Sans';
 	font-size:14px;
 	letter-spacing: 0px;
 }
 
-.autor{
+.blog__author {
 	margin-left: auto;
 	margin-right: 0;
 	text-align: right;
@@ -81,16 +81,16 @@ body{
 	letter-spacing: 0;
 }
 
-.date-autor{
+.blog__article-info{
 	display: flex;
 }
 
-.recent-article{
+.blog__article--aside {
 	margin-left: 73px;
 	margin-bottom: 30px;
 }
 
-.recent-article h2{
+.blog__article-title {
 	width: 430px;
 	margin-bottom: 3px; 
 	color:#333333;
@@ -101,23 +101,23 @@ body{
 	transition: 0.2s;
 }
 
-.recent-article h2 a{
+.blog__article-link {
 	color: #333333;
 	transition: 0.2s;
 	text-decoration: none;
 }
 
-.recent-article h2 a:hover{
+.blog__article-link:hover{
 	color: #FF6600;
 	transition: 0.2s;
 	text-decoration: none;
 }
 
 
-#blog-right-side-img{
-
-	margin-top: 50px;
+.blog-image-right {
+	margin-top: -60px;
 	position: absolute;
+	top: 0;
 	right: 0;
 	z-index: 1;
 	background: url('../images/try_dis.svg') no-repeat;
@@ -125,20 +125,20 @@ body{
 	width: 135px;
 }
 
-#ivents p a{
+.blog__more-link {
 	margin: 5px 0 0 75px;
 	color: #090909;
 	font-family:'Ubuntu';
 	font-size:19px;
 	border-bottom: 2px #303030 solid;
 	display: inline-block;
-    vertical-align: baseline;
-    line-height: 1;
+  vertical-align: baseline;
+  line-height: 1;
 	text-decoration: none;
 	transition: 0.2s;
 }
 
-#ivents p a:hover{
+.blog__more-link:hover{
 		border-bottom:2px #ffffff solid;
 		transition: 0.2s;
 }
@@ -155,7 +155,7 @@ body{
 
 }
 	
-.blog{
+.blog {
 	width: auto;
 	height: auto;
 	background-color: white;
@@ -165,7 +165,7 @@ body{
 	display: none;
 }
 
-#blog-caption h1{
+.blog__heading {
 	margin-top: 0px;
 	margin-left: 30px;
 	margin-bottom: 35px;
@@ -176,16 +176,16 @@ body{
 	text-shadow: 2px 2px 0px #FF6600;
 }
 
-#blog-right-side-img{
+.blog-image-right {
 	display: none;
 }
 
-.blog-article{
+.blog__articles{
 	display: inline;
 	margin: 0 0 0 0;
 }
 
-.blog-article img{
+.blog__articles img{
 	content: url('../images/blogphoto.jpg');
 	width: 798px;
 	height: 477px;
@@ -194,7 +194,7 @@ body{
 	
 }
 
-.main-article{
+.blog__article--main{
 	margin-left: 0px;
 	width: auto;
 	color:#333333;
@@ -204,32 +204,33 @@ body{
 	font-weight: 100;
 }
 
-.main-article h2{
+.blog__article-title--main {
+	font-size: 1.5em;
 	margin-left: 30px;
 	margin-right: 10px;
 }
 
-.main-article h2 a{
+.blog__article-link--main {
 	color: #333333;
 	transition: 0.2s;
 	text-decoration: none;
 }
 
-.date p{
+.blog__date {
 	margin-left: 30px;
 	font-size:35px;
 	font-weight: 500;
 	font-family:'PT Sans';
 }
 
-.autor p{
+.blog__author {
 	margin-right: 30px;
 	font-size:35px;
 	font-weight: 500;
 	font-family:'PT Sans';
 }
 
-.recent-article{
+.blog__article--aside {
 	margin-left: 0px;
 	width: auto;
 	color:#333333;
@@ -239,7 +240,7 @@ body{
 	font-weight: 100;
 }
 
-.recent-article h2{
+.blog__article-title {
 	margin-left: 35px;
 	margin-right: 5px;
 	width: auto;
@@ -247,60 +248,31 @@ body{
 	font-weight: 600;
 }
 
-.recent-article h2 a{
+.blog__article-link {
 	color: #333333;
 	transition: 0.2s;
 	text-decoration: none;
 }
 
-.recent-article:nth-child(3){
+.blog__article--aside:nth-child(3){
 	display: none;
 }
 
-#ivents p{
+.blog__more {
 	margin: 0 0 0 0;
 }
 
-#ivents p a{
+.blog__more-link {
 	margin: 35px 0 120px 30px;
 	color: #090909;
 	font-family:'Ubuntu';
 	font-size:45px;
 	border-bottom: 2px #303030 solid;
 	display: inline-block;
-    vertical-align: baseline;
-    line-height: 1;
+  vertical-align: baseline;
+  line-height: 1;
 	text-decoration: none;
 	font-weight: 600;
 }
 
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
