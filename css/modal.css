@@ -91,7 +91,7 @@
 	}
 }
 
-/*//////////////////////////////////////////////////////////////////////////////////////*/
+/* small screens */
 
 @media screen and (max-width: 1080px) {
 	.modal {
@@ -177,7 +177,7 @@
 		cursor: pointer;
 	}
 
-	.popup a {
+	.modal__close-button {
 		text-decoration: none;
 	}
 }

@@ -1,6 +1,6 @@
 @media screen and (min-width: 1080px) {
 	body {
-		margin: 0 0 0 0;
+		margin: 0;
 	}
 
 	.header__menu {
@@ -235,7 +235,6 @@
 		font-family: 'Ubuntu';
 		font-size: 25px;
 		line-height: 1.2;
-		letter-spacing: 0;
 	}
 
 	.manifest__button {
@@ -253,18 +252,18 @@
 	}
 }
 
-/*//////////////////////////////////////////////////////////////////////////////////////*/
+/* small screens */
 
 @media screen and (max-width: 1079px) {
 	body {
 /*overflow-x: hidden;*/
 		width: 100%;
-		margin: 0 0 0 0;
+		margin: 0;
 		background-color: #dddddd;
 	}
 
 	header {
-		margin: 0 0 0 0;
+		margin: 0;
 	}
 
 	.header__menu {
@@ -311,7 +310,7 @@
 	.manifest__left {
 		width: auto;
 		height: 1024px;
-		margin: 0 0 0 0;
+		margin: 0;
 		background-color: #ffffff;
 		background-image: url('../images/space_table_blur2.jpg');
 	}
@@ -327,20 +326,18 @@
 	.manifest__content {
 		width: 930px;
 		height: 516px;
-		margin: 0 0 0 0;
+		margin: 0;
 	}
 
 	.manifest__text {
 		z-index: 3;
 		padding: 120px 0 0 45px;
-		margin: 0 0 0 0;
+		margin: 0;
 		color: #ffffff;
 		font-family: 'Ubuntu';
 		font-size: 60px;
 		line-height: 1.2;
-		letter-spacing: 0;
 	}
-
 
 	.manifest__button {
 		position: absolute;

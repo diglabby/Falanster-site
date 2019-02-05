@@ -1,11 +1,7 @@
 
 @media screen and (min-width: 1080px) {
 	body {
-		margin: 0 0 0 0;
-	}
-
-	#blog_content {
-		margin: 0 auto;
+		margin: 0;
 	}
 
 	.blog {
@@ -25,8 +21,6 @@
 	}
 
 	.blog__articles {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		margin-bottom: 100px;
 	}
@@ -39,7 +33,6 @@
 		font-size: 15px;
 		font-weight: 100;
 		letter-spacing: 1px;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
@@ -57,7 +50,6 @@
 	.blog__article-link--main:hover {
 		color: #ff6600;
 		text-decoration: none;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
@@ -85,8 +77,6 @@
 	}
 
 	.blog__article-info {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -103,21 +93,18 @@
 		font-size: 19px;
 		font-weight: 400;
 		letter-spacing: 1px;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
 	.blog__article-link {
 		color: #333333;
 		text-decoration: none;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
 	.blog__article-link:hover {
 		color: #ff6600;
 		text-decoration: none;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
@@ -143,23 +130,21 @@
 		text-decoration: none;
 		vertical-align: baseline;
 		border-bottom: 2px #303030 solid;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
 	.blog__more-link:hover {
 		border-bottom: 2px #ffffff solid;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 }
 
 
-/*//////////////////////////////////////////////////////////////////////////////////////*/
+/* small screens  */
 
 @media screen and (max-width: 1079px) {
 	body {
-		margin: 0 0 0 0;
+		margin: 0;
 		background-color: #dddddd;
 	}
 
@@ -190,10 +175,10 @@
 
 	.blog__articles {
 		display: inline;
-		margin: 0 0 0 0;
+		margin: 0;
 	}
 
-	.blog__articles img {
+	.blog__article-image {
 		width: 798px;
 		height: 477px;
 		margin-top: 30px;
@@ -220,7 +205,6 @@
 	.blog__article-link--main {
 		color: #333333;
 		text-decoration: none;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
@@ -259,7 +243,6 @@
 	.blog__article-link {
 		color: #333333;
 		text-decoration: none;
-		-webkit-transition: 0.2s;
 		transition: 0.2s;
 	}
 
@@ -268,7 +251,7 @@
 	}
 
 	.blog__more {
-		margin: 0 0 0 0;
+		margin: 0;
 	}
 
 	.blog__more-link {
