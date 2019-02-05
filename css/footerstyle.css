@@ -7,6 +7,8 @@ body{
 
 .prefooter{
 	margin-top: 35px;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
 }
 
@@ -18,7 +20,6 @@ body{
 	font-family:'Ubuntu';
 	font-size:30px;
 	-webkit-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
-	-moz-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	cursor: pointer;
 }
@@ -60,6 +61,8 @@ body{
 
 
 footer{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 177px;
 	width: auto;
@@ -71,6 +74,8 @@ footer{
 }
 
 .footer__container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	background: url('../images/footerlogo.jpg') no-repeat 0 30px;
 }
@@ -111,15 +116,19 @@ footer{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .footer__social-link img {
+	-webkit-transition: 200ms;
 	transition: 200ms;
 }
 
 .footer__social-link:hover img {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .vk-icon {
@@ -164,7 +173,8 @@ footer{
 }
 
 .footer__subscribe input{
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 195px;
 	height: 40px;
 	border-radius: 3px;
@@ -186,7 +196,8 @@ input[type="email"]{
 
 .footer__subscribe-button {
 	display: inline-block;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	text-align: center;
 	vertical-align: top;
 	width: 48px;
@@ -217,11 +228,12 @@ body{
 
 .prefooter {
 	margin: 0 0 0 0;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width:  100%;
 	height: 800px;
 	-webkit-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
-	-moz-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);
 	background-color:#FF6600;
 
@@ -229,13 +241,17 @@ body{
 
 .withoutshadow{
 	margin: 0 0 0 0;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width:  100%;
 	height: 800px;
 	background-color:#FF6600;
 }
 
 .blog__article-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -251,7 +267,8 @@ body{
 	margin: 0 0 0 0;
 	height: 410px;
 	font-size: 58px;
-	box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);
+	-webkit-box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);
+	        box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);
 }
 
 .prefooter__heading {
@@ -285,6 +302,8 @@ footer{
 }
 
 .footer__container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	background: url('../images/footerlogo.jpg') no-repeat 45px 80px;
 	background-size: 135px 135px;
@@ -337,6 +356,8 @@ footer{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -391,7 +412,8 @@ padding-left: 40px;
 }
 
 .footer__subscribe input{
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 500px;
 	height: 100px;
 	border-radius: 1px;
@@ -413,7 +435,8 @@ input[type="email"]{
 
 .footer__subscribe-button {
 	display: inline-block;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	text-align: center;
 	vertical-align: top;
 	margin: 0 0 0 35px;
