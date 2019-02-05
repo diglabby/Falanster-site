@@ -38,7 +38,7 @@
 
 	.header__controls-link--form {
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 16px;
 		text-decoration: none;
 	}
@@ -63,7 +63,7 @@
 
 	.header__controls-link--help {
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 16px;
 		text-decoration: none;
 	}
@@ -96,7 +96,7 @@
 		padding: 9px 25px 9px 25px;
 		margin-left: 20px;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 16px;
 		font-weight: bold;
 		text-decoration: none;
@@ -114,7 +114,7 @@
 
 	.header__language-item {
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 11px;
 		font-weight: 700;
 		line-height: 14px;
@@ -165,7 +165,7 @@
 
 	.header__nav-item {
 		margin-left: -8px;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 18px;
 	}
 
@@ -232,7 +232,7 @@
 		z-index: 3;
 		margin: 215px 0 0 63px;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 25px;
 		line-height: 1.2;
 	}
@@ -243,7 +243,7 @@
 		padding: 15px 25px 18px 25px;
 		margin: 420px 0 0 63px;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 18px;
 		font-weight: bold;
 		text-decoration: none;
@@ -256,7 +256,6 @@
 
 @media screen and (max-width: 1079px) {
 	body {
-/*overflow-x: hidden;*/
 		width: 100%;
 		margin: 0;
 		background-color: #dddddd;
@@ -334,7 +333,7 @@
 		padding: 120px 0 0 45px;
 		margin: 0;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 60px;
 		line-height: 1.2;
 	}
@@ -345,7 +344,7 @@
 		padding: 35px 35px 38px 35px;
 		margin: 80px 0 0 45px;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 45px;
 		font-weight: bold;
 		text-decoration: none;

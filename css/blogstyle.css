@@ -14,7 +14,7 @@
 		margin-bottom: 45px;
 		margin-left: 0;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 60px;
 		letter-spacing: 1px;
 		text-shadow: 2px 2px 0 #ff6600;
@@ -29,7 +29,7 @@
 		width: 490px;
 		margin-left: 0;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 15px;
 		font-weight: 100;
 		letter-spacing: 1px;
@@ -89,7 +89,7 @@
 		width: 430px;
 		margin-bottom: 3px;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 19px;
 		font-weight: 400;
 		letter-spacing: 1px;
@@ -124,7 +124,7 @@
 		display: inline-block;
 		margin: 5px 0 0 75px;
 		color: #090909;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 19px;
 		line-height: 1;
 		text-decoration: none;
@@ -140,7 +140,7 @@
 }
 
 
-/* small screens  */
+/* small screens */
 
 @media screen and (max-width: 1079px) {
 	body {
@@ -163,7 +163,7 @@
 		margin-bottom: 35px;
 		margin-left: 30px;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 88px;
 		letter-spacing: 2px;
 		text-shadow: 2px 2px 0 #ff6600;
@@ -190,7 +190,7 @@
 		width: auto;
 		margin-left: 0;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 33px;
 		font-weight: 100;
 		letter-spacing: 1px;
@@ -226,7 +226,7 @@
 		width: auto;
 		margin-left: 0;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 33px;
 		font-weight: 100;
 		letter-spacing: 1px;
@@ -258,7 +258,7 @@
 		display: inline-block;
 		margin: 35px 0 120px 30px;
 		color: #090909;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 45px;
 		font-weight: 600;
 		line-height: 1;
