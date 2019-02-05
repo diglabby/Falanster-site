@@ -12,6 +12,7 @@
 		background-color: #333333;
 		line-height: 1.5;
 		z-index:9999;
+		-webkit-transition: left 0.3s;
 		transition: left 0.3s;
 		position: fixed;
 	}
@@ -31,7 +32,7 @@
 	.mobile-menu__item {
 		color: white;
 		font-size: 55px;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 	}
 
 	.mobile-menu__link {
@@ -56,6 +57,8 @@
 	}
 
 	.mobile-menu__language {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -65,7 +68,7 @@
 		padding-right: 40px;
 		padding-bottom: 25px;
 		font-size: 45px;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 	}
 
 	.mobile-menu__language-link {
