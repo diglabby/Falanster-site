@@ -10,10 +10,10 @@
 	}
 
 	.projects-image-right {
-		width: 230px !important;
-		height: 756px !important;
-		margin-top: 0 !important;
-		background-size: 230px 756px !important;
+		width: 230px;
+		height: 756px;
+		margin-top: 0;
+		background-size: 230px 756px;
 	}
 
 	.projects__items-row:nth-child(2) {
