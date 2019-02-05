@@ -433,7 +433,7 @@
 	}
 
 	.footer__license--big {
-		position: absolute;
+		display: block;
 		width: 266px;
 		height: 94px;
 		margin-top: 55px;
