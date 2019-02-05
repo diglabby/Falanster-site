@@ -1,8 +1,8 @@
 
 var last_btn = 'btn1';
-var last_block = 'project1';
+var last_block = '.projects__item1';
 
-document.getElementById('project1').classList.add("projects__item--visible");
+document.querySelector('.projects__item1').classList.add("projects__item--visible");
 document.getElementById('btn1').classList.add("projects__button--active");
 
 document.getElementById('btn1').onclick = button_click;
@@ -15,30 +15,30 @@ function  button_click(e){
 
 	e.target.classList.remove("projects__button--basic");
 	e.target.classList.add("projects__button--active");
-	document.getElementById(last_block).classList.remove("projects__item--visible");
+	document.querySelector(last_block).classList.remove("projects__item--visible");
 	document.getElementById(last_btn).classList.remove("projects__button--active");
 	document.getElementById(last_btn).classList.add("projects__button--basic");
 
 	switch(e.target.id){
 		case 'btn1':
-			document.getElementById('project1').classList.add("projects__item--visible");
+			document.querySelector('.projects__item1').classList.add("projects__item--visible");
 			last_btn = 'btn1';
-			last_block = 'project1';
+			last_block = '.projects__item1';
 			break;
 		case 'btn2':
-			document.getElementById('project2').classList.add("projects__item--visible");
+			document.querySelector('.projects__item2').classList.add("projects__item--visible");
 			last_btn = 'btn2';
-			last_block = 'project2';
+			last_block = '.projects__item2';
 			break;
 		case 'btn3':
-			document.getElementById('project3').classList.add("projects__item--visible");
+			document.querySelector('.projects__item3').classList.add("projects__item--visible");
 			last_btn = 'btn3';
-			last_block = 'project3';
+			last_block = '.projects__item3';
 			break;
 		case 'btn4':
-			document.getElementById('project4').classList.add("projects__item--visible");
+			document.querySelector('.projects__item4').classList.add("projects__item--visible");
 			last_btn = 'btn4';
-			last_block = 'project4';
+			last_block = '.projects__item4';
 			break;
 	}
 }

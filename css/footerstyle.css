@@ -70,7 +70,6 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		background: url('../images/footerlogo.jpg') no-repeat 0 30px;
 	}
 	
 	.footer__logo {
@@ -290,8 +289,6 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		background: url('../images/footerlogo.jpg') no-repeat 45px 80px;
-		background-size: 135px 135px;
 	}
 
 	.footer__logo {

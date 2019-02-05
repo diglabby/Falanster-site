@@ -270,25 +270,25 @@
 		margin-left: 10%;
 	}
 
-	#project1 .projects__image {
+	.projects__item1 .projects__image {
 		width: 798px;
 		height: 477px;
 		content: url('../images/img111.jpg');
 	}
 
-	#project2 .projects__image {
+	.projects__item2 .projects__image {
 		width: 798px;
 		height: 477px;
 		content: url('../images/img444.jpg');
 	}
 
-	#project3 .projects__image {
+	.projects__item3 .projects__image {
 		width: 798px;
 		height: 477px;
 		content: url('../images/img222.jpg');
 	}
 
-	#project4 .projects__image {
+	.projects__item4 .projects__image {
 		width: 798px;
 		height: 477px;
 		content: url('../images/img333.jpg');
