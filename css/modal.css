@@ -27,7 +27,7 @@
 		display: block;
 		height: 78px;
 		margin-bottom: 5px;
-		color: rgb(51, 51, 51);
+		color: #333333;
 		font-family: Ubuntu;
 		font-size: 22.5px;
 		font-weight: 700;
@@ -37,7 +37,7 @@
 
 	.modal__popup-text {
 		display: block;
-		color: rgb(51, 51, 51);
+		color: #333333;
 		font-family: Ubuntu;
 		font-size: 17px;
 		letter-spacing: 1px;
@@ -119,7 +119,7 @@
 
 	.modal__popup-heading {
 		display: block;
-		color: rgb(51, 51, 51);
+		color: #333333;
 		font-family: Ubuntu;
 		font-size: 40px;
 		font-weight: 700;
@@ -129,7 +129,7 @@
 
 	.modal__popup-text {
 		display: block;
-		color: rgb(51, 51, 51);
+		color: #333333;
 		font-family: Ubuntu;
 		font-size: 30px;
 		letter-spacing: 1px;
