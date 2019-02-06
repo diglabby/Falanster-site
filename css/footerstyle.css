@@ -14,7 +14,7 @@
 		width: 50%;
 		height: 280px;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 30px;
 		background-color: #ff6600;
 		-webkit-box-shadow: 0 -1px 70px -5px rgba(0,0,0,0.42);
@@ -33,7 +33,7 @@
 	.prefooter__text--left {
 		margin: 0;
 		color: #333333;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 17px;
 		font-weight: bold;
 		line-height: 1.4;
@@ -45,7 +45,7 @@
 		width: 50%;
 		height: 280px;
 		color: #333333;
-		font-family: 'PT Sans';
+		font-family: 'PT Sans', Arial, sans-serif;
 		font-size: 17px;
 		background-color: #f5f5f5;
 	}
@@ -65,13 +65,13 @@
 		height: 177px;
 		background-color: #333333;
 	}
-	
+
 	.footer__container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 	}
-	
+
 	.footer__logo {
 		display: block;
 		margin: 31px 0 0 0;
@@ -88,7 +88,7 @@
 	.footer__menu-item {
 		margin: 7px 0 0 0;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 18px;
 		list-style-type: none;
 	}
@@ -105,7 +105,7 @@
 
 	.footer__social-title {
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 18px;
 	}
 
@@ -164,7 +164,7 @@
 		display: block;
 		margin: 1em 0;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 18px;
 	}
 
@@ -239,14 +239,6 @@
 		-webkit-box-pack: center;
 	}
 
-	.blog__article-image {
-		margin-left: 35px;
-	}
-
-	.blog__author {
-		margin-left: 40px;
-	}
-
 	.prefooter__left {
 		height: 410px;
 		margin: 0;
@@ -259,7 +251,7 @@
 		padding: 75px 0 0 50px;
 		margin: 0;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 1.5em;
 		font-weight: bold;
 		letter-spacing: 1px;
@@ -268,7 +260,7 @@
 	.prefooter__text--left {
 		margin: 35px 50px 0 55px;
 		color: #ffffff;
-		font-family: 'PT Sans';
+		font-family: 'PT Sans', Arial, sans-serif;
 		font-size: 45px;
 		font-weight: normal;
 		letter-spacing: 2px;
@@ -292,9 +284,9 @@
 	}
 
 	.footer__logo {
-		margin: 70px 0 0 45px;
-		height: 135px;
 		width: 135px;
+		height: 135px;
+		margin: 70px 0 0 45px;
 	}
 
 	.footer__menu {
@@ -309,7 +301,7 @@
 		width: 270px;
 		margin: 7px 0 0 0;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 35px;
 		line-height: 2;
 		list-style-type: none;
@@ -327,7 +319,7 @@
 
 	.footer__social-title {
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 42px;
 	}
 
@@ -385,7 +377,7 @@
 		display: block;
 		margin: 1em 0;
 		color: #ffffff;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 45px;
 	}
 
@@ -415,7 +407,7 @@
 		padding: 32px 35px 30px 33px;
 		margin: 0 0 0 35px;
 		color: #848484;
-		font-family: 'Ubuntu';
+		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 35px;
 		font-weight: bold;
 		letter-spacing: 1px;
