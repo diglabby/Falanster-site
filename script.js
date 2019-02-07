@@ -259,7 +259,7 @@ setCorrectViewPort();
 const validateEmail = (email) => {
   const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
   const input = email || document.querySelector('.footer__email-input').value;
-  let validate = () => { return reg.test(input) ? true : false; }
+  let validate = () => { return reg.test(input) ? true : false };
   return validate();
 };
 // <-- validate email -->
@@ -293,34 +293,12 @@ input.addEventListener('input', (e) => {
 // <-- subscribe form -->
 const subscribeForm = () => {
   const subscribeBlock = document.querySelector('.footer__subscribe');
-  const modal = document.querySelector('.modal');
-
-  const close = (e) => {
-    const classesList = ['modal modal__popup_visible', 'modal__close-button'];
-    const eventCodes = ['Enter', 'Escape'];
-    e.preventDefault();
-    if ((classesList.includes(e.target.className)) || (eventCodes.includes(e.code))) {
-      hideModal('modal__popup_visible')
-    }
-  };
-
-  const showModal = async (className) => {
-    await modal.classList.add(className);
-    document.addEventListener('click', close);
-    document.addEventListener('keydown', close);
-  };
-
-  const hideModal = (className) => {
-    document.removeEventListener('click', close);
-    document.removeEventListener('keydown', close);
-    modal.classList.remove(className);
-  };
-
+  const form = document.querySelector('.validate');
 
   subscribeBlock.addEventListener('click', (e) => {
     e.preventDefault();
     if (e.target.className === 'footer__subscribe-button' && validateEmail()) {
-      showModal('modal__popup_visible');
+      form.submit();
       successEmail();
       input.value = '';
     } else {
@@ -331,6 +309,8 @@ const subscribeForm = () => {
 
 subscribeForm();
 // <-- end subscribe form -->
+
+
 
 
 
