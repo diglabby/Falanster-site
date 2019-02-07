@@ -256,13 +256,38 @@ setCorrectViewPort();
 
 
 // <-- validate email -->
-const validateEmail = () => {
+const validateEmail = (email) => {
   const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  const input = document.querySelector('.footer__email-input').value;
+  const input = email || document.querySelector('.footer__email-input').value;
   let validate = () => { return reg.test(input) ? true : false; }
   return validate();
 };
 // <-- validate email -->
+
+
+const input = document.querySelector('.footer__email-input');
+
+
+// <-- error & success email -->
+const errorEmail = () => {
+  input.classList.add('email-input_error');
+  if (input.value.length === 0) {
+    successEmail();
+  }
+};
+
+const successEmail = () => {
+  input.classList.remove('email-input_error');
+};
+// <-- error & success email -->
+
+
+// <-- input focus -->
+input.addEventListener('input', (e) => {
+  let email = e.target.value;
+  validateEmail(email) ? successEmail() : errorEmail();
+});
+// <-- input focus -->
 
 
 // <-- subscribe form -->
@@ -275,7 +300,7 @@ const subscribeForm = () => {
     const eventCodes = ['Enter', 'Escape'];
     e.preventDefault();
     if ((classesList.includes(e.target.className)) || (eventCodes.includes(e.code))) {
-      hideModal('modal__popup_visible');
+      hideModal('modal__popup_visible')
     }
   };
 
@@ -296,6 +321,9 @@ const subscribeForm = () => {
     e.preventDefault();
     if (e.target.className === 'footer__subscribe-button' && validateEmail()) {
       showModal('modal__popup_visible');
+      successEmail();
+    } else {
+      errorEmail();
     }
   });
 };
