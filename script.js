@@ -322,6 +322,7 @@ const subscribeForm = () => {
     if (e.target.className === 'footer__subscribe-button' && validateEmail()) {
       showModal('modal__popup_visible');
       successEmail();
+      input.value = '';
     } else {
       errorEmail();
     }
