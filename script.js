@@ -249,10 +249,20 @@ const setCorrectViewPort = () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
-}
+};
 
 setCorrectViewPort();
 // <-- the trick to correct sizing -->
+
+
+// <-- validate email -->
+const validateEmail = () => {
+  const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  const input = document.querySelector('.footer__email-input').value;
+  let validate = () => { return reg.test(input) ? true : false; }
+  return validate();
+};
+// <-- validate email -->
 
 
 // <-- subscribe form -->
@@ -284,11 +294,11 @@ const subscribeForm = () => {
 
   subscribeBlock.addEventListener('click', (e) => {
     e.preventDefault();
-    if (e.target.className === 'footer__subscribe-button') {
+    if (e.target.className === 'footer__subscribe-button' && validateEmail()) {
       showModal('modal__popup_visible');
     }
   });
-}
+};
 
 subscribeForm();
 // <-- end subscribe form -->
