@@ -118,11 +118,14 @@
 		width: 632px;
 		height: 800px;
 		margin: 10% auto;
-		background: #ffffff;
+    background: #ffffff;
+    transform: scale(1.4);
   }
 
   .modal__popup_visible {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 	.modal__popup-heading {
