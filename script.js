@@ -305,6 +305,17 @@ const subscribeForm = () => {
       errorEmail();
     }
   });
+
+  subscribeBlock.addEventListener('keydown', (e) => {
+    const eventCodes = ['Enter'];
+    if (eventCodes.includes(e.code) && e.target === 'INPUT' && validateEmail()) {
+      form.submit();
+      successEmail();
+      input.value = '';
+    } else {
+      errorEmail();
+    }
+  });
 };
 
 subscribeForm();
