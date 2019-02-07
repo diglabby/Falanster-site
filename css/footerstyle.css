@@ -185,6 +185,11 @@
     border: 1px solid #e85c41;
   }
 
+  .email-input_error:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(232, 92, 65, 0.6);
+    outline: 0 none;
+  }
+
 	::-webkit-input-placeholder {
 		padding-left: 0;
 		font-size: 15px;
@@ -400,6 +405,11 @@
 
   .email-input_error {
     border: 2px solid #e85c41;
+  }
+
+  .email-input_error:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(232, 92, 65, 0.6);
+    outline: 0 none;
   }
 
 	::-webkit-input-placeholder {
