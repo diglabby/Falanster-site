@@ -311,7 +311,7 @@ const subscribeForm = () => {
     }
   });
 
-  subscribeBlock.addEventListener('keypress', (e) => {
+  subscribeBlock.addEventListener('keydown', (e) => {
     const eventCodes = ['Enter'];
     if (eventCodes.includes(e.code) && e.target === 'INPUT' && validateEmail()) {
       form.submit();
