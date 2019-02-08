@@ -112,9 +112,9 @@
   }
 
   .header__controls-link--login:active {
-    color: #333;
+    color: #f60;
+    border-color: #f60;
     font-weight: normal;
-    background: #f60;
   }
 
 	.header__language {
