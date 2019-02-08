@@ -111,11 +111,6 @@
     transform: scale(1.05);
   }
 
-  .header__controls-link--login:active {
-    color: #f60;
-    border-color: #f60;
-  }
-
 	.header__language {
 		padding: 0;
 		margin: 0;
