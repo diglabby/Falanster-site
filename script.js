@@ -266,13 +266,11 @@ const validateEmail = (email) => {
 
 
 const input = document.querySelector('.footer__email-input');
-let stateLightBox = false;
+
 
 // <-- error & success email -->
 const errorEmail = () => {
-  if (stateLightBox) {
-    input.classList.add('email-input_error');
-  }
+  input.classList.add('email-input_error');
   if (input.value.length === 0) {
     successEmail();
   }
@@ -299,9 +297,6 @@ const subscribeForm = () => {
 
   subscribeBlock.addEventListener('click', (e) => {
     e.preventDefault();
-    if (e.target.className === 'footer__subscribe-button') {
-      stateLightBox = true;
-    }
     if (e.target.className === 'footer__subscribe-button' && validateEmail()) {
       form.submit();
       successEmail();
@@ -311,7 +306,7 @@ const subscribeForm = () => {
     }
   });
 
-  subscribeBlock.addEventListener('keypress', (e) => {
+  subscribeBlock.addEventListener('keydown', (e) => {
     const eventCodes = ['Enter'];
     if (eventCodes.includes(e.code) && e.target === 'INPUT' && validateEmail()) {
       form.submit();
