@@ -263,6 +263,16 @@
 		background-color: #ff6600;
 		border-radius: 3px;
 	}
+  	
+  .manifest__button:hover {
+   transform: scale(1.05);
+  }
+	
+  .manifest__button:active {
+  color: #f60;
+	background-color: #fff;
+  font-weight: normal;
+  }
 }
 
 /* small screens */
