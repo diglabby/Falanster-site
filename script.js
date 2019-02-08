@@ -274,6 +274,7 @@ const errorEmail = () => {
     input.classList.add('email-input_error');
   }
   if (input.value.length === 0) {
+		stateLightBox = false;
     successEmail();
   }
 };
