@@ -114,7 +114,6 @@
   .header__controls-link--login:active {
     color: #f60;
     border-color: #f60;
-    font-weight: normal;
   }
 
 	.header__language {
@@ -271,7 +270,6 @@
   .manifest__button:active {
   color: #f60;
 	background-color: #fff;
-  font-weight: normal;
   }
 }
 
