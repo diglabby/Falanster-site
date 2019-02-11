@@ -90,7 +90,7 @@
 
 /* content styles */
 
-.about__content img {
+.content img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -98,7 +98,7 @@
 	margin-bottom: 70px;
 }
 
-.about__content h2 {
+.content h2 {
 	margin-top: 0;
 	margin-bottom: 42px;
 	font-size: 24px;
@@ -106,7 +106,7 @@
 	line-height: 22px;
 }
 
-.about__content h3 {
+.content h3 {
 	margin-top: 0;
 	margin-bottom: 25px;
 	font-size: 20px;
@@ -114,7 +114,7 @@
 	line-height: 22px;
 }
 
-.about__content p {
+.content p {
 	margin-top: 0;
 	margin-bottom: 35px;
 	font-size: 16px;
@@ -122,16 +122,16 @@
 	line-height: 22px;
 }
 
-.about__content .intro-paragraph {
+.content .intro-paragraph {
 	margin-bottom: 50px;
 }
 
-.about__content a {
+.content a {
 	color: #333333;
 	text-decoration: underline;
 }
 
-.about__content .link-color {
+.content .link-color {
 	color: #ff6600;
 }
 
