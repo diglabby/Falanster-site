@@ -420,6 +420,11 @@ body {
 	}
 }
 
+.container-inner {
+	width: 778px;
+	margin: 0 auto;
+}
+
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 	width: 1px;
