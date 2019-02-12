@@ -102,25 +102,18 @@ function close_btn_fun(){
 	mobnav.style.left = "-100%";
 };
 
-document.querySelector('.prefooter__left').onclick = pref_fun;
+const prefooterLeft = document.querySelector('.prefooter__left');
 
-function pref_fun(e){
-	if( window.innerWidth >= 1080){
-		if(e.currentTarget.style.background === "white"){
-			e.currentTarget.style.background = "#ff6600";
-			e.currentTarget.style.color = "white";
-			e.currentTarget.style.transition = "0.05s";
-			e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);";
-		}
-		else{
-			e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);";
-			e.currentTarget.style.background = "white";
-			e.currentTarget.style.color = "#ff6600";
-			e.currentTarget.style.transition = "0.05s";
-		}
-		window.location='https://falanster.by/be/volunteers';
+prefooterLeft.addEventListener('load', () => {
+  prefooterLeft.classList.remove('prefooter__left_active');
+});
+
+prefooterLeft.addEventListener('click', async () => {
+  if(window.innerWidth >= 1080){
+    await prefooterLeft.classList.add('prefooter__left_active');
+    window.location='https://falanster.by/be/volunteers';
 	}
-};
+});
 
 document.querySelector('.prefooter').onclick = mob_pref_fun;
 
