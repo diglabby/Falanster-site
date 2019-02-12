@@ -102,29 +102,6 @@ function close_btn_fun(){
 	mobnav.style.left = "-100%";
 };
 
-const prefooterLeft = document.querySelector('.prefooter__left');
-
-if ('onhashchange' in window) {
-  prefooterLeft.classList.remove('prefooter__left_active');
-}
-
-prefooterLeft.addEventListener('click', async () => {
-  if(window.innerWidth >= 1080){
-    await prefooterLeft.classList.add('prefooter__left_active');
-    window.location='https://falanster.by/be/volunteers';
-	}
-});
-
-document.querySelector('.prefooter').onclick = mob_pref_fun;
-
-function mob_pref_fun(e){
-	if( window.innerWidth < 1080){
-		e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);";
-		
-		window.location='https://falanster.by/be/volunteers';
-	}
-};
-
 document.querySelector('.button-hamburger').onclick = open_fun;
 
 function open_fun(){
@@ -136,6 +113,14 @@ document.querySelector('.button-close').onclick = close_fun;
 function close_fun(){
 	document.querySelector('.mobile-menu').style.left = "-100%";
 }
+
+const prefooterLeft = document.querySelector('.prefooter__left');
+
+prefooterLeft.addEventListener('click', () => {
+  if (window.innerWidth >= 1080) {
+    prefooterLeft.classList.add('prefooter__left_active');
+  }
+});
 
 document.querySelector('.blog__more-link').onclick = blog_fun;
 
