@@ -104,7 +104,7 @@ function close_btn_fun(){
 
 const prefooterLeft = document.querySelector('.prefooter__left');
 
-prefooterLeft.addEventListener('load', () => {
+window.addEventListener('hashchange', () => {
   prefooterLeft.classList.remove('prefooter__left_active');
 });
 
