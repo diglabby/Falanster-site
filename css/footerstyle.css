@@ -30,8 +30,8 @@
   }
 
   .prefooter__left:visited {
-		color: #ffffff;
-		background-color: #ff6600;
+		color: #ffffff !important;
+		background-color: #ff6600 !important;
   }
 
 	.prefooter__heading {
