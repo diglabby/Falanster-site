@@ -122,6 +122,10 @@ prefooterLeft.addEventListener('click', () => {
   }
 });
 
+window.onunload = () => {
+  prefooterLeft.classList.remove('prefooter__left_active');
+};
+
 document.querySelector('.blog__more-link').onclick = blog_fun;
 
 function blog_fun(e){
