@@ -19,7 +19,6 @@
 		background-color: #ff6600;
 		-webkit-box-shadow: 0 -1px 70px -5px rgba(0,0,0,0.42);
 		        box-shadow: 0 -1px 70px -5px rgba(0,0,0,0.42);
-    cursor: pointer;
   }
 
   .prefooter__left_active {
@@ -28,6 +27,11 @@
 		background-color: #ffffff;
 		-webkit-box-shadow: 0 -1px 70px -5px rgba(0,0,0,0);;
 		        box-shadow: 0 -1px 70px -5px rgba(0,0,0,0);;
+  }
+
+  .prefooter__left:visited {
+		color: #ffffff;
+		background-color: #ff6600;
   }
 
 	.prefooter__heading {
