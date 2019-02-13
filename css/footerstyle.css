@@ -181,6 +181,15 @@
 		border-radius: 3px;
   }
 
+  .footer__email-input::-ms-clear {
+    display: none;
+  }
+
+  .footer__email-input:focus {
+    box-shadow:  0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(51, 143, 255, 0.6);
+    outline: 0 none;
+  }
+
   .email-input_error {
     border: 1px solid #e85c41;
   }
@@ -401,6 +410,15 @@
 		background-color: #333333;
 		border: 1px #ffffff solid;
 		border-radius: 1px;
+  }
+
+  .footer__email-input::-ms-clear {
+    display: none;
+  }
+
+  .footer__email-input:focus {
+    box-shadow:  0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(51, 143, 255, 0.6);
+    outline: 0 none;
   }
 
   .email-input_error {
