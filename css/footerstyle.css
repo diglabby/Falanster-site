@@ -19,8 +19,15 @@
 		background-color: #ff6600;
 		-webkit-box-shadow: 0 -1px 70px -5px rgba(0,0,0,0.42);
 		        box-shadow: 0 -1px 70px -5px rgba(0,0,0,0.42);
-		cursor: pointer;
-	}
+  }
+
+  .prefooter__left_active {
+    animation: prefooterLeft 3s 1s;
+    color: #ff6600;
+		background-color: #ffffff;
+		-webkit-box-shadow: 0 -1px 70px -5px rgba(0,0,0,0);;
+		        box-shadow: 0 -1px 70px -5px rgba(0,0,0,0);;
+  }
 
 	.prefooter__heading {
 		float: right;
@@ -37,8 +44,8 @@
 		font-size: 17px;
 		font-weight: bold;
 		line-height: 1.4;
-		letter-spacing: 1px;
-		visibility: hidden;
+    letter-spacing: 1px;
+    visibility: hidden;
 	}
 
 	.prefooter__right {
@@ -239,7 +246,7 @@
 		width: 100%;
 		height: 800px;
 		margin: 0;
-		background-color: #ff6600;
+    background-color: #ff6600;
 		-webkit-box-shadow: 0 -1px 70px -5px rgba(0,0,0,0.42);
 		        box-shadow: 0 -1px 70px -5px rgba(0,0,0,0.42);
 
@@ -260,7 +267,8 @@
 	.prefooter__left {
 		height: 410px;
 		margin: 0;
-		font-size: 58px;
+    font-size: 58px;
+    text-decoration: none;
 		-webkit-box-shadow: 0 -1px 70px -5px rgba(0,0,0,0);
 		        box-shadow: 0 -1px 70px -5px rgba(0,0,0,0);
 	}
@@ -281,7 +289,7 @@
 		font-family: 'PT Sans', Arial, sans-serif;
 		font-size: 45px;
 		font-weight: normal;
-		letter-spacing: 2px;
+    letter-spacing: 2px;
 		visibility: visible;
 	}
 
