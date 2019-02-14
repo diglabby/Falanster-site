@@ -131,8 +131,14 @@
 	text-decoration: underline;
 }
 
-.content .link-color {
+.content a:hover,
+.content a:focus {
 	color: #ff6600;
+}
+
+.content a:active {
+	color: #ff6600;
+	text-decoration: none;
 }
 
 /* end of content styles */
