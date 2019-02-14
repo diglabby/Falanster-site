@@ -416,7 +416,7 @@
 		font-size: 40px;
 		background-color: #333333;
 		border: 1px #ffffff solid;
-		border-radius: 1px;
+		border-radius: 3px;
   }
 
   .footer__email-input::-ms-clear {
