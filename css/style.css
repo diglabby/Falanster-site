@@ -35,7 +35,8 @@ body {
 
 @media screen and (min-width: 1080px) {
 	body {
-		margin: 0;
+    overflow-x: hidden;
+    margin: 0;
 	}
 
 	.projects {

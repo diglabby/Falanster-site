@@ -73,6 +73,59 @@ function out_func(e){
 }
 
 
+
+window.onscroll = function(){stickyNav(); autoclose_fun()};
+
+function stickyNav(){
+	var navigationbar = document.querySelector(".header__nav");
+	var navbar_settop = navigationbar.offsetTop;
+	if(window.pageYOffset > navbar_settop + 8){
+		navigationbar.classList.add("sticky");
+	}
+	else{
+		navigationbar.classList.remove("sticky");
+	}
+};
+
+function autoclose_fun(){
+	var mobnav = document.querySelector('.mobile-menu');
+	var settop = mobnav.offsetTop;
+	if(window.pageYOffset > settop + 300){
+		mobnav.style.left = "-100%";
+	}
+};
+
+document.querySelector('.mobile-menu__links').onclick = close_btn_fun;
+
+function close_btn_fun(){
+	var mobnav = document.querySelector('.mobile-menu');
+	mobnav.style.left = "-100%";
+};
+
+document.querySelector('.button-hamburger').onclick = open_fun;
+
+function open_fun(){
+	document.querySelector('.mobile-menu').style.left = 0;
+}
+
+document.querySelector('.button-close').onclick = close_fun;
+
+function close_fun(){
+	document.querySelector('.mobile-menu').style.left = "-100%";
+}
+
+const prefooterLeft = document.querySelector('.prefooter__left');
+
+prefooterLeft.addEventListener('click', () => {
+  if (window.innerWidth >= 1080) {
+    prefooterLeft.classList.add('prefooter__left_active');
+  }
+});
+
+window.onunload = () => {
+  prefooterLeft.classList.remove('prefooter__left_active');
+};
+
 document.querySelector('.blog__more-link').onclick = blog_fun;
 
 function blog_fun(e){
@@ -125,37 +178,6 @@ function article_click3(){
 };
 
 
-document.querySelector('.prefooter__left').onclick = pref_fun;
-
-function pref_fun(e){
-	if( window.innerWidth >= 1080){
-		if(e.currentTarget.style.background === "white"){
-			e.currentTarget.style.background = "#ff6600";
-			e.currentTarget.style.color = "white";
-			e.currentTarget.style.transition = "0.05s";
-			e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0.42);";
-		}
-		else{
-			e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);";
-			e.currentTarget.style.background = "white";
-			e.currentTarget.style.color = "#ff6600";
-			e.currentTarget.style.transition = "0.05s";
-		}
-		window.location='https://falanster.by/be/volunteers';
-	}
-};
-
-document.querySelector('.prefooter').onclick = mob_pref_fun;
-
-function mob_pref_fun(e){
-	if( window.innerWidth < 1080){
-		e.currentTarget.style.cssText = "box-shadow: 0px -1px 70px -5px rgba(0,0,0,0);";
-		
-		window.location='https://falanster.by/be/volunteers';
-	}
-};
-
-
 // <-- start touchSlider -->
 
 function touchSlider() {
@@ -198,6 +220,21 @@ function touchSlider() {
 touchSlider();
 
 // <-- end touchSlider -->
+
+
+// <-- the trick to correct sizing -->
+const setCorrectViewPort = () => {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+	window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+};
+
+setCorrectViewPort();
+// <-- the trick to correct sizing -->
 
 
 // <-- validate email -->
@@ -272,3 +309,17 @@ const subscribeForm = () => {
 
 subscribeForm();
 // <-- end subscribe form -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
