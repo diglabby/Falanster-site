@@ -53,3 +53,23 @@ const setCorrectViewPort = () => {
 
 setCorrectViewPort();
 // <-- the trick to correct sizing -->
+
+
+
+// <--  scroll into view -->
+var scrollDownBtn = document.querySelector('.btn-scroll');
+
+function handleButtonClick() {
+	const contentBlock = document.querySelector('.content');
+	const headerOffset = parseInt(getComputedStyle(document.querySelector('.header__nav')).height, 10);
+	const contentPosition = contentBlock.getBoundingClientRect().top;
+	const offsetPosition = contentPosition - headerOffset;
+	
+	window.scrollTo({
+		top: offsetPosition,
+		behavior: "smooth"
+	});
+}
+
+scrollDownBtn.addEventListener('click', handleButtonClick);
+// <--  scroll into view -->

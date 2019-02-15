@@ -154,10 +154,10 @@
 
   <main>
     <section class="banner">
-      <div class="banner__photo banner__photo--event">
+      <div class="banner__photo" style="background-image: url('./images/event-bg.jpg');">
         <div class="banner__container container-inner">
-          <div class="banner__header">
-            <h1>Назва мерапрыемства</h1>
+          <div class="banner__text">
+            <h1 class="banner__heading">Назва мерапрыемства</h1>
             <p class="banner__info">
               <span class="banner__date">
                 серада, 23.10.2018
@@ -167,16 +167,21 @@
               </span>
             </p>
           </div>
+
+          <div class="banner__links">
+            <a class="banner__link banner__link--prev" href="#">Папярэдняе мерапрыемства</a>
+            <a class="banner__link banner__link--next" href="#">Наступнае мерапрыемства</a>
+          </div>
           
-          <a class="banner__btn-scroll btn-scroll" href="#about">Далей</a>
+          <button class="banner__btn-scroll btn-scroll" type="button">Далей</button>
           <p class="banner__date-block">22 cтудзеня 19:00</p>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="content">
       <div class="container-inner">
-        <article class="content">
+        <article class="content__text">
           <p class="intro-paragraph">Толькі ўяві: ты, душэўны і сябравіты, жадаеш накарміць смачнымі дранікамі ўвесь
             навакольны свет. Гатаваць
             самому, канешне, сэнсу няма, а вось навучыць рэцепту – справа іншая. Ты робіш дранікаблог, куды ўжо гатовы
@@ -211,7 +216,7 @@
 
           <img src="./images/event-photo.jpg" alt="" width="778" height="438">
         </article>
-        <a class="about__btn" href="https://falanster.by/be/volunteers">Стань валанцёрам!</a>
+        <a class="content__btn" href="https://falanster.by/be/volunteers">Стань валанцёрам!</a>
       </div>
     </section>
   </main>

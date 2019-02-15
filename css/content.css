@@ -9,22 +9,9 @@
 	height: calc(100vh - 67px);
 	margin-top: -260px;
 	background: #333333;
-	background-image: url('../images/about-us.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
-}
-
-.banner__photo--project {
-	background-image: url('../images/project-bg.jpg');
-}
-
-.banner__photo--project {
-	background-image: url('../images/project-bg.jpg');
-}
-
-.banner__photo--event {
-	background-image: url('../images/event-bg.jpg');
 }
 
 .banner__photo::before {
@@ -45,6 +32,8 @@
 	margin-top: -260px;
 }
 
+
+/* 
 .banner__heading {
 	position: absolute;
 	top: 50%;
@@ -56,9 +45,9 @@
 	line-height: normal;
 	vertical-align: middle;
 	transform: translate(-50%, -50%);
-}
+} */
 
-.banner__header {
+.banner__text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -69,7 +58,7 @@
 	transform: translate(-50%, -50%);
 }
 
-.banner__header h1 {
+.banner__heading {
 	margin: 0;
 	margin-bottom: 70px;
 	font-size: 60px;
@@ -94,10 +83,14 @@
 	width: 40px;
 	height: 40px;
 	font-size: 0;
+	background-color: transparent;
 	background-image: url('../images/arrow-down.png');
 	background-repeat: no-repeat;
 	background-size: 40px 40px;
+	border: none;
+	outline: none;
 	transform: translate(-50%, 0);
+	cursor: pointer;
 }
 
 .banner__date-block,
@@ -127,7 +120,7 @@
 	vertical-align: middle;
 }
 
-.about {
+.content {
 	padding-top: 100px;
 	margin-bottom: 110px;
 	color: #333333;
@@ -137,7 +130,7 @@
 	background-size: 100%;
 }
 
-.about__btn {
+.content__btn {
 	display: block;
 	width: 420px;
 	padding: 12px;
@@ -151,11 +144,11 @@
 	background-color: #ff6600;
 	border: 2px solid #ff6600;
 	border-radius: 3px;
-	transition: all 0.2s ease-in;
+	transition: all 0.25s ease-in;
 }
 
-.about__btn:hover,
-.about__btn:active {
+.content__btn:hover,
+.content__btn:active {
 	color: #ff6600;
 	background-color: #ffffff;
 }
@@ -163,7 +156,7 @@
 
 /* content styles */
 
-.content img {
+.content__text img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -171,7 +164,7 @@
 	margin-bottom: 70px;
 }
 
-.content h2 {
+.content__text h2 {
 	margin-top: 0;
 	margin-bottom: 42px;
 	font-size: 24px;
@@ -179,7 +172,7 @@
 	line-height: 22px;
 }
 
-.content h3 {
+.content__text h3 {
 	margin-top: 0;
 	margin-bottom: 25px;
 	font-size: 20px;
@@ -187,7 +180,7 @@
 	line-height: 22px;
 }
 
-.content p {
+.content__text p {
 	margin-top: 0;
 	margin-bottom: 35px;
 	font-size: 16px;
@@ -195,21 +188,21 @@
 	line-height: 22px;
 }
 
-.content .intro-paragraph {
+.content__text .intro-paragraph {
 	margin-bottom: 50px;
 }
 
-.content a {
+.content__text a {
 	color: #333333;
 	text-decoration: underline;
 }
 
-.content a:hover,
-.content a:focus {
+.content__text a:hover,
+.content__text a:focus {
 	color: #ff6600;
 }
 
-.content a:active {
+.content__text a:active {
 	color: #ff6600;
 	text-decoration: none;
 }
