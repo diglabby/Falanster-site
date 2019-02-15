@@ -61,7 +61,7 @@ var scrollDownBtn = document.querySelector('.btn-scroll');
 
 function handleButtonClick() {
 	const contentBlock = document.querySelector('.content');
-	const headerOffset = parseInt(getComputedStyle(document.querySelector('.header__nav')).height, 10);
+	const headerOffset = parseInt(getComputedStyle(document.querySelector('.header__menu')).height, 10);
 	const contentPosition = contentBlock.getBoundingClientRect().top;
 	const offsetPosition = contentPosition - headerOffset;
 	
