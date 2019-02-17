@@ -145,6 +145,10 @@
 
 /* content styles */
 
+.content__text {
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
 .content__text img {
 	display: block;
 	width: 100%;
