@@ -236,7 +236,6 @@ body {
 @media screen and (max-width: 1079px) {
 	body {
 		margin: 0;
-		background-color: #dddddd;
 	}
 
 	.projects {
