@@ -62,11 +62,9 @@
   grid-area: calendar;
   width: 360px;
   height: 530px;
-  background-color: #ececec;
 }
 
 .module-doika {
   grid-area: doika;
   height: 270px;
-  background-color: #333;
 }
