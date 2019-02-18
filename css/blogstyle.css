@@ -152,17 +152,12 @@
 @media screen and (max-width: 1079px) {
 	body {
 		margin: 0;
-		background-color: #dddddd;
 	}
 
 	.blog {
 		width: auto;
 		height: auto;
 		background-color: white;
-	}
-
-	.calendar {
-		display: none;
 	}
 
 	.blog__heading {
