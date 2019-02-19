@@ -215,7 +215,8 @@
 	.manifest__container {
 		display: flex;
 		width: 100%;
-		height: calc(100vh - 66px);
+    height: calc(100vh - 66px);
+    min-height: 690px;
 		margin: 0;
 	}
 
@@ -228,18 +229,21 @@
 
 	.manifest__left .manifest__content {
 		display: none;
-	}
+  }
+
+  .manifest__right .manifest__content {
+    margin: 215px 0 0 63px;
+  }
 
 	.manifest__right {
 		width: 50%;
 		height: 100%;
     background: #121212 url('../images/background.jpg') no-repeat top right;
+    background-size: cover;
 	}
 
 	.manifest__text {
-		position: absolute;
-		z-index: 3;
-		margin: 215px 0 0 63px;
+    margin: 0 0 25px 0;
 		color: #ffffff;
 		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 25px;
@@ -247,23 +251,21 @@
 	}
 
 	.manifest__button {
-		position: absolute;
-		z-index: 3;
-		padding: 15px 25px 18px 25px;
-		margin: 420px 0 0 63px;
+    padding: 15px 25px 18px 25px;
 		color: #ffffff;
 		font-family: 'Ubuntu', Arial, sans-serif;
 		font-size: 18px;
 		font-weight: bold;
 		text-decoration: none;
 		background-color: #ff6600;
-		border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
 	}
-  	
+
   .manifest__button:hover {
-   transform: scale(1.05);
+    transform: scale(1.05);
   }
-	
+
   .manifest__button:active {
   color: #f60;
 	background-color: #fff;
