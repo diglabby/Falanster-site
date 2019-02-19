@@ -1,14 +1,21 @@
+.text--center {
+  text-align: center;
+}
+
 .banner {
   font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 .banner__photo {
+  position: relative;
 	width: 100%;
 	height: calc(100vh - 66px);
 	background: #333333;
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .banner__photo::before {
@@ -20,7 +27,10 @@
 }
 
 .banner__container {
-	height: calc(100vh - 67px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
 }
 
 .banner__text {
@@ -36,10 +46,11 @@
 }
 
 .banner__heading {
-	margin: 0;
+	margin: 0 0 68px 0;
 	font-size: 60px;
   line-height: 68px;
   font-weight: 500;
+  width: 778px;
 }
 
 .banner__info {

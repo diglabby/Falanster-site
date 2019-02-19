@@ -70,3 +70,16 @@ if (!!scrollDownBtn) {
 // <--  scroll into view -->
 
 
+//<-- title styles modificator -->
+const bannerHeading = document.querySelector('.banner__heading');
+const isOverflowed = (el) => {
+  if (el.scrollHeight > 68) {
+    el.classList.remove('text--center');
+  };
+};
+if (!!bannerHeading) {
+  isOverflowed(bannerHeading);
+}
+//<-- title styles modificator -->
+
+
