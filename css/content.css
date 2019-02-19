@@ -79,6 +79,14 @@
 	cursor: pointer;
 }
 
+.banner__btn-scroll_pseudo {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+}
+
 .banner__date-block,
 .banner__status {
 	position: absolute;

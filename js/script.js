@@ -57,19 +57,16 @@ setCorrectViewPort();
 
 
 // <--  scroll into view -->
-var scrollDownBtn = document.querySelector('.btn-scroll');
-
-function handleButtonClick() {
-	const contentBlock = document.querySelector('.content');
-	const headerOffset = parseInt(getComputedStyle(document.querySelector('.header__menu')).height, 10);
-	const contentPosition = contentBlock.getBoundingClientRect().top;
-	const offsetPosition = contentPosition - headerOffset;
-	
-	window.scrollTo({
-		top: offsetPosition,
-		behavior: "smooth"
-	});
+const scrollDownBtn = document.querySelector('.btn-scroll');
+if (!!scrollDownBtn) {
+  scrollDownBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('.banner__btn-scroll_pseudo').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+  });
 }
-
-scrollDownBtn.addEventListener('click', handleButtonClick);
 // <--  scroll into view -->
+
+
