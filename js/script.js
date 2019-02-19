@@ -61,7 +61,7 @@ const scrollDownBtn = document.querySelector('.btn-scroll');
 if (!!scrollDownBtn) {
   scrollDownBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelector('.banner__btn-scroll_pseudo').scrollIntoView({
+    scrollDownBtn.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
