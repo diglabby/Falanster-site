@@ -73,8 +73,8 @@ if (!!scrollDownBtn) {
 //<-- title styles modificator -->
 const bannerHeading = document.querySelector('.banner__heading');
 const isOverflowed = (el) => {
-  if (el.scrollHeight > 68) {
-    el.classList.remove('text--center');
+  if (el.scrollHeight < 70) {
+    el.classList.add('text--center');
   };
 };
 if (!!bannerHeading) {
