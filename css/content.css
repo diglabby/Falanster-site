@@ -47,6 +47,7 @@
 	font-size: 60px;
   line-height: 68px;
   font-weight: 500;
+  word-wrap: break-word;
 }
 
 .banner__info {
