@@ -2,6 +2,10 @@ body {
 	font-family: 'Ubuntu', Arial, sans-serif;
 }
 
+a {
+  outline: none;
+}
+
 @media screen and (min-width: 2200px) {
 	.projects__items {
 		display: -webkit-box;
