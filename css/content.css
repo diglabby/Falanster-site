@@ -237,6 +237,19 @@
 		padding-top: 200px;
 	}
 
+	.banner__photo {
+		height: calc(92vh - 200px);
+	}
+
+	.banner__photo::before {
+		height: calc(67vh - 200px);
+	}
+
+	.banner__photo::after {
+		position: absolute;
+		top: calc(67vh - 200px);
+	}
+
 	.banner__text--event {
 		left: 5%;
 		font-size: 42px;
