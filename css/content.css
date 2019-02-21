@@ -58,6 +58,11 @@
 	font-size: 60px;
   line-height: 68px;
   font-weight: 500;
+  word-wrap: break-word;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .banner__info {
