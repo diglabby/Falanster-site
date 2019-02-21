@@ -17,14 +17,36 @@
 .banner__photo::before {
 	display: block;
 	width: 100%;
-	height: calc(125vh - 66px);
+	height: calc(100vh - 66px);
 	content: '';
 	background-color: rgba(51, 51, 51, 0.7);
-	background: linear-gradient(to bottom,
-		rgba(51,51,51,0.7) 0%,
-		rgba(51,51,51,0.7) 78%,
-		rgba(255,255,255,0.8) 90%,
-		rgba(255,255,255,1) 100%);
+}
+
+.banner__photo::after {
+  position: absolute;
+  top: calc(100vh - 66px);
+	width: 100%;
+	height: 25vh;
+	content: '';
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 20%, 0.7) 0%,
+    hsla(0, 0%, 22.85%, 0.704) 8.1%,
+    hsla(0, 0%, 29.44%, 0.715) 15.5%,
+    hsla(0, 0%, 37.4%, 0.731) 22.5%,
+    hsla(0, 0%, 45.65%, 0.753) 29%,
+    hsla(0, 0%, 53.75%, 0.778) 35.3%,
+    hsla(0, 0%, 61.48%, 0.806) 41.2%,
+    hsla(0, 0%, 68.71%, 0.835) 47.1%,
+    hsla(0, 0%, 75.36%, 0.865) 52.9%,
+    hsla(0, 0%, 81.37%, 0.894) 58.8%,
+    hsla(0, 0%, 86.67%, 0.922) 64.7%,
+    hsla(0, 0%, 91.19%, 0.947) 71%,
+    hsla(0, 0%, 94.88%, 0.969) 77.5%,
+    hsla(0, 0%, 97.64%, 0.985) 84.5%,
+    hsla(0, 0%, 99.39%, 0.996) 91.9%,
+    hsl(0, 0%, 100%) 100%
+  );
   background-blend-mode: screen;
 }
 
