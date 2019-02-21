@@ -149,7 +149,10 @@
 	transition: all 0.25s ease-in;
 }
 
-.content__btn:hover,
+.content__btn:hover {
+	transform: scale(1.05);
+}
+
 .content__btn:active {
 	color: #ff6600;
 	background-color: #ffffff;
