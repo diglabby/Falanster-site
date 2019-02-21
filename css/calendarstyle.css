@@ -3,7 +3,7 @@
   height: 700px;
   position: relative;
   overflow: hidden;
-  margin: 60px 0;
+  padding: 60px 0;
 }
 
 .calendar__container {
@@ -17,7 +17,7 @@
   height: 3px;
   background-color: #d2ff1b;
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
 }
 
@@ -27,12 +27,11 @@
   height: 3px;
   background-color: #333333;
   position: absolute;
-  top: 9px;
+  top: 69px;
   left: 0;
 }
 
 .calendar__heading {
-  grid-area: mainhead;
   color: #333333;
   font-family: 'Ubuntu', Arial, sans-serif;
   font-size: 60px;
