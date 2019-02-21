@@ -225,3 +225,75 @@
 /* end of hotfix styles */
 
 
+
+/* small screens */
+
+@media (max-width: 1079px) {
+	.content {
+		padding-top: 80px;
+	}
+
+	.banner {
+		padding-top: 200px;
+	}
+
+	.banner__text--event {
+		left: 5%;
+		font-size: 42px;
+		line-height: 52px;
+		transform: translateY(-50%);
+	}
+
+	.banner__heading {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.banner__heading--event {
+		font-size: 42px;
+		line-height: 52px;
+	}
+
+	.banner__info {
+		margin-top: 5px;
+	}
+
+	.banner__date {
+		margin-right: 32px;
+	}
+
+	.banner__date-block,
+	.banner__status {
+		right: 0;
+		width: 50%;
+		height: 56px;
+		font-size: 14px;
+		line-height: 56px;
+	}
+
+	.banner__links {
+		display: none;
+	}
+
+	.banner__btn-scroll {
+		display: none;
+	}
+
+	.content__btn {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		padding: 25px;
+		line-height: 18px;
+	}
+
+	.content__text p {
+		line-height: 1.5em;
+	}
+
+	.content__text img {
+		width: 110%;
+		margin-left: -5%;
+	}
+}
+
