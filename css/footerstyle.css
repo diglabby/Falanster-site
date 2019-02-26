@@ -101,12 +101,22 @@
 
 	.footer__menu-link {
 		color: #ffffff;
-		text-decoration: none;
-	}
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .footer__menu-link:hover {
+    display: inline-block;
+    transform: scale(1.1);
+  }
+
+  .footer__menu-link:active {
+    color: #ff6600;
+  }
 
 	.footer__social {
 		margin-top: 8px;
-		margin-left: 98px;
+    margin-left: 98px;
 	}
 
 	.footer__social-title {
