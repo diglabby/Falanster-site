@@ -70,3 +70,20 @@ if (!!scrollDownBtn) {
 // <--  scroll into view -->
 
 
+// <--  slice content -->
+const innerModuleText = document.querySelectorAll('.inner-module-text');
+if (!!innerModuleText) {
+  const arrayFromInnerModuleText = Array.from(innerModuleText);
+  arrayFromInnerModuleText.forEach(el => {
+    (function sliceContent() {
+      while (el.scrollHeight > 132) {
+        const content = el.innerText.split(' ');
+        const newContent = content.slice(content[content.length - 1], -1);
+        el.innerText = newContent.join(' ') + '...';
+        sliceContent();
+      }
+    })();
+  });
+}
+// <--  slice content -->
+
