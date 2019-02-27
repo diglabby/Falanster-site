@@ -213,6 +213,16 @@
 }
 
 
+/* hotfix styles */
+
+.negative-margin_top {
+	margin-top: -25vh;
+}
+
+/* end of hotfix styles */
+
+
+
 /* content styles */
 
 .content__text {
@@ -286,15 +296,3 @@
 
 
 /* end of content styles */
-
-
-/* hotfix styles */
-
-.negative-margin_top {
-	margin-top: -25vh;
-}
-
-/* end of hotfix styles */
-
-
-
