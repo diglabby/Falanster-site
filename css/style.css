@@ -481,6 +481,10 @@ body {
   overflow: hidden;
 }
 
+.module-translucent {
+  opacity: 0.5;
+}
+
 .inner-module-title {
   margin: 20px 0 8px;
   padding: 0;
@@ -505,10 +509,30 @@ body {
   align-items: center;
   width: 172px;
   height: 40px;
+  padding: 0 16px;
   background: #333333;
   color: #ffffff;
+  font: 16px 'Ubuntu', Arial, sans-serif;
   font-weight: 500;
   border-radius: 3px 3px 0 0;
+}
+
+.label-hot {
+  color: #ff6600;
+}
+
+.label-hot::after {
+  content: url('../images/icon-fire.png');
+  margin-left: 13px;
+  width: 16px;
+  height: 19px;
+}
+
+.label-pending::after {
+  content: url('../images/icon-pending.png');
+  margin-left: 13px;
+  width: 9px;
+  height: 16px;
 }
 
 .inner-module-text {
