@@ -90,7 +90,7 @@ if (!!containerInnerModule) {
     function sliceContent(textBlock) {
       const content = textBlock.innerText.split(' ');
       const newContent = content.slice(content[content.length - 1], -1);
-      textBlock.innerText = newContent.join(' ').replace('.', '') + '...';
+      textBlock.innerText = (newContent.join(' ') + '...').replace('....', '...');
       checkHeight();
     }
 
