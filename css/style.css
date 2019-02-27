@@ -438,22 +438,49 @@ body {
 }
 
 .container-inner__module {
+  position: relative;
   margin-bottom: 45px;
+  padding: 240px 16px 0 16px;
   width: 300px;
   height: 456px;
   background: #fcfcfc;
   box-sizing: border-box;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
+  overflow: hidden;
 }
 
 .container-inner__module:nth-child(3n-1) {
-  margin: 0 45px;
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.inner-module-title {
+  margin: 0;
+  padding: 0;
+  font: 24px 'PT Sans', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.inner-module-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 300px;
+  height: 240px;
+}
+
+.inner-module-text {
+  margin: 0;
+  padding: 0;
+  font: 16px 'PT Sans', Arial, sans-serif;
 }
 
 .block-container {
   display: flex;
   flex-flow: row wrap;
+  font: 16px 'PT Sans', Arial, sans-serif;
+  line-height: 1.4;
 }
 
 .block-title {
