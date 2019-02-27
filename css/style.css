@@ -496,6 +496,21 @@ body {
   height: 240px;
 }
 
+.inner-module-label {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 172px;
+  height: 40px;
+  background: #333333;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 3px 3px 0 0;
+}
+
 .inner-module-text {
   display: inline-block;
   max-height: 132px;
