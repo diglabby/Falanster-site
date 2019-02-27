@@ -1,0 +1,24 @@
+.pagination-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.pagination-item {
+  display: flex;
+  margin: 0 4px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  width: 20px;
+  height: 20px;
+}
+
+.pagination-container > .pagination-item_active {
+  background-color: #ff6600;
+  color: #ffffff;
+  border-radius: 50%;
+}
