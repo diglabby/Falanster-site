@@ -440,7 +440,7 @@ body {
 .container-inner__module {
   position: relative;
   margin-bottom: 45px;
-  padding: 240px 16px 0 16px;
+  padding: 240px 15px 0;
   width: 300px;
   height: 456px;
   background: #fcfcfc;
@@ -456,7 +456,7 @@ body {
 }
 
 .inner-module-title {
-  margin: 0;
+  margin: 20px 0 8px;
   padding: 0;
   font: 24px 'PT Sans', Arial, sans-serif;
   font-weight: 500;
@@ -471,16 +471,18 @@ body {
 }
 
 .inner-module-text {
+  display: inline-block;
+  max-height: 132px;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  font: 16px 'PT Sans', Arial, sans-serif;
+  line-height: 1.4;
 }
 
 .block-container {
   display: flex;
   flex-flow: row wrap;
   font: 16px 'PT Sans', Arial, sans-serif;
-  line-height: 1.4;
 }
 
 .block-title {
