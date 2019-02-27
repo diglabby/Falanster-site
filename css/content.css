@@ -213,6 +213,13 @@
 }
 
 
+@media screen and (max-width: 1079px) {
+  .content__summary::before,
+  .content__summary::after {
+    display: none;
+  }
+}
+
 /* hotfix styles */
 
 .negative-margin_top {
