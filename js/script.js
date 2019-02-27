@@ -71,18 +71,30 @@ if (!!scrollDownBtn) {
 
 
 // <--  slice content -->
-const innerModuleText = document.querySelectorAll('.inner-module-text');
-if (!!innerModuleText) {
-  const arrayFromInnerModuleText = Array.from(innerModuleText);
-  arrayFromInnerModuleText.forEach(el => {
-    (function sliceContent() {
-      while (el.scrollHeight > 132) {
-        const content = el.innerText.split(' ');
-        const newContent = content.slice(content[content.length - 1], -1);
-        el.innerText = newContent.join(' ') + '...';
-        sliceContent();
+const containerInnerModule = document.querySelectorAll('.container-inner__module');
+
+if (!!containerInnerModule) {
+  const arrayFromContainerInnerModule = Array.from(containerInnerModule);
+  arrayFromContainerInnerModule.forEach((container) => {
+    const titleBlock = container.children[0];
+
+    function checkHeight() {
+      const textBlock = container.children[2];
+      if (textBlock && titleBlock && titleBlock.scrollHeight < 94) {
+        titleBlock.scrollHeight + textBlock.scrollHeight > 163 ? sliceContent(textBlock) : false;
+      } else if (textBlock && titleBlock && titleBlock.scrollHeight >= 94) {
+        sliceContent(titleBlock);
       }
-    })();
+    };
+
+    function sliceContent(textBlock) {
+      const content = textBlock.innerText.split(' ');
+      const newContent = content.slice(content[content.length - 1], -1);
+      textBlock.innerText = newContent.join(' ').replace('.', '') + '...';
+      checkHeight();
+    }
+
+    checkHeight();
   });
 }
 // <--  slice content -->
