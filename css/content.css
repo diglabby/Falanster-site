@@ -150,6 +150,7 @@
 }
 
 .content__btn {
+  box-sizing: border-box;
 	display: block;
 	width: 420px;
 	padding: 12px;
@@ -214,20 +215,21 @@
 
 
 @media screen and (max-width: 1079px) {
+  .content__summary {
+    width: 110%;
+    margin-left: -5%;
+    padding: 5%;
+  }
+
   .content__summary::before,
   .content__summary::after {
     display: none;
   }
+
+  .content__btn {
+    width: 100%;
+  }
 }
-
-/* hotfix styles */
-
-.negative-margin_top {
-	margin-top: -25vh;
-}
-
-/* end of hotfix styles */
-
 
 
 /* content styles */
@@ -301,5 +303,22 @@
 	line-height: 22px;
 }
 
+@media screen and (max-width: 1079px) {
+  .content__text img {
+    width: 110%;
+    margin-left: -5%;
+  }
+}
+
 
 /* end of content styles */
+
+
+
+/* hotfix styles */
+
+.negative-margin_top {
+	margin-top: -25vh;
+}
+
+/* end of hotfix styles */
