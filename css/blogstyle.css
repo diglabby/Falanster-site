@@ -141,9 +141,14 @@
 	}
 
 	.blog__more-link:hover {
-		border-bottom: 2px #ffffff solid;
+    color: #ff6600;
+    border-bottom: 2px #ff6600 solid;
 		transition: 0.2s;
-	}
+  }
+
+  .blog__more-link:active {
+    border-bottom: 2px #ffffff solid;
+  }
 }
 
 
