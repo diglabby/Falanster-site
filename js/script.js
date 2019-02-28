@@ -70,3 +70,32 @@ if (!!scrollDownBtn) {
 // <--  scroll into view -->
 
 
+// <--  slice content -->
+const containerInnerModule = document.querySelectorAll('.container-inner__module');
+
+if (!!containerInnerModule) {
+  const arrayFromContainerInnerModule = Array.from(containerInnerModule);
+  arrayFromContainerInnerModule.forEach((container) => {
+    const titleBlock = container.children[0];
+
+    function checkHeight() {
+      const textBlock = container.children[2];
+      if (textBlock && titleBlock && titleBlock.scrollHeight < 94) {
+        titleBlock.scrollHeight + textBlock.scrollHeight > 163 ? sliceContent(textBlock) : false;
+      } else if (textBlock && titleBlock && titleBlock.scrollHeight >= 94) {
+        sliceContent(titleBlock);
+      }
+    };
+
+    function sliceContent(textBlock) {
+      const content = textBlock.innerText.split(' ');
+      const newContent = content.slice(content[content.length - 1], -1);
+      textBlock.innerText = (newContent.join(' ') + '...').replace('....', '...');
+      checkHeight();
+    }
+
+    checkHeight();
+  });
+}
+// <--  slice content -->
+

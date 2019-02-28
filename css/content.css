@@ -147,6 +147,10 @@
   background-size: 100%;
 }
 
+.content-inner_large {
+  padding-top: 61px;
+}
+
 .content__btn {
 	display: block;
 	width: 420px;
