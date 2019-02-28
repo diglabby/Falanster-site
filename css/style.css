@@ -413,17 +413,23 @@ body {
 	margin: 0 auto;
 }
 
-@media (max-width: 1079px) {
-	.container {
-		width: 100%;
-		margin: 0;
-	}
-}
-
 .container-inner {
 	width: 778px;
 	margin: 0 auto;
 }
+
+
+@media (max-width: 1079px) {
+	.container {
+		width: 100%;
+		margin: 0;
+  }
+  .container-inner {
+    width: 91%;
+    margin: 0 auto;
+  }  
+}
+
 
 .container-inner_large {
   width: 990px;
