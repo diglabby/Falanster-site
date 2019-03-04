@@ -377,7 +377,9 @@
 		width: 50%;
 		height: 100px;
 		font-size: 30px;
-		line-height: 100px;
+    line-height: 100px;
+    bottom: 25vh;
+    bottom: calc(var(--vh, 1vh) * 25)
 	}
 
 	.banner__btn-scroll {
