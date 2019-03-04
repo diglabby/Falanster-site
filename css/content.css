@@ -356,10 +356,12 @@
 	.banner__date-block,
 	.banner__status {
 		right: 0;
+		top: calc(100vh - 100px);
 		width: 50%;
 		height: 100px;
 		font-size: 30px;
 		line-height: 100px;
+		z-index: 1;
 	}
 
 	.banner__btn-scroll {
