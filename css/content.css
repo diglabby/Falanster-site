@@ -344,16 +344,20 @@
 
 @media screen and (max-width: 1079px) {
 	.banner__photo {
-		height: 125vh;
+    height: 125vh;
+    height: calc(var(--vh, 1vh) * 125);
 	}
 
 	.banner__photo::before {
-		height: 100vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 	}
 
 	.banner__photo::after {
-		height: calc(25vh + 1px);
-		top: 100vh;
+    height: calc(25vh + 1px);
+    height: calc(var(--vh, 1vh) * 25 + 1px);
+    top: 100vh;
+    top: calc(var(--vh, 1vh) * 100);
 	}
 
 	.banner__heading {
@@ -370,7 +374,6 @@
 	.banner__status {
 		margin: 0;
 		right: 0;
-		top: calc(100vh - 100px);
 		width: 50%;
 		height: 100px;
 		font-size: 30px;
