@@ -344,11 +344,13 @@
 
 @media screen and (max-width: 1079px) {
 	.banner__photo::before {
-		height: 100vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 	}
 
 	.banner__photo::after {
-		top: 100vh;
+    top: 100vh;
+    top: calc(var(--vh, 1vh) * 100);
 	}
 
 	.banner__heading {
