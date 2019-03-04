@@ -347,9 +347,14 @@
 		height: 125vh;
 	}
 
+	.banner__photo::before {
+		height: 100vh;
+	}
+
 	.banner__photo::after {
 		height: calc(25vh + 1px);
-  }
+		top: 100vh;
+	}
 
 	.banner__heading {
 		font-size: 90px;
