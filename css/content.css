@@ -343,13 +343,13 @@
 
 
 @media screen and (max-width: 1079px) {
-	.banner__photo::before {
-		height: 100vh;
+	.banner__photo {
+		height: 125vh;
 	}
 
 	.banner__photo::after {
-		top: 100vh;
-	}
+		height: calc(25vh + 1px);
+  }
 
 	.banner__heading {
 		font-size: 90px;
