@@ -180,6 +180,12 @@
 	padding-top: 61px;
 }
 
+@media screen and (max-width: 1079px) {
+  .content-inner_large {
+    padding-top: 200px;
+  }
+}
+
 .content__btn {
 	box-sizing: border-box;
 	display: block;
