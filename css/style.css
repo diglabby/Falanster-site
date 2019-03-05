@@ -611,6 +611,7 @@ body {
     font: 4em 'Ubuntu', Arial, sans-serif;
     margin-top: 0.8em;
     line-height: 1.25em;
+    min-width: 100%;
   }
 
   .inner-module-img {
@@ -631,7 +632,7 @@ body {
     position: relative;
     top: 55%;
     display: inline-block;
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin: 0.5em 0.5em 0;
     max-height: 100%;
   }
