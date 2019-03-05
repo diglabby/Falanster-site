@@ -346,19 +346,16 @@
   .banner__photo {
     height: 125vh;
     height: calc(var(--vh, 1vh) * 125);
-    transition: 0.1s;
   }
 
 	.banner__photo::before {
     height: 80%;
-    transition: 0.1s;
 	}
 
 	.banner__photo::after {
     top: 80%;
     height: 20%;
     padding-bottom: 1em;
-    transition: 0.1s;
   }
 
   .banner__container {
@@ -408,6 +405,5 @@
 	.negative-margin_top {
     margin-top: -10vh;
     margin-top: calc(var(--vh, 1vh) * -10);
-    transition: 0.1s;
 	}
 }
