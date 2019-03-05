@@ -403,7 +403,6 @@
 	}
 
 	.negative-margin_top {
-    margin-top: -10vh;
-    margin-top: calc(var(--vh, 1vh) * -10);
+    margin-top: -20%;
 	}
 }
