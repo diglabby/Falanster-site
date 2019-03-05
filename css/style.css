@@ -572,7 +572,7 @@ body {
   .block-container__link:nth-child(n) {
     margin: 0 0 10% 0;
     height: calc(100vh - 435px);
-    height: calc(var(--vh, 1vh) * 100 - 435px);
+    /* height: calc(var(--vh, 1vh) * 100 - 435px); */
   }
 
   .container-inner_large {
@@ -592,7 +592,7 @@ body {
 	.container-inner__module {
     width: 100%;
     height: calc(100vh - 435px);
-    height: calc(var(--vh, 1vh) * 100 - 435px);
+    /* height: calc(var(--vh, 1vh) * 100 - 435px); */
     padding: 0 2em;
   }
 
