@@ -348,6 +348,11 @@
     height: calc(var(--vh, 1vh) * 125);
   }
 
+  .banner__photo {
+    height: 125vh;
+    height: calc(var(--vh, 1vh) * 125);
+  }
+
 	.banner__photo::before {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
