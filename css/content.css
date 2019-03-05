@@ -386,7 +386,11 @@
 		height: 100px;
 		font-size: 30px;
     line-height: 100px;
-	}
+  }
+
+  .banner__text {
+    top: 32.5%;
+  }
 
 	.banner__btn-scroll {
 		display: none;
