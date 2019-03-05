@@ -354,13 +354,15 @@
   }
 
 	.banner__photo::before {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(100vh + 1px);
+    height: calc(var(--vh, 1vh) * 100 + 1px);
 	}
 
 	.banner__photo::after {
     top: 100vh;
     top: calc(var(--vh, 1vh) * 100);
+    height: calc(25vh + 3px);
+    height: calc(var(--vh, 1vh) * 25 + 3px);
 	}
 
 	.banner__heading {
