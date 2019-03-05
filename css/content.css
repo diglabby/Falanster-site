@@ -343,27 +343,23 @@
 
 
 @media screen and (max-width: 1079px) {
-  .banner__container {
-    height: 125vh;
-    height: calc(var(--vh, 1vh) * 125);
-  }
-
   .banner__photo {
     height: 125vh;
     height: calc(var(--vh, 1vh) * 125);
   }
 
 	.banner__photo::before {
-    height: calc(100vh + 1px);
-    height: calc(var(--vh, 1vh) * 100 + 1px);
+    height: 80%;
 	}
 
 	.banner__photo::after {
-    top: 100vh;
-    top: calc(var(--vh, 1vh) * 100);
-    height: calc(25vh + 3px);
-    height: calc(var(--vh, 1vh) * 25 + 3px);
-	}
+    top: 80%;
+    height: 20%;
+  }
+
+  .banner__container {
+    height: 100%;
+  }
 
 	.banner__heading {
 		font-size: 90px;
@@ -383,8 +379,7 @@
 		height: 100px;
 		font-size: 30px;
     line-height: 100px;
-    bottom: 25vh;
-    bottom: calc(var(--vh, 1vh) * 25);
+    bottom: 20%;
 	}
 
 	.banner__btn-scroll {
