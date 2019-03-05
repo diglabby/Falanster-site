@@ -346,7 +346,7 @@
   .banner__photo {
     height: 125vh;
     height: calc(var(--vh, 1vh) * 125);
-    transition: height 0.5s;
+    transition: height 0.2s;
   }
 
 	.banner__photo::before {
