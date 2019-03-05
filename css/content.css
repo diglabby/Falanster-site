@@ -349,7 +349,7 @@
   }
 
 	.banner__photo::before {
-    height: calc(80% + 1px);
+    height: 80%;
 	}
 
 	.banner__photo::after {
