@@ -572,10 +572,11 @@ body {
   .block-container__link:nth-child(n) {
     margin: 0 0 10% 0;
     height: calc(100vh - 435px);
+    font-size: 16px;
   }
 
   .block-container__link:nth-child(1) {
-    height: calc(100vh - 565px);
+    height: calc(90vh - 435px);
   }
 
   .container-inner_large {
@@ -596,17 +597,20 @@ body {
     width: 100%;
     height: calc(100vh - 435px);
     padding: 0 2em;
+    border-radius: 0.3em;
   }
 
   .block-container__link:nth-child(1) > .container-inner__module {
-    height: calc(100vh - 565px);
+    height: calc(90vh - 435px);
   }
 
   .inner-module-title {
-    position: absolute;
+    position: relative;
     top: 55%;
-    font-size: 3.5em;
+    display: inline-block;
+    font: 4em 'Ubuntu', Arial, sans-serif;
     margin-top: 0.8em;
+    line-height: 1.25em;
   }
 
   .inner-module-img {
@@ -618,15 +622,17 @@ body {
     bottom: 45%;
     top: auto;
     width: 50%;
-    height: 90px;
+    height: 2.5em;
     font-size: 2.8em;
+    border-radius: 0.3em 0.3em 0 0;
   }
 
   .inner-module-text {
-    font-size: 2.5em;
-    position: absolute;
+    position: relative;
     top: 55%;
-    margin: 3.5em 0.5em 0;
+    display: inline-block;
+    font-size: 2.5em;
+    margin: 0.5em 0.5em 0;
     max-height: 100%;
   }
 
