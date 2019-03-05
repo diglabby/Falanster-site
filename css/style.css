@@ -575,7 +575,7 @@ body {
   }
 
   .block-container__link:nth-child(1) {
-    height: calc(100vh - 495px);
+    height: calc(100vh - 525px);
   }
 
   .container-inner_large {
@@ -599,7 +599,7 @@ body {
   }
 
   .block-container__link:nth-child(1) > .container-inner__module {
-    height: calc(100vh - 495px);
+    height: calc(100vh - 525px);
   }
 
   .inner-module-title {
