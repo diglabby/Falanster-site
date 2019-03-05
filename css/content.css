@@ -335,7 +335,7 @@
 /* hotfix styles */
 
 .negative-margin_top {
-	margin-top: -25vh;
+  margin-top: -25vh;
 }
 
 /* end of hotfix styles */
@@ -402,6 +402,7 @@
 	}
 
 	.negative-margin_top {
-		margin-top: -10vh;
+    margin-top: -10vh;
+    margin-top: calc(var(--vh, 1vh) * -10);
 	}
 }
