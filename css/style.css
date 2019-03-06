@@ -593,6 +593,7 @@ body {
 
   .container-inner__title {
     font-size: 5em;
+    margin: 0 0 0.5em;
   }
 
 	.container-inner__module {
