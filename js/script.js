@@ -155,3 +155,11 @@ const slicer = () => {
 slicer();
 window.addEventListener('resize', slicer);
 // <--  slice content -->
+
+// <--  fix banner__date-block  -->
+const bannerDateBlock = document.querySelector('.banner__date-block');
+if (!!bannerDateBlock) {
+  const bannerDateBlockOffsetTop = bannerDateBlock.offsetTop;
+  bannerDateBlock.style.top = `${bannerDateBlockOffsetTop}px`;
+}
+// <--  fix banner__date-block -->
