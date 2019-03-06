@@ -73,16 +73,46 @@ if (!!scrollDownBtn) {
 // <--  slice content -->
 const containerInnerModule = document.querySelectorAll('.container-inner__module');
 
+const defaultDeviceSettings = {
+  desktop: {
+    titleBlockScrollHeight: 94,
+    textBlockScrollHeight: 163,
+  },
+  mobilePortrait: {
+    titleBlockScrollHeight: 250,
+    textBlockScrollHeight: 370,
+  },
+  mobileLandscape: {
+    titleBlockScrollHeight: 220,
+    textBlockScrollHeight: 270,
+  },
+};
+
+const deviceSettings = {};
+
+if (window.innerWidth > 1079) {
+    deviceSettings.titleBlockScrollHeight = defaultDeviceSettings.desktop.titleBlockScrollHeight;
+    deviceSettings.textBlockScrollHeight = defaultDeviceSettings.desktop.textBlockScrollHeight;
+} else if (window.innerHeight > 1400) {
+  deviceSettings.titleBlockScrollHeight = defaultDeviceSettings.mobilePortrait.titleBlockScrollHeight;
+  deviceSettings.textBlockScrollHeight = defaultDeviceSettings.mobilePortrait.textBlockScrollHeight;
+} else {
+  deviceSettings.titleBlockScrollHeight = defaultDeviceSettings.mobileLandscape.titleBlockScrollHeight;
+  deviceSettings.textBlockScrollHeight = defaultDeviceSettings.mobileLandscape.textBlockScrollHeight;
+}
+
 if (!!containerInnerModule) {
+  const {titleBlockScrollHeight, textBlockScrollHeight} = deviceSettings;
+
   const arrayFromContainerInnerModule = Array.from(containerInnerModule);
   arrayFromContainerInnerModule.forEach((container) => {
     const titleBlock = container.children[0];
 
     function checkHeight() {
       const textBlock = container.children[2];
-      if (textBlock && titleBlock && titleBlock.scrollHeight < 94) {
-        titleBlock.scrollHeight + textBlock.scrollHeight > 163 ? sliceContent(textBlock) : false;
-      } else if (textBlock && titleBlock && titleBlock.scrollHeight >= 94) {
+      if (textBlock && titleBlock && titleBlock.scrollHeight < titleBlockScrollHeight) {
+        titleBlock.scrollHeight + textBlock.scrollHeight > textBlockScrollHeight ? sliceContent(textBlock) : false;
+      } else if (textBlock && titleBlock && titleBlock.scrollHeight >= titleBlockScrollHeight) {
         sliceContent(titleBlock);
       }
     };

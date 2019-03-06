@@ -614,6 +614,10 @@ body {
     min-width: 100%;
   }
 
+  .block-container__link:nth-child(1) > * > .inner-module-title {
+    margin-top: 0.4em;
+  }
+
   .inner-module-img {
     width: 100%;
     height: 55%;
@@ -633,6 +637,7 @@ body {
     top: 55%;
     display: inline-block;
     font-size: 2.8em;
+    line-height: 1.375em;
     margin: 0.5em 0.5em 0;
     max-height: 100%;
   }
