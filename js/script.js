@@ -165,10 +165,11 @@ const setPositionOfBannerDateBlock = () => {
   }
 };
 setPositionOfBannerDateBlock();
-window.addEventListener('resize', () => {
-  if (!!bannerDateBlock) {
+
+if (!!bannerDateBlock) {
+  window.addEventListener('resize', () => {
     bannerDateBlock.removeAttribute('style');
     setPositionOfBannerDateBlock();
-  }
-});
+  });
+}
 // <--  fix banner__date-block -->
