@@ -56,3 +56,27 @@
 .item-next:hover {
   border-color: #ff6600;
 }
+
+@media screen and (max-width: 1079px) {
+  .pagination-item {
+    width: 90px;
+    height: 90px;
+    font-size: 3em;
+    margin: 0 6px;
+  }
+
+  .item-prev,
+  .item-next {
+    width: 45px;
+    height: 45px;
+    font-size: 0;
+  }
+
+  .item-prev {
+    margin-right: 48px;
+  }
+
+  .item-next {
+    margin-left: 48px;
+  }
+}

@@ -180,6 +180,12 @@
 	padding-top: 61px;
 }
 
+@media screen and (max-width: 1079px) {
+  .content-inner_large {
+    padding-top: 200px;
+  }
+}
+
 .content__btn {
 	box-sizing: border-box;
 	display: block;
@@ -345,7 +351,6 @@
 @media screen and (max-width: 1079px) {
   .banner__photo {
     height: 125vh;
-    height: calc(var(--vh, 1vh) * 125);
   }
 
 	.banner__photo::before {
@@ -375,13 +380,17 @@
 	.banner__date-block,
 	.banner__status {
 		margin: 0;
-		right: 0;
+    right: 0;
+    top: calc(90vh - 200px);
 		width: 50%;
 		height: 100px;
 		font-size: 30px;
     line-height: 100px;
-    bottom: 20%;
-	}
+  }
+
+  .banner__text {
+    top: 32.5%;
+  }
 
 	.banner__btn-scroll {
 		display: none;
