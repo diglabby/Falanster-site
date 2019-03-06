@@ -166,7 +166,9 @@ const setPositionOfBannerDateBlock = () => {
 };
 setPositionOfBannerDateBlock();
 window.addEventListener('resize', () => {
-  bannerDateBlock.removeAttribute('style');
-  setPositionOfBannerDateBlock();
+  if (!!bannerDateBlock) {
+    bannerDateBlock.removeAttribute('style');
+    setPositionOfBannerDateBlock();
+  }
 });
 // <--  fix banner__date-block -->
