@@ -128,8 +128,7 @@ const slicer = () => {
   if (!!containerInnerModule) {
     const {titleBlockScrollHeight, textBlockScrollHeight} = deviceSettings;
 
-    const arrayFromContainerInnerModule = Array.from(containerInnerModule);
-    arrayFromContainerInnerModule.forEach((container) => {
+    [].map.call(containerInnerModule, (container) => {
       const titleBlock = container.children[0];
 
       function checkHeight() {
