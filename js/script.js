@@ -156,8 +156,9 @@ slicer();
 window.addEventListener('resize', slicer);
 // <--  slice content -->
 
+
 // <--  fix banner__date-block  -->
-const bannerDateBlock = document.querySelector('.banner__date-block');
+const bannerDateBlock = document.querySelector('.banner__date-block') || document.querySelector('.banner__status');
 const setPositionOfBannerDateBlock = () => {
   if (!!bannerDateBlock && window.innerWidth < 1079) {
     const bannerDateBlockOffsetTop = bannerDateBlock.offsetTop;
