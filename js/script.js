@@ -71,84 +71,88 @@ if (!!scrollDownBtn) {
 
 
 // <--  slice content -->
-const containerInnerModule = document.querySelectorAll('.container-inner__module');
+const slicer = () => {
+  const containerInnerModule = document.querySelectorAll('.container-inner__module');
 
-const listOfSettings = {
-  // desktop ======================
-  desktop: {
-    titleBlockScrollHeight: 94,
-    textBlockScrollHeight: 163,
-  },
-  // mobile innerHeight ===========
-  2100: {
-    titleBlockScrollHeight: 320,
-    textBlockScrollHeight: 700,
-  },
-  1900: {
-    titleBlockScrollHeight: 250,
-    textBlockScrollHeight: 550,
-  },
-  1700: {
-    titleBlockScrollHeight: 250,
-    textBlockScrollHeight: 450,
-  },
-  1400: {
-    titleBlockScrollHeight: 250,
-    textBlockScrollHeight: 370,
-  },
-  default: {
-    titleBlockScrollHeight: 220,
-    textBlockScrollHeight: 270,
-  },
+  const listOfSettings = {
+    // desktop ======================
+    desktop: {
+      titleBlockScrollHeight: 94,
+      textBlockScrollHeight: 163,
+    },
+    // mobile innerHeight ===========
+    2100: {
+      titleBlockScrollHeight: 320,
+      textBlockScrollHeight: 700,
+    },
+    1900: {
+      titleBlockScrollHeight: 250,
+      textBlockScrollHeight: 550,
+    },
+    1700: {
+      titleBlockScrollHeight: 250,
+      textBlockScrollHeight: 450,
+    },
+    1400: {
+      titleBlockScrollHeight: 250,
+      textBlockScrollHeight: 370,
+    },
+    default: {
+      titleBlockScrollHeight: 220,
+      textBlockScrollHeight: 270,
+    },
+  };
+
+  const deviceSettings = {};
+
+  if (window.innerWidth > 1079) {
+      deviceSettings.titleBlockScrollHeight = listOfSettings.desktop.titleBlockScrollHeight;
+      deviceSettings.textBlockScrollHeight = listOfSettings.desktop.textBlockScrollHeight;
+  } else if (window.innerHeight > 2100) {
+      deviceSettings.titleBlockScrollHeight = listOfSettings[2100].titleBlockScrollHeight;
+      deviceSettings.textBlockScrollHeight = listOfSettings[2100].textBlockScrollHeight;
+  } else if (window.innerHeight > 1900) {
+      deviceSettings.titleBlockScrollHeight = listOfSettings[1900].titleBlockScrollHeight;
+      deviceSettings.textBlockScrollHeight = listOfSettings[1900].textBlockScrollHeight;
+  } else if (window.innerHeight > 1700) {
+      deviceSettings.titleBlockScrollHeight = listOfSettings[1700].titleBlockScrollHeight;
+      deviceSettings.textBlockScrollHeight = listOfSettings[1700].textBlockScrollHeight;
+  } else if (window.innerHeight > 1400) {
+      deviceSettings.titleBlockScrollHeight = listOfSettings[1400].titleBlockScrollHeight;
+      deviceSettings.textBlockScrollHeight = listOfSettings[1400].textBlockScrollHeight;
+  } else {
+      deviceSettings.titleBlockScrollHeight = listOfSettings.default.titleBlockScrollHeight;
+      deviceSettings.textBlockScrollHeight = listOfSettings.default.textBlockScrollHeight;
+  }
+
+  if (!!containerInnerModule) {
+    const {titleBlockScrollHeight, textBlockScrollHeight} = deviceSettings;
+
+    const arrayFromContainerInnerModule = Array.from(containerInnerModule);
+    arrayFromContainerInnerModule.forEach((container) => {
+      const titleBlock = container.children[0];
+
+      function checkHeight() {
+        const textBlock = container.children[2];
+        if (textBlock && titleBlock && titleBlock.scrollHeight < titleBlockScrollHeight) {
+          titleBlock.scrollHeight + textBlock.scrollHeight > textBlockScrollHeight ? sliceContent(textBlock) : false;
+        } else if (textBlock && titleBlock && titleBlock.scrollHeight >= titleBlockScrollHeight) {
+          sliceContent(titleBlock);
+        }
+      };
+
+      function sliceContent(textBlock) {
+        const content = textBlock.innerText.split(' ');
+        const newContent = content.slice(content[content.length - 1], -1);
+        textBlock.innerText = (newContent.join(' ') + '...').replace('....', '...');
+        checkHeight();
+      }
+
+      checkHeight();
+    });
+  }
 };
 
-const deviceSettings = {};
-
-if (window.innerWidth > 1079) {
-    deviceSettings.titleBlockScrollHeight = listOfSettings.desktop.titleBlockScrollHeight;
-    deviceSettings.textBlockScrollHeight = listOfSettings.desktop.textBlockScrollHeight;
-} else if (window.innerHeight > 2100) {
-    deviceSettings.titleBlockScrollHeight = listOfSettings[2100].titleBlockScrollHeight;
-    deviceSettings.textBlockScrollHeight = listOfSettings[2100].textBlockScrollHeight;
-} else if (window.innerHeight > 1900) {
-    deviceSettings.titleBlockScrollHeight = listOfSettings[1900].titleBlockScrollHeight;
-    deviceSettings.textBlockScrollHeight = listOfSettings[1900].textBlockScrollHeight;
-} else if (window.innerHeight > 1700) {
-    deviceSettings.titleBlockScrollHeight = listOfSettings[1700].titleBlockScrollHeight;
-    deviceSettings.textBlockScrollHeight = listOfSettings[1700].textBlockScrollHeight;
-} else if (window.innerHeight > 1400) {
-    deviceSettings.titleBlockScrollHeight = listOfSettings[1400].titleBlockScrollHeight;
-    deviceSettings.textBlockScrollHeight = listOfSettings[1400].textBlockScrollHeight;
-} else {
-    deviceSettings.titleBlockScrollHeight = listOfSettings.default.titleBlockScrollHeight;
-    deviceSettings.textBlockScrollHeight = listOfSettings.default.textBlockScrollHeight;
-}
-
-if (!!containerInnerModule) {
-  const {titleBlockScrollHeight, textBlockScrollHeight} = deviceSettings;
-
-  const arrayFromContainerInnerModule = Array.from(containerInnerModule);
-  arrayFromContainerInnerModule.forEach((container) => {
-    const titleBlock = container.children[0];
-
-    function checkHeight() {
-      const textBlock = container.children[2];
-      if (textBlock && titleBlock && titleBlock.scrollHeight < titleBlockScrollHeight) {
-        titleBlock.scrollHeight + textBlock.scrollHeight > textBlockScrollHeight ? sliceContent(textBlock) : false;
-      } else if (textBlock && titleBlock && titleBlock.scrollHeight >= titleBlockScrollHeight) {
-        sliceContent(titleBlock);
-      }
-    };
-
-    function sliceContent(textBlock) {
-      const content = textBlock.innerText.split(' ');
-      const newContent = content.slice(content[content.length - 1], -1);
-      textBlock.innerText = (newContent.join(' ') + '...').replace('....', '...');
-      checkHeight();
-    }
-
-    checkHeight();
-  });
-}
+slicer();
+window.addEventListener('resize', slicer);
 // <--  slice content -->
-
