@@ -572,11 +572,13 @@ body {
   .block-container__link:nth-child(n) {
     margin: 0 0 10% 0;
     height: calc(100vh - 435px);
+    min-height: 900px;
     font-size: 16px;
   }
 
   .block-container__link:nth-child(1) {
     height: calc(90vh - 435px);
+    min-height: 900px;
   }
 
   .container-inner_large {
@@ -596,12 +598,14 @@ body {
 	.container-inner__module {
     width: 100%;
     height: calc(100vh - 435px);
+    min-height: 900px;
     padding: 0 2em;
     border-radius: 0.3em;
   }
 
   .block-container__link:nth-child(1) > .container-inner__module {
     height: calc(90vh - 435px);
+    min-height: 900px;
   }
 
   .inner-module-title {
