@@ -74,10 +74,12 @@ if (!!scrollDownBtn) {
 const containerInnerModule = document.querySelectorAll('.container-inner__module');
 
 const listOfSettings = {
+  // desktop ======================
   desktop: {
     titleBlockScrollHeight: 94,
     textBlockScrollHeight: 163,
   },
+  // mobile innerHeight ===========
   2100: {
     titleBlockScrollHeight: 320,
     textBlockScrollHeight: 700,
@@ -94,7 +96,7 @@ const listOfSettings = {
     titleBlockScrollHeight: 250,
     textBlockScrollHeight: 370,
   },
-  other: {
+  default: {
     titleBlockScrollHeight: 220,
     textBlockScrollHeight: 270,
   },
@@ -106,20 +108,20 @@ if (window.innerWidth > 1079) {
     deviceSettings.titleBlockScrollHeight = listOfSettings.desktop.titleBlockScrollHeight;
     deviceSettings.textBlockScrollHeight = listOfSettings.desktop.textBlockScrollHeight;
 } else if (window.innerHeight > 2100) {
-  deviceSettings.titleBlockScrollHeight = listOfSettings[2100].titleBlockScrollHeight;
-  deviceSettings.textBlockScrollHeight = listOfSettings[2100].textBlockScrollHeight;
+    deviceSettings.titleBlockScrollHeight = listOfSettings[2100].titleBlockScrollHeight;
+    deviceSettings.textBlockScrollHeight = listOfSettings[2100].textBlockScrollHeight;
 } else if (window.innerHeight > 1900) {
-  deviceSettings.titleBlockScrollHeight = listOfSettings[1900].titleBlockScrollHeight;
-  deviceSettings.textBlockScrollHeight = listOfSettings[1900].textBlockScrollHeight;
+    deviceSettings.titleBlockScrollHeight = listOfSettings[1900].titleBlockScrollHeight;
+    deviceSettings.textBlockScrollHeight = listOfSettings[1900].textBlockScrollHeight;
 } else if (window.innerHeight > 1700) {
-  deviceSettings.titleBlockScrollHeight = listOfSettings[1700].titleBlockScrollHeight;
-  deviceSettings.textBlockScrollHeight = listOfSettings[1700].textBlockScrollHeight;
+    deviceSettings.titleBlockScrollHeight = listOfSettings[1700].titleBlockScrollHeight;
+    deviceSettings.textBlockScrollHeight = listOfSettings[1700].textBlockScrollHeight;
 } else if (window.innerHeight > 1400) {
-  deviceSettings.titleBlockScrollHeight = listOfSettings[1400].titleBlockScrollHeight;
-  deviceSettings.textBlockScrollHeight = listOfSettings[1400].textBlockScrollHeight;
+    deviceSettings.titleBlockScrollHeight = listOfSettings[1400].titleBlockScrollHeight;
+    deviceSettings.textBlockScrollHeight = listOfSettings[1400].textBlockScrollHeight;
 } else {
-  deviceSettings.titleBlockScrollHeight = listOfSettings.other.titleBlockScrollHeight;
-  deviceSettings.textBlockScrollHeight = listOfSettings.other.textBlockScrollHeight;
+    deviceSettings.titleBlockScrollHeight = listOfSettings.default.titleBlockScrollHeight;
+    deviceSettings.textBlockScrollHeight = listOfSettings.default.textBlockScrollHeight;
 }
 
 if (!!containerInnerModule) {
