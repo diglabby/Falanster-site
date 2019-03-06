@@ -387,6 +387,7 @@
 		height: 100px;
 		font-size: 30px;
     line-height: 100px;
+    transition: all 0.2s;
   }
 
   .banner__text {
