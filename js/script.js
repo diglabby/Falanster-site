@@ -158,8 +158,18 @@ window.addEventListener('resize', slicer);
 
 // <--  fix banner__date-block  -->
 const bannerDateBlock = document.querySelector('.banner__date-block');
+const setPositionOfBannerDateBlock = () => {
+  if (!!bannerDateBlock && window.innerWidth < 1079) {
+    const bannerDateBlockOffsetTop = bannerDateBlock.offsetTop;
+    bannerDateBlock.style.top = `${bannerDateBlockOffsetTop}px`;
+  }
+};
+setPositionOfBannerDateBlock();
+
 if (!!bannerDateBlock) {
-  const bannerDateBlockOffsetTop = bannerDateBlock.offsetTop;
-  bannerDateBlock.style.top = `${bannerDateBlockOffsetTop}px`;
+  window.addEventListener('resize', () => {
+    bannerDateBlock.removeAttribute('style');
+    setPositionOfBannerDateBlock();
+  });
 }
 // <--  fix banner__date-block -->
