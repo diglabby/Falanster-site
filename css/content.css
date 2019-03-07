@@ -194,7 +194,7 @@
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 700;
-	line-height: 36px;
+	line-height: 2em;
 	letter-spacing: -0.01em;
 	text-align: center;
 	text-decoration: none;
@@ -409,8 +409,20 @@
 	}
 
 	.content__btn {
+    margin: 100px 0;
 		width: 100%;
-	}
+		line-height: 3em;
+  }
+  
+  .content__btn:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  .content__btn:active {
+    color: #ffffff;
+    background-color: #ff6600;
+  }
 
 	.negative-margin_top {
     margin-top: -20%;
