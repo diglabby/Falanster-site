@@ -299,8 +299,7 @@
 	text-decoration: underline;
 }
 
-.content__text a:hover,
-.content__text a:focus {
+.content__text a:hover {
 	color: #ff6600;
 }
 
