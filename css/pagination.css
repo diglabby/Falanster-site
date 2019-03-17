@@ -30,6 +30,11 @@
   border-radius: 50%;
 }
 
+.pagination-container > .pagination-item_active::before {
+  content:'';
+  width: 1px;
+}
+
 .item-prev {
   align-self: center;
   font-size: 0;

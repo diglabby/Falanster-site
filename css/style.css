@@ -494,7 +494,7 @@ body {
 .inner-module-title {
   margin: 20px 0 8px;
   padding: 0;
-  font: 24px 'PT Sans', Arial, sans-serif;
+  font: 24px 'Ubuntu', Arial, sans-serif;
   font-weight: 500;
 }
 
@@ -593,6 +593,7 @@ body {
 
   .container-inner__title {
     font-size: 5em;
+    margin: 0 0 0.5em;
   }
 
 	.container-inner__module {
@@ -601,6 +602,16 @@ body {
     min-height: 900px;
     padding: 0 2em;
     border-radius: 0.3em;
+  }
+
+  .container-inner__module > figure {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 55%;
+    top: 0;
+    left: 0;
   }
 
   .block-container__link:nth-child(1) > .container-inner__module {
@@ -623,8 +634,11 @@ body {
   }
 
   .inner-module-img {
+    position: static;
     width: 100%;
-    height: 55%;
+    height: 100%;
+    min-width: 0;
+    object-fit: cover;
   }
 
   .inner-module-label {
