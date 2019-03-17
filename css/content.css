@@ -323,6 +323,14 @@
 }
 
 @media screen and (max-width: 1079px) {
+  .content__text h2 {
+    font-size: 1.5em;
+  }
+
+  .content__text h3 {
+    font-size: 1.25em;
+  }
+
 	.content__text p {
 		line-height: 1.375em;
 	}
