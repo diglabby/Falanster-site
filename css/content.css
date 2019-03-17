@@ -410,7 +410,8 @@
 	.content__btn {
     margin: 100px 0;
 		width: 100%;
-		line-height: 3em;
+    line-height: 3em;
+    font-size: 1.5em;
   }
   
   .content__btn:hover {
