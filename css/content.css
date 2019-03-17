@@ -325,12 +325,17 @@
 @media screen and (max-width: 1079px) {
   .content__text h2 {
     font-size: 2.25em;
-    margin: 5.5rem 0 4rem;
+    margin: 5rem 0 3rem;
   }
 
   .content__text h3 {
     font-size: 1.875em;
     margin: 4rem 0 2rem;
+  }
+
+  .content__summary h4 {
+    font-size: 2.25em;
+    margin: 4rem 0;
   }
 
 	.content__text p {
@@ -346,6 +351,8 @@
   
   .intro-paragraph {
     margin-bottom: 0 !important;
+    font-size: 1.5em;
+    line-height: 1.375em;
   }
 }
 
