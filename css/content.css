@@ -335,10 +335,12 @@
 
   .content__summary {
     padding: 0 5% 5% !important;
+    width: 100% !important;
+    box-sizing: content-box;
   }
 
   .content__summary h4 {
-    font-size: 2.8em;
+    font-size: 3em;
     padding: 4rem 0 2rem;
   }
 
