@@ -157,13 +157,24 @@
 	        box-shadow: 1px -2px 18px rgba(0,0,0,0.11);
 }
 
+.banner__status .banner__status-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
 .banner__status--process .banner__status-icon {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	margin-left: 15px;
-	content: url('../images/process.svg');
-	vertical-align: middle;
+  content: url("../images/process.svg");
+}
+
+.banner__status--stop .banner__status-icon {
+  content: url("../images/stop.svg");
+}
+
+.banner__status--finished .banner__status-icon {
+  content: url("../images/finished.svg");
 }
 
 .content {
