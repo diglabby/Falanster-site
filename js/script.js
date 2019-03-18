@@ -176,3 +176,77 @@ if (!!bannerDateBlock) {
   });
 }
 // <--  fix banner__date-block -->
+
+
+// <-- validate email -->
+const validateEmail = (email) => {
+  const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  const input = email || document.querySelector('.footer__email-input').value;
+  let validate = () => { return reg.test(input) ? true : false };
+  return validate();
+};
+// <-- validate email -->
+
+
+const input = document.querySelector('.footer__email-input');
+let stateLightBox = false;
+
+
+// <-- error & success email -->
+const errorEmail = () => {
+	if (stateLightBox) {
+		input.classList.add('email-input_error');
+	}
+  if (input.value.length === 0) {
+		stateLightBox = false;
+    successEmail();
+  }
+};
+
+const successEmail = () => {
+  input.classList.remove('email-input_error');
+};
+// <-- error & success email -->
+
+
+// <-- input focus -->
+input.addEventListener('input', (e) => {
+  let email = e.target.value;
+  validateEmail(email) ? successEmail() : errorEmail();
+});
+// <-- input focus -->
+
+
+// <-- subscribe form -->
+const subscribeForm = () => {
+  const subscribeBlock = document.querySelector('.footer__subscribe');
+  const form = document.querySelector('.validate');
+
+  subscribeBlock.addEventListener('click', (e) => {
+		e.preventDefault();
+		if (e.target.className === 'footer__subscribe-button') {
+      stateLightBox = true;
+    }
+    if (e.target.className === 'footer__subscribe-button' && validateEmail()) {
+      form.submit();
+      successEmail();
+      input.value = '';
+    } else {
+      errorEmail();
+    }
+  });
+
+  subscribeBlock.addEventListener('keydown', (e) => {
+    const eventCodes = ['Enter'];
+    if (eventCodes.includes(e.code) && e.target === 'INPUT' && validateEmail()) {
+      form.submit();
+      successEmail();
+      input.value = '';
+    } else {
+      errorEmail();
+    }
+  });
+};
+
+subscribeForm();
+// <-- end subscribe form -->
